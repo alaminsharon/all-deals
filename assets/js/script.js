@@ -53,7 +53,7 @@ let cardSlider = new Swiper('.cardSwiper', {
 let ourSlider = new Swiper('.aboutSwiper', {
     loop: true,
     slidesPerView: 6,
-    spaceBetween: 15,
+    spaceBetween: 10,
     autoplay: {
         delay: 1000,
         disableOnInteraction: false,
