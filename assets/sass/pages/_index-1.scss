@@ -86,6 +86,28 @@
 
 /****** Hero Section End *********/
 
+/****** Card Section Start *********/
+.al-card-section {
+    padding: 60px 0;
+    background-color: green;
+}
+
+.al-card-content {
+    background-color: $white-color;
+    border-radius: 28px;
+}
+
+.al-card-content-title {
+    text-align: center;
+    padding: 20px 0;
+    h6 {
+        font-size: 20px;
+        line-height: 28px;
+        color: $primary-color;
+    }
+}
+/****** Card Section End *********/
+
 /****** About Section Start *********/
 .al-about-section {
     background-color: $about-bg;
@@ -97,6 +119,7 @@
         display: inline-block;
         color: $primary-color;
         position: relative;
+
         span {
             background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
             -webkit-background-clip: text;
@@ -104,6 +127,7 @@
             background-clip: text;
             color: transparent;
         }
+
         img {
             position: absolute;
             right: -35px;
@@ -116,6 +140,7 @@
     h2 {
         color: $primary-color;
         line-height: 61px;
+
         span {
             color: #7C458F;
         }
@@ -130,6 +155,7 @@
         margin: 0 auto;
     }
 }
+
 .al-about-card {
     background-color: $white-color;
     padding: 43px 35px;
