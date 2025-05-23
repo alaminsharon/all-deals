@@ -262,7 +262,9 @@ h6 {
   justify-content: center;
   border-radius: 3px; }
 
-/********* Footer *********/
+/********* Footer Page *********/
+/********* Footer Section Start *********/
+/********* Footer Section End *********/
 /******** pages file **********/
 /******Home Page*********/
 /****** Hero Section Start *********/
@@ -462,6 +464,42 @@ h6 {
     transform: rotate(-45deg); }
 
 /****** Reward Section End *********/
+/****** Deal Section Start *********/
+.al-deal-section {
+  padding: 120px 0; }
+
+.al-deal-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10; }
+
+.al-deal-shape {
+  position: absolute;
+  top: -60px;
+  left: 150px; }
+
+.al-deal-infinity {
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  z-index: -1; }
+
+.al-deal-content-subtitle h6 {
+  line-height: 24px; }
+
+.al-deal-content-title {
+  margin-top: 17px;
+  margin-bottom: 40px; }
+  .al-deal-content-title h3 {
+    line-height: 61px;
+    max-width: 550px; }
+
+/****** Deal Section End *********/
+/****** Faq Section Start *********/
+/****** Faq Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {

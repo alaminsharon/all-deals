@@ -233,6 +233,7 @@
         align-items: center;
         justify-content: center;
         transition: 0.3s;
+
         i {
             color: $primary-color;
             display: inline-block;
@@ -242,3 +243,53 @@
 }
 
 /****** Reward Section End *********/
+
+/****** Deal Section Start *********/
+.al-deal-section {
+    padding: 120px 0;
+}
+
+.al-deal-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.al-deal-shape {
+    position: absolute;
+    top: -60px;
+    left: 150px;
+}
+
+.al-deal-infinity {
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+.al-deal-content-subtitle {
+    h6 {
+        line-height: 24px;
+    }
+}
+
+.al-deal-content-title {
+    margin-top: 17px;
+    margin-bottom: 40px;
+
+    h3 {
+        line-height: 61px;
+        max-width: 550px;
+    }
+}
+
+/****** Deal Section End *********/
+
+/****** Faq Section Start *********/
+
+/****** Faq Section End *********/
