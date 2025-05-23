@@ -13,7 +13,6 @@
     h1 {
         background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
         line-height: 84px;
-
     }
 }
 
@@ -100,12 +99,13 @@
 .al-card-content-title {
     text-align: center;
     padding: 20px 0;
+
     h6 {
         font-size: 20px;
         line-height: 28px;
-        color: $primary-color;
     }
 }
+
 /****** Card Section End *********/
 
 /****** About Section Start *********/
@@ -117,7 +117,6 @@
 .al-about-top-subtitle {
     h6 {
         display: inline-block;
-        color: $primary-color;
         position: relative;
 
         span {
@@ -138,7 +137,6 @@
 
 .al-about-top-title {
     h2 {
-        color: $primary-color;
         line-height: 61px;
 
         span {
@@ -170,7 +168,6 @@
         font-size: 21px;
         line-height: 30px;
         font-weight: 500;
-        color: $primary-color;
 
         @include screen-1260 {
             font-size: 19px;
@@ -179,3 +176,69 @@
 }
 
 /****** About Section End *********/
+
+/****** Reward Section Start *********/
+.al-reward-section {
+    padding: 70px 0;
+}
+
+.al-reward-top-title {
+    h2 {
+        line-height: 61px;
+        max-width: 650px;
+        margin: 0 auto;
+
+        span {
+            color: #7C458F;
+        }
+    }
+}
+
+.al-reward-para {
+    p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.al-reward-card {
+    background-color: $reward-card-bg;
+    padding: 60px 25px 30px 25px;
+    border-radius: 30px;
+}
+
+.al-reward-card-color {
+    background-color: $reward-card-bg-2;
+}
+
+.al-reward-card-content-title {
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+
+.al-reward-card-content-icon {
+    a {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: $white-color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        i {
+            color: $primary-color;
+            display: inline-block;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+/****** Reward Section End *********/
