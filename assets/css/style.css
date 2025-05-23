@@ -346,6 +346,7 @@ h6 {
   padding: 75px 0 110px 0; }
 
 .al-about-top-subtitle h6 {
+  display: inline-block;
   color: #033365;
   position: relative; }
   .al-about-top-subtitle h6 span {
