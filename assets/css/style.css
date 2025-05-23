@@ -287,6 +287,35 @@ h6 {
 .al-footer-widget-email {
   margin-top: 26px;
   margin-bottom: 50px; }
+  .al-footer-widget-email input {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    opacity: 1;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px; }
+
+.al-footer-widget-social ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 13px;
+  background-color: #ffffff; }
+  .al-footer-widget-social ul li a i {
+    color: #191957;
+    font-size: 30px; }
 
 .al-footer-widget-title h5 {
   font-size: 19px;
@@ -525,6 +554,69 @@ h6 {
     transform: rotate(-45deg); }
 
 /****** Reward Section End *********/
+/****** Faq Section Start *********/
+.al-faq-section {
+  padding: 35px 0 60px 0; }
+
+.al-faq-top h2 {
+  line-height: 61px;
+  max-width: 480px;
+  margin: 0 auto; }
+
+.al-faq-thumb {
+  margin-left: 75px; }
+
+.al-faq-accordion .accordion-item {
+  border: 0;
+  margin-bottom: 15px; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 24px;
+    font-weight: 600;
+    background: transparent;
+    color: #033365;
+    outline: none;
+    border: none; }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
+      background: none;
+      content: "\f107";
+      font-family: "FontAwesome";
+      width: auto;
+      height: auto; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: #A040C1; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    -webkit-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+    width: 60px;
+    height: 60px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(111, 104, 191, 0.1);
+    border-radius: 50%; }
+  .al-faq-accordion .accordion-item .accordion-body p {
+    font-size: 22px;
+    line-height: 37px;
+    color: #033365; }
+
+.al-faq-btn a {
+  text-decoration: underline;
+  color: #033365;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 44px; }
+
+/****** Faq Section End *********/
 /****** Deal Section Start *********/
 .al-deal-section {
   padding: 120px 0; }
@@ -559,8 +651,6 @@ h6 {
     max-width: 550px; }
 
 /****** Deal Section End *********/
-/****** Faq Section Start *********/
-/****** Faq Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {

@@ -31,7 +31,40 @@
 .al-footer-widget-email {
     margin-top: 26px;
     margin-bottom: 50px;
+    input {
+        border: 1px solid $white-color;
+        color: $white-color;
+        opacity: 1;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 70px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 36px;
+    }
 }
+
+.al-footer-widget-social {
+    ul {
+        li {
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                font-size: 13px;
+                background-color: $white-color;
+                i {
+                    color: #191957;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
 .al-footer-widget-title {
     h5 {
         font-size: 19px;
@@ -51,9 +84,6 @@
         }
     }
 }
-
-
-
 
 .al-footer-copyright {
     p {
