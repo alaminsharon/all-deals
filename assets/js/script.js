@@ -22,32 +22,19 @@
 
 })(jQuery)
 
-//////////////
-let cardSlider = new Swiper('.cardSwiper', {
+
+var swiper = new Swiper(".cardSwiper", {
+    slidesPerView: 6.5,
+    spaceBetween: 30,
+    centeredSlides: false,
+    grabCursor: true,
     loop: true,
-    slidesPerView: 6,
-    spaceBetween: 15,
     autoplay: {
         delay: 1000,
         disableOnInteraction: false,
     },
     speed: 800,
-    breakpoints: {
-        576: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        992: {
-            slidesPerView: 4,
-        },
-        1200: {
-            slidesPerView: 6,
-        }
-    }
 });
-//////////////
 
 //////////////
 let ourSlider = new Swiper('.aboutSwiper', {

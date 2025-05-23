@@ -91,9 +91,19 @@
     background-color: green;
 }
 
+.card-slider {
+    margin-left: 250px;
+}
+
 .al-card-content {
     background-color: $white-color;
     border-radius: 28px;
+}
+
+.al-card-content-thumb {
+    img {
+        width: 100%;
+    }
 }
 
 .al-card-content-title {
@@ -152,6 +162,11 @@
         max-width: 750px;
         margin: 0 auto;
     }
+}
+
+.our-slider {
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .al-about-card {

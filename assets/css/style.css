@@ -78,7 +78,8 @@ h5,
 h6 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  color: #033365; }
+  color: #033365;
+  margin-bottom: 0; }
 
 .mt100 {
   margin-top: 100px; }
@@ -270,6 +271,35 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.al-footer-top {
+  margin-bottom: 320px; }
+
+.al-footer-widget-newsletter-title h4 {
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 61px; }
+
+.al-footer-widget-newsletter-subtitle p {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 36px; }
+
+.al-footer-widget-email {
+  margin-top: 26px;
+  margin-bottom: 50px; }
+
+.al-footer-widget-title h5 {
+  font-size: 19px;
+  line-height: 34px;
+  color: #ffffff;
+  font-weight: 700; }
+
+.al-footer-widget-content li a {
+  font-size: 20px;
+  line-height: 64px;
+  color: #ffffff;
+  font-weight: 500; }
+
 .al-footer-copyright p {
   font-size: 19px;
   line-height: 34px;
@@ -369,9 +399,15 @@ h6 {
   padding: 60px 0;
   background-color: green; }
 
+.card-slider {
+  margin-left: 250px; }
+
 .al-card-content {
   background-color: #ffffff;
   border-radius: 28px; }
+
+.al-card-content-thumb img {
+  width: 100%; }
 
 .al-card-content-title {
   text-align: center;
@@ -412,6 +448,10 @@ h6 {
   line-height: 36px;
   max-width: 750px;
   margin: 0 auto; }
+
+.our-slider {
+  margin-left: 120px;
+  margin-right: 120px; }
 
 .al-about-card {
   background-color: #ffffff;
