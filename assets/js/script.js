@@ -23,7 +23,7 @@
 })(jQuery)
 
 //////////////
-let ourSlider = new Swiper('.mySwiper', {
+let ourSlider = new Swiper('.aboutSwiper', {
     loop: true,
     slidesPerView: 6,
     spaceBetween: 15,
@@ -40,7 +40,7 @@ let ourSlider = new Swiper('.mySwiper', {
             slidesPerView: 2,
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
         1200: {
             slidesPerView: 6,
