@@ -1,0 +1,154 @@
+/******Home Page*********/
+
+
+/****** Hero Section Start *********/
+.al-hero-section {
+    padding: 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.al-hero-title {
+    h1 {
+        background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
+        line-height: 84px;
+
+    }
+}
+
+.al-hero-subtitle {
+    margin-top: 11px;
+    margin-bottom: 104px;
+
+    p {
+        font-size: 25px;
+        line-height: 42px;
+        max-width: 710px;
+    }
+}
+
+.default-btn {
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    padding: 7px 23px;
+    z-index: 1;
+    background-color: $white-color;
+    color: $primary-color;
+    transition: 0.3s;
+    opacity: 1;
+    font-size: 22px;
+    line-height: 42px;
+    font-weight: 500;
+    border-radius: 70px;
+    transition: 0.5s;
+
+    i {
+        font-size: 28px;
+        color: $primary-color;
+        display: inline-block;
+        margin-left: 30px;
+        transform: rotate(45deg);
+    }
+
+    span {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        background-color: #141417;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 1;
+    }
+
+    &:hover {
+        color: $white-color;
+
+        i {
+            color: $white-color;
+        }
+
+        span {
+            width: 225%;
+            height: 562.5px;
+        }
+
+        i {
+            animation: 0.4s toTopFromBottom1 forwards;
+        }
+    }
+}
+
+/****** Hero Section End *********/
+
+/****** About Section Start *********/
+.al-about-section {
+    background-color: $about-bg;
+    padding: 75px 0 110px 0;
+}
+
+.al-about-top-subtitle {
+    h6 {
+        color: $primary-color;
+        position: relative;
+        span {
+            background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        img {
+            position: absolute;
+            right: -35px;
+            top: -18px;
+        }
+    }
+}
+
+.al-about-top-title {
+    h2 {
+        color: $primary-color;
+        line-height: 61px;
+        span {
+            color: #7C458F;
+        }
+    }
+}
+
+.al-about-para {
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+.al-about-card {
+    background-color: $white-color;
+    padding: 43px 35px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.al-about-card-title {
+    margin-top: 42px;
+
+    h5 {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $primary-color;
+
+        @include screen-1260 {
+            font-size: 19px;
+        }
+    }
+}
+
+/****** About Section End *********/

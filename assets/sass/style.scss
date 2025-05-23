@@ -1,0 +1,20 @@
+
+/********* base file **********/
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixin';
+@import 'base/typhography';
+@import 'base/spacing';
+
+/******** components file ********/
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/footer';
+
+/******** pages file **********/
+@import 'pages/index-1';
+
+
+/******** theme file **********/
+@import 'theme/animation';
+@import 'theme/common';

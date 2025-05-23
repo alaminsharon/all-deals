@@ -1,0 +1,136 @@
+/******Header Page*********/
+
+
+/******Header Home page *********/
+
+/******Header Home page Top Start *********/
+.al-header-top {
+    background-color: $header-top-bg;
+    padding: 11px 0;
+}
+
+.al-header-top-left-content {
+    p {
+        font-weight: 500;
+        color: $white-color;
+        font-size: 16px;
+
+        @include portrait-phone {
+            font-size: 14px;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+            color: $white-color;
+        }
+    }
+
+    @include screen-992 {
+        text-align: center;
+    }
+}
+
+.al-header-top-right-content {
+    a {
+        color: $white-color;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $body-font;
+    }
+
+    @include portrait-phone {
+        display: none !important;
+    }
+}
+
+/******Header Home page Top End *********/
+
+
+/******Header Home page Bottom Start *********/
+
+.al-header-bottom {
+    background-color: #7C458F;
+    padding: 15px 0;
+}
+
+.al-header-nav {
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            position: relative;
+            z-index: 20;
+
+            a {
+                font-size: 19px;
+                font-weight: 500;
+                display: inline-block;
+                color: $primary-color;
+            }
+
+            i {
+                font-size: 16px;
+                margin-top: 3px;
+                margin-left: 10px;
+                color: $primary-color;
+            }
+
+            .submenu-wrapper {
+                position: absolute;
+                right: -20px;
+                top: calc(100% + 19px);
+                min-width: 200px;
+                display: block;
+                background: $white-color;
+                border: 1px solid rgba(229, 231, 235, 1);
+                border-radius: 6px;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                padding-left: 0;
+
+                a {
+                    min-width: 260px;
+                    padding: 10px 25px;
+                    text-transform: capitalize;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: rgba(243, 244, 246, 1);
+                    }
+                }
+            }
+
+            &:hover .submenu-wrapper {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.al-header-btn-log {
+    font-size: 19px;
+    font-weight: 500;
+    color: $primary-color;
+}
+
+.al-header-btn-sign {
+    font-size: 19px;
+    font-weight: 500;
+    color: $primary-color;
+    background: linear-gradient(269.13deg, rgba(255, 255, 255, 0.5) 7.91%, #FFFFFF 99.27%);
+    padding: 12px 35px;
+    border-radius: 70px;
+}
+
+/******Header Home page Bottom End *********/
+
+/******Header Home page *********/

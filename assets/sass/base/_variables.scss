@@ -1,0 +1,26 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+//variable
+$body-font: "Outfit", sans-serif;
+$primary-color: #033365;
+$template-color: #334D88;
+$white-color: #ffffff;
+$header-top-bg: #02274D;
+$about-bg: #F9EEF3;
+
+
+img {
+    max-width: 100%;
+}
+
+* {
+    transition: 0.3s;
+}
+
+.al-container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 12px;
+}
