@@ -21,3 +21,30 @@
 
 
 })(jQuery)
+
+//////////////
+let ourSlider = new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 15,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 6,
+        }
+    }
+});
+//////////////
