@@ -12,7 +12,7 @@ img {
 .al-container {
   max-width: 1440px;
   margin: auto;
-  padding: 0 12px; }
+  padding: 0 30px; }
 
 * {
   margin: 0;
@@ -328,23 +328,59 @@ h6 {
     right: 0; }
 
 /******Header Home page *********/
-.primary-btn {
-  padding: 6px 24px;
-  background: var(--secondary-color);
-  color: var(--white-color);
-  font-size: 15px;
+.default-btn {
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  padding: 7px 23px;
+  z-index: 1;
+  background-color: #ffffff;
+  color: #033365;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  font-size: 22px;
+  line-height: 42px;
   font-weight: 500;
-  font-family: var(--primary-font);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 3px; }
+  border-radius: 70px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .default-btn i {
+    font-size: 28px;
+    color: #033365;
+    display: inline-block;
+    margin-left: 30px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .default-btn span {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    background-color: #141417;
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 1; }
+  .default-btn:hover {
+    color: #ffffff; }
+    .default-btn:hover i {
+      color: #ffffff; }
+    .default-btn:hover span {
+      width: 225%;
+      height: 562.5px; }
+    .default-btn:hover i {
+      -webkit-animation: 0.4s toTopFromBottom1 forwards;
+      animation: 0.4s toTopFromBottom1 forwards; }
 
 /********* Footer Page *********/
 /********* Footer Section Start *********/
@@ -501,21 +537,45 @@ h6 {
     position: absolute;
     right: -35px;
     top: -18px; }
+    @media (max-width: 575.98px) {
+      .al-about-top-subtitle h6 img {
+        right: 8px;
+        top: 15px; } }
+  @media (max-width: 575.98px) {
+    .al-about-top-subtitle h6 {
+      font-size: 18px;
+      max-width: 245px; } }
 
-.al-about-top-title h2 {
-  line-height: 61px; }
-  .al-about-top-title h2 span {
-    color: #7C458F; }
+.al-about-top-title {
+  margin-top: 10px;
+  margin-bottom: 16px; }
+  .al-about-top-title h2 {
+    line-height: 61px; }
+    .al-about-top-title h2 span {
+      color: #7C458F; }
+    @media (max-width: 575.98px) {
+      .al-about-top-title h2 {
+        font-size: 45px;
+        line-height: 43px; } }
 
 .al-about-para p {
   font-size: 24px;
   line-height: 36px;
   max-width: 750px;
   margin: 0 auto; }
+  @media (max-width: 575.98px) {
+    .al-about-para p {
+      font-size: 20px;
+      line-height: 30px; } }
 
 .our-slider {
-  margin-left: 120px;
-  margin-right: 120px; }
+  padding: 0 120px; }
+  @media (max-width: 1199.98px) {
+    .our-slider {
+      padding: 0 60px; } }
+  @media (max-width: 991.98px) {
+    .our-slider {
+      padding: 0; } }
 
 .al-about-card {
   background-color: #ffffff;
@@ -523,15 +583,26 @@ h6 {
   border-radius: 32px;
   text-align: center; }
 
-1111111 .al-about-card-title {
+.al-about-card-title {
   margin-top: 42px; }
-  1111111 .al-about-card-title h5 {
+  .al-about-card-title h5 {
     font-size: 21px;
     line-height: 30px;
     font-weight: 500; }
     @media (max-width: 1260px) {
-      1111111 .al-about-card-title h5 {
-        font-size: 19px; } }
+      .al-about-card-title h5 {
+        font-size: 19px;
+        line-height: 22px; } }
+    @media (max-width: 991.98px) {
+      .al-about-card-title h5 {
+        font-size: 14px; } }
+    @media (max-width: 767.98px) {
+      .al-about-card-title h5 {
+        font-size: 20px; } }
+
+@media (max-width: 575.98px) {
+  .al-about-btn {
+    display: none; } }
 
 /****** About Section End *********/
 /******** theme file **********/

@@ -1,12 +1,55 @@
-%primary-btn {
-    padding: 6px 24px;
-    background: var(--secondary-color);
-    color: var(--white-color);
-    font-size: 15px;
+.default-btn {
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    padding: 7px 23px;
+    z-index: 1;
+    background-color: $white-color;
+    color: $primary-color;
+    transition: 0.3s;
+    opacity: 1;
+    font-size: 22px;
+    line-height: 42px;
     font-weight: 500;
-    font-family: var(--primary-font);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
+    border-radius: 70px;
+    transition: 0.5s;
+
+    i {
+        font-size: 28px;
+        color: $primary-color;
+        display: inline-block;
+        margin-left: 30px;
+        transform: rotate(45deg);
+    }
+
+    span {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        background-color: #141417;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 1;
+    }
+
+    &:hover {
+        color: $white-color;
+
+        i {
+            color: $white-color;
+        }
+
+        span {
+            width: 225%;
+            height: 562.5px;
+        }
+
+        i {
+            animation: 0.4s toTopFromBottom1 forwards;
+        }
+    }
 }
