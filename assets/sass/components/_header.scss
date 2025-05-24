@@ -58,6 +58,12 @@
     padding: 15px 0;
 }
 
+.al-container-bottom {
+    @include screen-768 {
+        padding: 0 30px;
+    }
+}
+
 .al-header-nav {
     ul {
         display: flex;
@@ -131,6 +137,100 @@
     border-radius: 70px;
 }
 
+.al-header-user {
+    width: 45px;
+    height: 45px;
+    border-radius: 70px;
+    background: linear-gradient(269.79deg, rgba(255, 255, 255, 0.4) 7.95%, rgba(255, 255, 255, 0.7) 99.82%);
+    opacity: 0.7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mobile-toggle {
+    .header_toggle_btn {
+        span {
+            width: 32px;
+            height: 2px;
+            display: block;
+            background: #02274D;
+
+            +span {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
 /******Header Home page Bottom End *********/
+
+/************************ mobile menu start ****************/
+.mobile-menu {
+    width: 400px;
+    @include portrait-phone {
+        width: 280px;
+    }
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -410px;
+    background-color: $white-color;
+    z-index: 60;
+    padding: 18px 24px;
+    overflow-y: scroll;
+    transition: 0.3s;
+
+    .close {
+        position: absolute;
+        right: 37px;
+        top: 20px;
+        color: $primary-color;
+    }
+
+    .mobile-nav-menu {
+        margin-top: 20px;
+
+        li {
+            +li {
+                border-top: 1px solid #E8E8E8;
+            }
+
+            a {
+                display: inline-block;
+                color: $primary-color;
+                padding: 15px 0;
+            }
+
+            &.has-submenu {
+                position: relative;
+
+                &>i {
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    padding: 8px;
+                    transition: 0.3s;
+
+                    &.icon-rotate {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &>.submenu-wrapper {
+                    padding-left: 15px;
+                    display: none;
+                    transition: initial;
+                }
+            }
+        }
+    }
+
+    &.active {
+        right: 0;
+    }
+}
+
 
 /******Header Home page *********/

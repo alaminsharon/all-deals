@@ -1,40 +1,40 @@
 (function ($) {
 
-    //1. Button Hover JS
+    /*
+        1. Header Button
+        2. Mobile Menu
+    */
 
-    $(function () {
-        $('.default-btn')
-            .on('mouseenter', function (e) {
-                var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-                $(this).find('span').css({ top: relY, left: relX })
-            })
-            .on('mouseout', function (e) {
-                var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-                $(this).find('span').css({ top: relY, left: relX })
-            });
+    //1. Header Button
+
+    $(".header_toggle_btn").on("click", function () {
+        $(".mobile-menu").toggleClass("active");
     });
 
 
+    //2. Mobile Menu
 
-})(jQuery)
+    $(".mobile-menu .close").on("click", function () {
+        $(".mobile-menu").removeClass("active");
+    });
+
+    $(".mobile-menu ul li.has-submenu i").each(function () {
+        $(this).on("click", function () {
+            $(this).siblings('ul').slideToggle();
+            $(this).toggleClass("icon-rotate");
+        });
+    });
+
+    $(".mobile-menu ul li.has-submenu a").each(function () {
+        $(this).on("click", function () {
+            $(this).siblings('ul').slideToggle();
+            $(this).toggleClass("icon-rotate");
+        });
+    });
 
 
-var swiper = new Swiper(".cardSwiper", {
-    slidesPerView: 6.5,
-    spaceBetween: 30,
-    centeredSlides: false,
-    grabCursor: true,
-    loop: true,
-    autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-    },
-    speed: 800,
-});
+})(jQuery);
+
 
 //////////////
 let ourSlider = new Swiper('.aboutSwiper', {
