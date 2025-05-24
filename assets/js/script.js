@@ -54,6 +54,22 @@
 
 
 //////////////
+var swiper = new Swiper(".cardSwiper", {
+    slidesPerView: 6.5,
+    spaceBetween: 30,
+    centeredSlides: false,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+});
+//////////////
+
+
+//////////////
 let ourSlider = new Swiper('.aboutSwiper', {
     loop: true,
     slidesPerView: 6,

@@ -1,5 +1,39 @@
 /******Home Page*********/
 
+/****** Card Section Start *********/
+.al-card-section {
+    padding: 60px 0;
+    background-color: green;
+}
+
+.card-slider {
+    margin-left: 250px;
+}
+
+.al-card-content {
+    background-color: $white-color;
+    border-radius: 28px;
+}
+
+.al-card-content-thumb {
+    img {
+        width: 100%;
+        border-radius: 28px 28px 0 0;
+    }
+}
+
+.al-card-content-title {
+    text-align: center;
+    padding: 20px 0;
+
+    h6 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+/****** Card Section End *********/
+
 /****** About Section Start *********/
 .al-about-section {
     background-color: $about-bg;
@@ -217,6 +251,7 @@
             display: inline-block;
             transform: rotate(-45deg);
         }
+
         &:hover {
             background-color: #7C458F;
 

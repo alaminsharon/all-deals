@@ -106,6 +106,12 @@
     }
 }
 
+.al-email-input::placeholder {
+    color: $white-color;
+    opacity: 1;
+}
+
+
 .al-footer-widget-social {
     ul {
         li {
