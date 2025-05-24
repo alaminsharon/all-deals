@@ -688,6 +688,125 @@ h6 {
     transform: rotate(-45deg); }
 
 /****** Reward Section End *********/
+/****** Faq Section Start *********/
+.al-faq-section {
+  padding: 35px 0 60px 0; }
+
+.al-faq-top {
+  margin-bottom: 70px; }
+  @media (max-width: 991.98px) {
+    .al-faq-top {
+      margin-bottom: 50px; } }
+  @media (max-width: 575.98px) {
+    .al-faq-top {
+      margin-bottom: 30px; } }
+  .al-faq-top h2 {
+    line-height: 61px;
+    max-width: 480px;
+    margin: 0 auto; }
+    @media (max-width: 575.98px) {
+      .al-faq-top h2 {
+        font-size: 40px;
+        line-height: 45px; } }
+
+.al-faq-thumb {
+  margin-left: 75px; }
+  @media (max-width: 1399.98px) {
+    .al-faq-thumb {
+      margin-left: 0; } }
+  @media (max-width: 991.98px) {
+    .al-faq-thumb img {
+      width: 100%; } }
+
+.al-faq-accordion .accordion-item {
+  border: 0;
+  margin-bottom: 15px; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+    background: transparent;
+    color: #033365;
+    outline: none;
+    border: none;
+    padding: 0 0 27px 0;
+    max-width: 600px; }
+    @media (max-width: 1050px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+        padding: 0 0 5px 0;
+        font-size: 20px;
+        line-height: 28px; } }
+    @media (max-width: 991.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+        max-width: 100%; } }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
+      background: none;
+      content: "\f107";
+      font-family: "FontAwesome";
+      width: auto;
+      height: auto; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: #A040C1;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    -webkit-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+    width: 80px;
+    height: 80px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(111, 104, 191, 0.1);
+    border-radius: 50%;
+    position: relative;
+    right: -32px; }
+    @media (max-width: 1399.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+        width: 60px;
+        height: 60px;
+        right: -25px; } }
+    @media (max-width: 767.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+        width: 45px;
+        height: 45px;
+        right: -17px; } }
+  .al-faq-accordion .accordion-item .accordion-body {
+    padding: 0 80px 0 0; }
+    @media (max-width: 1050px) {
+      .al-faq-accordion .accordion-item .accordion-body {
+        padding: 0 40px 0 0; } }
+    @media (max-width: 575.98px) {
+      .al-faq-accordion .accordion-item .accordion-body {
+        padding: 0 10px 0 0; } }
+    .al-faq-accordion .accordion-item .accordion-body p {
+      font-size: 22px;
+      line-height: 37px;
+      color: #033365;
+      font-weight: 400; }
+      @media (max-width: 575.98px) {
+        .al-faq-accordion .accordion-item .accordion-body p {
+          font-size: 18px;
+          line-height: 31px; } }
+
+.al-faq-btn a {
+  text-decoration: underline;
+  color: #033365;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 44px; }
+
+/****** Faq Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {
