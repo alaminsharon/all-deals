@@ -161,7 +161,12 @@ h6 {
   .al-header-top-left-content p a {
     font-weight: 700;
     text-decoration: underline;
-    color: #ffffff; }
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .al-header-top-left-content p a:hover {
+      color: #7C458F; }
 
 @media (max-width: 991.98px) {
   .al-header-top-left-content {
@@ -171,7 +176,12 @@ h6 {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  font-family: "Outfit", sans-serif; }
+  font-family: "Outfit", sans-serif;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-header-top-right-content a:hover {
+    color: #7C458F; }
 
 @media (max-width: 575.98px) {
   .al-header-top-right-content {
@@ -334,7 +344,7 @@ h6 {
   display: inline-block;
   text-align: center;
   overflow: hidden;
-  padding: 7px 23px;
+  padding: 1px 18px;
   z-index: 1;
   background-color: #ffffff;
   color: #033365;
@@ -463,10 +473,17 @@ h6 {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .al-footer-widget-email-wrapper .al-email-button i {
       font-size: 20px;
       color: #033365; }
+    .al-footer-widget-email-wrapper .al-email-button:hover {
+      background-color: #7C458F; }
+      .al-footer-widget-email-wrapper .al-email-button:hover i {
+        color: #ffffff; }
 
 .al-footer-widget-social ul li a {
   display: -webkit-inline-box;
@@ -482,10 +499,17 @@ h6 {
   height: 64px;
   border-radius: 50%;
   font-size: 13px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .al-footer-widget-social ul li a i {
     color: #191957;
     font-size: 30px; }
+  .al-footer-widget-social ul li a:hover {
+    background-color: #7C458F; }
+    .al-footer-widget-social ul li a:hover i {
+      color: #ffffff; }
 
 .al-footer-widget-title h5 {
   font-size: 19px;
@@ -497,7 +521,12 @@ h6 {
   font-size: 20px;
   line-height: 64px;
   color: #ffffff;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-footer-widget-content li a:hover {
+    color: #7C458F; }
 
 .al-footer-copyright p {
   font-size: 19px;
@@ -509,7 +538,12 @@ h6 {
   .al-footer-copyright-item ul li a {
     font-size: 19px;
     line-height: 34px;
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .al-footer-copyright-item ul li a:hover {
+      color: #7C458F; }
 
 .al-footer-copyright-item ul li::marker {
   color: rgba(255, 255, 255, 0.6); }
@@ -686,6 +720,10 @@ h6 {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }
+  .al-reward-card-content-icon a:hover {
+    background-color: #7C458F; }
+    .al-reward-card-content-icon a:hover i {
+      color: #ffffff; }
 
 /****** Reward Section End *********/
 /****** Faq Section Start *********/
@@ -804,9 +842,89 @@ h6 {
   color: #033365;
   font-size: 22px;
   font-weight: 500;
-  line-height: 44px; }
+  line-height: 44px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-faq-btn a:hover {
+    color: #7C458F; }
 
 /****** Faq Section End *********/
+/****** Deal Section Start *********/
+.al-deal-section {
+  padding: 120px 0; }
+
+.al-deal-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  padding: 1px 0 10px 0; }
+  @media (max-width: 1050px) {
+    .al-deal-item {
+      padding: 36px 20px 50px 0; } }
+
+.al-deal-shape {
+  position: absolute;
+  top: -60px;
+  left: 150px; }
+  @media (max-width: 1199.98px) {
+    .al-deal-shape {
+      display: none; } }
+
+.al-deal-infinity {
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  z-index: -1; }
+  @media (max-width: 1199.98px) {
+    .al-deal-infinity {
+      display: none; } }
+
+.al-deal-content {
+  margin-left: 120px; }
+  @media (max-width: 1199.98px) {
+    .al-deal-content {
+      margin-left: 30px; } }
+
+.al-deal-content-subtitle h6 {
+  line-height: 24px; }
+  @media (max-width: 575.98px) {
+    .al-deal-content-subtitle h6 {
+      font-size: 21px;
+      line-height: 28px; } }
+
+.al-deal-content-title {
+  margin-top: 17px;
+  margin-bottom: 40px; }
+  .al-deal-content-title h3 {
+    line-height: 61px;
+    max-width: 550px; }
+    @media (max-width: 1199.98px) {
+      .al-deal-content-title h3 {
+        font-size: 45px; } }
+    @media (max-width: 575.98px) {
+      .al-deal-content-title h3 {
+        font-size: 35px;
+        line-height: 42px; } }
+
+.al-deal-thumb {
+  margin-bottom: -80px; }
+  @media (max-width: 991.98px) {
+    .al-deal-thumb {
+      margin-bottom: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-deal-thumb {
+      margin-left: -20px;
+      margin-right: -22px; } }
+
+@media (max-width: 400px) {
+  .al-deal-btn {
+    margin-left: 10px; } }
+
+/****** Deal Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {

@@ -217,6 +217,13 @@
             display: inline-block;
             transform: rotate(-45deg);
         }
+        &:hover {
+            background-color: #7C458F;
+
+            i {
+                color: $white-color;
+            }
+        }
     }
 }
 
@@ -351,6 +358,7 @@
                 line-height: 37px;
                 color: $primary-color;
                 font-weight: 400;
+
                 @include portrait-phone {
                     font-size: 18px;
                     line-height: 31px;
@@ -367,7 +375,111 @@
         font-size: 22px;
         font-weight: 500;
         line-height: 44px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #7C458F;
+        }
     }
 }
 
 /****** Faq Section End *********/
+
+/****** Deal Section Start *********/
+.al-deal-section {
+    padding: 120px 0;
+}
+
+.al-deal-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    padding: 1px 0 10px 0;
+
+    @include screen-1050 {
+        padding: 36px 20px 50px 0;
+    }
+}
+
+.al-deal-shape {
+    position: absolute;
+    top: -60px;
+    left: 150px;
+
+    @include large-screen {
+        display: none;
+    }
+}
+
+.al-deal-infinity {
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    z-index: -1;
+
+    @include large-screen {
+        display: none;
+    }
+}
+
+.al-deal-content {
+    margin-left: 120px;
+
+    @include large-screen {
+        margin-left: 30px;
+    }
+}
+
+.al-deal-content-subtitle {
+    h6 {
+        line-height: 24px;
+
+        @include portrait-phone {
+            font-size: 21px;
+            line-height: 28px;
+        }
+    }
+}
+
+.al-deal-content-title {
+    margin-top: 17px;
+    margin-bottom: 40px;
+
+    h3 {
+        line-height: 61px;
+        max-width: 550px;
+
+        @include large-screen {
+            font-size: 45px;
+        }
+
+        @include portrait-phone {
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+}
+
+.al-deal-thumb {
+    margin-bottom: -80px;
+
+    @include screen-992 {
+        margin-bottom: 40px;
+    }
+
+    @include portrait-phone {
+        margin-left: -20px;
+        margin-right: -22px;
+    }
+}
+
+.al-deal-btn {
+    @include screen-400 {
+        margin-left: 10px;
+    }
+}
+
+/****** Deal Section End *********/

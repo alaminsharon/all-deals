@@ -27,6 +27,11 @@
             font-weight: 700;
             text-decoration: underline;
             color: $white-color;
+            transition: 0.3s;
+
+            &:hover {
+                color: #7C458F;
+            }
         }
     }
 
@@ -41,6 +46,11 @@
         font-size: 16px;
         font-weight: 700;
         font-family: $body-font;
+        transition: 0.3s;
+
+        &:hover {
+            color: #7C458F;
+        }
     }
 
     @include portrait-phone {
@@ -169,9 +179,11 @@
 /************************ mobile menu start ****************/
 .mobile-menu {
     width: 400px;
+
     @include portrait-phone {
         width: 280px;
     }
+
     height: 100vh;
     position: fixed;
     top: 0;
