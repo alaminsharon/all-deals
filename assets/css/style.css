@@ -605,6 +605,89 @@ h6 {
     display: none; } }
 
 /****** About Section End *********/
+/****** Reward Section Start *********/
+.al-reward-section {
+  padding: 70px 0; }
+
+.al-reward-top {
+  margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .al-reward-top {
+      margin-bottom: 37px; } }
+
+.al-reward-top-title h2 {
+  line-height: 61px;
+  max-width: 650px;
+  margin: 0 auto; }
+  .al-reward-top-title h2 span {
+    color: #7C458F; }
+  @media (max-width: 767.98px) {
+    .al-reward-top-title h2 {
+      font-size: 50px;
+      line-height: 50px; } }
+  @media (max-width: 575.98px) {
+    .al-reward-top-title h2 {
+      font-size: 36px;
+      line-height: 43px; } }
+
+.al-reward-para p {
+  font-size: 24px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-reward-para p {
+      font-size: 20px;
+      line-height: 29px; } }
+
+.al-reward-card {
+  background-color: #F8CAC9;
+  padding: 60px 25px 30px 25px;
+  border-radius: 30px; }
+  @media (max-width: 1399.98px) {
+    .al-reward-card {
+      padding: 50px 15px 25px 20px; } }
+  @media (max-width: 767.98px) {
+    .al-reward-card {
+      padding: 30px 10px 15px 15px; } }
+
+.al-reward-card-color {
+  background-color: #9EE7B0; }
+
+.al-reward-card-content-title h5 {
+  font-size: 22px; }
+
+.al-reward-card-content-title h6 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500; }
+  @media (max-width: 1460px) {
+    .al-reward-card-content-title h6 {
+      font-size: 15px; } }
+
+.al-reward-card-content-icon a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-reward-card-content-icon a i {
+    color: #033365;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+/****** Reward Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {
