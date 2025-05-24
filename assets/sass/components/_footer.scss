@@ -2,7 +2,7 @@
 
 /********* Footer Section Start *********/
 .al-footer-section {
-    padding: 110px 0 25px 0;
+    padding: 500px 0 25px 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +13,10 @@
     position: absolute;
     left: 0;
     bottom: 60px;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-shape-02 {
@@ -20,6 +24,10 @@
     right: 0;
     bottom: 60px;
     z-index: 1;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-shape-03 {
@@ -27,16 +35,30 @@
     right: 40px;
     bottom: 60px;
     z-index: 2;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-shape-04 {
     position: absolute;
     left: 40%;
     bottom: 260px;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-top {
     margin-bottom: 320px;
+}
+
+.al-footer-widget-newsletter {
+    @include screen-992 {
+        text-align: center;
+    }
 }
 
 .al-footer-widget-newsletter-title {
@@ -44,6 +66,10 @@
         font-weight: 700;
         color: $white-color;
         line-height: 61px;
+
+        @include portrait-phone {
+            line-height: 49px;
+        }
     }
 }
 
@@ -53,6 +79,15 @@
         color: rgba(255, 255, 255, 0.90);
         line-height: 36px;
         max-width: 400px;
+
+        @include screen-992 {
+            margin: 0 auto;
+        }
+
+        @include portrait-phone {
+            font-size: 20px;
+            line-height: 49px;
+        }
     }
 }
 
@@ -65,6 +100,7 @@
     overflow: hidden;
     background-color: transparent;
     width: fit-content;
+    display: inline-flex;
 
     .al-email-input {
         color: $white-color;
@@ -76,6 +112,10 @@
         border: none;
         outline: none;
         width: 280px;
+
+        @include portrait-phone {
+            width: 240px;
+        }
     }
 
     .al-email-button {
@@ -104,6 +144,10 @@
             }
         }
     }
+
+    @include screen-992 {
+        justify-content: center;
+    }
 }
 
 .al-email-input::placeholder {
@@ -114,6 +158,10 @@
 
 .al-footer-widget-social {
     ul {
+        @include screen-992 {
+            justify-content: center;
+        }
+
         li {
             a {
                 display: inline-flex;
@@ -124,6 +172,11 @@
                 border-radius: 50%;
                 font-size: 13px;
                 background-color: $white-color;
+
+                @include portrait-phone {
+                    width: 55px;
+                    height: 55px;
+                }
 
                 i {
                     color: #191957;
@@ -169,6 +222,15 @@
     }
 }
 
+.al-footer-copyright-content {
+    display: flex;
+
+    @include screen-768 {
+        display: block;
+        text-align: center;
+    }
+}
+
 .al-footer-copyright {
     p {
         font-size: 19px;
@@ -180,6 +242,10 @@
 .al-footer-copyright-item {
     ul {
         list-style-type: disc;
+
+        @include screen-768 {
+            justify-content: center;
+        }
 
         li {
             a {

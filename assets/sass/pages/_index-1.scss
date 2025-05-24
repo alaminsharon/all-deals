@@ -103,19 +103,30 @@
     }
 }
 
+// .our-slider {
+//     padding: 0 120px;
+
+//     @include large-screen {
+//         padding: 0 60px;
+//     }
+
+//     @include screen-992 {
+//         padding: 0;
+//     }
+// }
+
+
 .our-slider {
     padding: 0 120px;
-
-    @include large-screen {
-        padding: 0 60px;
-    }
-
-    @include screen-992 {
-        padding: 0;
+    position: relative;
+    ::after {
+        position: absolute;
+        content: "";
+        width: 246px;
+        height: 100%;
+        background: linear-gradient(271.46deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%);
     }
 }
-
-
 .al-about-card {
     background-color: $white-color;
     padding: 43px 35px;
