@@ -12,6 +12,8 @@
 .al-hero-title {
     h1 {
         background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         line-height: 84px;
     }
 }
@@ -280,6 +282,7 @@
     .accordion-item {
         border: 0;
         margin-bottom: 15px;
+
         .accordion-header {
             .accordion-button {
                 font-size: 24px;
@@ -288,6 +291,7 @@
                 color: $primary-color;
                 outline: none;
                 border: none;
+                padding: 0 0 20px 0;
 
                 &::after {
                     background: none;
@@ -304,21 +308,25 @@
 
             .accordion-button:not(.collapsed) {
                 color: #A040C1;
+                box-shadow: 0 0 0 0;
             }
 
             .accordion-button:not(.collapsed)::after {
                 transform: rotate(180deg) !important;
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 background-color: rgba(111, 104, 191, 0.10);
                 border-radius: 50%;
+                position: relative;
+                right: -32px;
             }
         }
 
         .accordion-body {
+            padding: 0 80px 0 0;
             p {
                 font-size: 22px;
                 line-height: 37px;
@@ -337,6 +345,7 @@
         line-height: 44px;
     }
 }
+
 /****** Faq Section End *********/
 
 /****** Deal Section Start *********/

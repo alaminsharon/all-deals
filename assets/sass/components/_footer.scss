@@ -6,6 +6,33 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.al-footer-shape-01 {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+}
+
+.al-footer-shape-02 {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    z-index: 1;
+}
+
+.al-footer-shape-03 {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    z-index: 2;
+}
+
+.al-footer-shape-04 {
+    position: absolute;
+    left: 300px;
+    bottom: 260px;
 }
 
 .al-footer-top {
@@ -28,19 +55,43 @@
     }
 }
 
-.al-footer-widget-email {
+
+.al-footer-widget-email-wrapper {
     margin-top: 26px;
     margin-bottom: 50px;
-    input {
-        border: 1px solid $white-color;
+    border: 2px solid $white-color;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: transparent;
+    width: fit-content;
+
+    .al-email-input {
         color: $white-color;
-        opacity: 1;
-        background-color: transparent;
-        padding: 20px;
-        border-radius: 70px;
+        padding: 18px;
+        background: transparent;
         font-size: 20px;
         font-weight: 500;
         line-height: 36px;
+        border: none;
+        outline: none;
+        width: 280px;
+    }
+
+    .al-email-button {
+        background: white;
+        border: none;
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+        margin-right: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 20px;
+            color: $primary-color;
+        }
     }
 }
 
@@ -56,6 +107,7 @@
                 border-radius: 50%;
                 font-size: 13px;
                 background-color: $white-color;
+
                 i {
                     color: #191957;
                     font-size: 30px;

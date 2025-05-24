@@ -269,7 +269,30 @@ h6 {
   padding: 110px 0 25px 0;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+
+.al-footer-shape-01 {
+  position: absolute;
+  left: 0;
+  bottom: 60px; }
+
+.al-footer-shape-02 {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  z-index: 1; }
+
+.al-footer-shape-03 {
+  position: absolute;
+  right: 40px;
+  bottom: 60px;
+  z-index: 2; }
+
+.al-footer-shape-04 {
+  position: absolute;
+  left: 300px;
+  bottom: 260px; }
 
 .al-footer-top {
   margin-bottom: 320px; }
@@ -284,19 +307,46 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   line-height: 36px; }
 
-.al-footer-widget-email {
+.al-footer-widget-email-wrapper {
   margin-top: 26px;
-  margin-bottom: 50px; }
-  .al-footer-widget-email input {
-    border: 1px solid #ffffff;
+  margin-bottom: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .al-footer-widget-email-wrapper .al-email-input {
     color: #ffffff;
-    opacity: 1;
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 70px;
+    padding: 18px;
+    background: transparent;
     font-size: 20px;
     font-weight: 500;
-    line-height: 36px; }
+    line-height: 36px;
+    border: none;
+    outline: none;
+    width: 280px; }
+  .al-footer-widget-email-wrapper .al-email-button {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .al-footer-widget-email-wrapper .al-email-button i {
+      font-size: 20px;
+      color: #033365; }
 
 .al-footer-widget-social ul li a {
   display: -webkit-inline-box;
@@ -358,6 +408,8 @@ h6 {
   background: -webkit-linear-gradient(351.17deg, #7C458F 38.91%, #E73771 57.22%);
   background: -o-linear-gradient(351.17deg, #7C458F 38.91%, #E73771 57.22%);
   background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 84px; }
 
 .al-hero-subtitle {
@@ -575,7 +627,8 @@ h6 {
     background: transparent;
     color: #033365;
     outline: none;
-    border: none; }
+    border: none;
+    padding: 0 0 20px 0; }
     .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
       background: none;
       content: "\f107";
@@ -586,13 +639,15 @@ h6 {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-    color: #A040C1; }
+    color: #A040C1;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
   .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
     -webkit-transform: rotate(180deg) !important;
     -ms-transform: rotate(180deg) !important;
     transform: rotate(180deg) !important;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -603,11 +658,15 @@ h6 {
     -ms-flex-pack: center;
     justify-content: center;
     background-color: rgba(111, 104, 191, 0.1);
-    border-radius: 50%; }
-  .al-faq-accordion .accordion-item .accordion-body p {
-    font-size: 22px;
-    line-height: 37px;
-    color: #033365; }
+    border-radius: 50%;
+    position: relative;
+    right: -32px; }
+  .al-faq-accordion .accordion-item .accordion-body {
+    padding: 0 80px 0 0; }
+    .al-faq-accordion .accordion-item .accordion-body p {
+      font-size: 22px;
+      line-height: 37px;
+      color: #033365; }
 
 .al-faq-btn a {
   text-decoration: underline;
