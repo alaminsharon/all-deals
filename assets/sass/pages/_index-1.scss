@@ -124,6 +124,7 @@
         height: 100%;
         background: red;
     }
+
     @include large-screen {
         padding: 0 60px;
     }
@@ -280,6 +281,30 @@
 }
 
 /****** Reward Section End *********/
+
+/****** Testimonial Section Start *********/
+.al-testimonial-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.al-testimonial-top {
+    h3 {
+        max-width: 870px;
+        margin: 0 auto;
+
+        span {
+            background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+/****** Testimonial Section End *********/
 
 /****** Faq Section Start *********/
 .al-faq-section {
@@ -523,7 +548,6 @@
     }
 
     @include portrait-phone {
-        margin-left: -20px;
         margin-right: -22px;
     }
 }
