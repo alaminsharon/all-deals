@@ -176,11 +176,12 @@
 .al-feature-section {
     padding: 120px 0;
 }
+
 .al-feature-content {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 0;
+    padding: 100px 0;
     margin-left: 100px;
     border-radius: 50px 0 0 50px;
 }
@@ -188,6 +189,7 @@
 .al-feature-content-title {
     margin-bottom: 40px;
     margin-left: 50px;
+
     h2 {
         color: $white-color;
     }
@@ -195,6 +197,27 @@
 
 .al-feature-slider {
     margin-left: 50px;
+    position: relative;
+    .swiper-button-next {
+        position: absolute;
+        right: 50px;
+        top: -100px;
+        z-index: 100;
+        color: red;
+        opacity: 1;
+    }
+    .swiper-button-prev {
+        position: absolute;
+        right: 100px;
+        top: -100px;
+        z-index: 100;
+        color: red;
+        opacity: 1;
+    }
+    .swiper-pagination {
+        position: absolute;
+
+    }
 }
 
 .al-feature-card-top {
@@ -231,6 +254,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
     i {
         color: #F96668;
     }
@@ -255,6 +279,7 @@
         font-weight: 600;
         color: $primary-color;
     }
+
     del {
         font-size: 20px;
         font-weight: 500;
@@ -281,6 +306,7 @@
     background-color: #586BD0;
     padding: 20px;
     border-radius: 0 0 24px 24px;
+
     span {
         font-size: 18px;
         font-weight: 600;
@@ -291,6 +317,8 @@
 .al-feature-card-bottom-two {
     background-color: #EF8D76;
 }
+
+
 /****** Feature Section End *********/
 
 
@@ -478,6 +506,7 @@
 .al-testimonial-default {
     padding: 14px 28px;
 }
+
 /****** Testimonial Section End *********/
 
 /****** Faq Section Start *********/
