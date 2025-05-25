@@ -172,6 +172,11 @@
 
 /****** About Section End *********/
 
+/****** Feature Section Start *********/
+
+/****** Feature Section End *********/
+
+
 /****** Reward Section Start *********/
 .al-reward-section {
     padding: 70px 0;
@@ -284,18 +289,33 @@
 
 /****** Testimonial Section Start *********/
 .al-testimonial-section {
+    padding: 120px 0;
+}
+
+.al-testimonial-content {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 60px 0;
+    border-radius: 50px;
+    position: relative;
+}
+
+.al-testimonial-shape {
+    position: absolute;
+    top: 0;
+    right: 50px;
 }
 
 .al-testimonial-top {
     h3 {
+        line-height: 60px;
+        color: $white-color;
         max-width: 870px;
         margin: 0 auto;
 
         span {
-            background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
+            background: linear-gradient(97.3deg, #AF59CC 16.54%, #E9447B 71.36%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -304,6 +324,43 @@
     }
 }
 
+.al-testimonial-slider {
+    margin-left: 50px;
+}
+
+.al-testimonial-card {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.al-testimonial-card-para {
+    p {
+        font-size: 22px;
+        line-height: 37px;
+    }
+}
+
+.al-testimonial-card-content-item-title {
+    h5 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
+
+.al-testimonial-card-content-item-check-title {
+    h6 {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #02274D;
+    }
+}
+
+.al-testimonial-default {
+    padding: 14px 28px;
+}
 /****** Testimonial Section End *********/
 
 /****** Faq Section Start *********/

@@ -110,3 +110,30 @@ let ourSlider = new Swiper('.aboutSwiper', {
 });
 
 //////////////
+
+
+//////////////
+var swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 3.3,
+    spaceBetween: 30,
+    centeredSlides: false,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    breakpoints: {
+        370: {
+            slidesPerView: 1.9,
+        },
+        992: {
+            slidesPerView: 2.5,
+        },
+        1200: {
+            slidesPerView: 3.3,
+        }
+    }
+});
+//////////////
