@@ -1,5 +1,36 @@
 /******Home Page*********/
 
+/****** Hero Section Start *********/
+.al-hero-section {
+    padding: 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.al-hero-title {
+    h1 {
+        background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 84px;
+    }
+}
+
+.al-hero-subtitle {
+    margin-top: 11px;
+    margin-bottom: 104px;
+
+    p {
+        font-size: 25px;
+        line-height: 42px;
+        max-width: 710px;
+    }
+}
+
+/****** Hero Section End *********/
+
+
 /****** Card Section Start *********/
 .al-card-section {
     padding: 60px 0;
@@ -198,6 +229,7 @@
 .al-feature-slider {
     margin-left: 50px;
     position: relative;
+
     .swiper-button-next {
         position: absolute;
         right: 50px;
@@ -206,6 +238,7 @@
         color: red;
         opacity: 1;
     }
+
     .swiper-button-prev {
         position: absolute;
         right: 100px;
@@ -214,6 +247,7 @@
         color: red;
         opacity: 1;
     }
+
     .swiper-pagination {
         position: absolute;
 
