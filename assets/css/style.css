@@ -706,14 +706,22 @@ h6 {
 .our-slider {
   padding: 0 120px;
   position: relative; }
-  .our-slider ::after {
+  .our-slider::before {
     position: absolute;
+    left: 0;
+    top: 0;
     content: "";
     width: 246px;
     height: 100%;
-    background: -webkit-linear-gradient(178.54deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%);
-    background: -o-linear-gradient(178.54deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%);
-    background: linear-gradient(271.46deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%); }
+    background: red; }
+  .our-slider::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 246px;
+    height: 100%;
+    background: red; }
 
 .al-about-card {
   background-color: #ffffff;
