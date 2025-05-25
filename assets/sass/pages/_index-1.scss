@@ -107,7 +107,7 @@
 
     &::before {
         position: absolute;
-        left: 0;
+        left: 120px;
         top: 0;
         content: "";
         width: 246px;
@@ -117,7 +117,7 @@
 
     &::after {
         position: absolute;
-        right: 0;
+        right: 120px;
         top: 0;
         content: "";
         width: 246px;
@@ -173,7 +173,124 @@
 /****** About Section End *********/
 
 /****** Feature Section Start *********/
+.al-feature-section {
+    padding: 120px 0;
+}
+.al-feature-content {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    margin-left: 100px;
+    border-radius: 50px 0 0 50px;
+}
 
+.al-feature-content-title {
+    margin-bottom: 40px;
+    margin-left: 50px;
+    h2 {
+        color: $white-color;
+    }
+}
+
+.al-feature-slider {
+    margin-left: 50px;
+}
+
+.al-feature-card-top {
+    background-color: $white-color;
+    padding: 20px;
+    border-radius: 24px 24px 0 0;
+}
+
+.al-feature-card-off {
+    background-color: #586BD0;
+    padding: 1px 10px;
+    border-radius: 44px;
+}
+
+.al-feature-card-off-two {
+    background-color: #EF8D76;
+}
+
+
+.al-feature-card-off-title {
+    span {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+}
+
+.al-feature-card-heart {
+    width: 40px;
+    height: 40px;
+    background-color: #EEF6F7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    i {
+        color: #F96668;
+    }
+}
+
+.al-feature-card-top-content-sold {
+    span {
+        font-size: 17px;
+        font-weight: 500;
+        color: rgba(3, 50, 101, 0.50);
+    }
+}
+
+.al-feature-card-top-content-title {
+    margin-top: 6px;
+    margin-bottom: 14px;
+}
+
+.al-feature-card-top-content-number {
+    span {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+    del {
+        font-size: 20px;
+        font-weight: 500;
+        color: #8194A3;
+    }
+}
+
+.al-feature-card-top-content-number-icon-content {
+    h4 {
+        font-size: 17px;
+        line-height: 22px;
+        color: #2E9865;
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
+
+.al-feature-card-bottom {
+    background-color: #586BD0;
+    padding: 20px;
+    border-radius: 0 0 24px 24px;
+    span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white-color;
+    }
+}
+
+.al-feature-card-bottom-two {
+    background-color: #EF8D76;
+}
 /****** Feature Section End *********/
 
 

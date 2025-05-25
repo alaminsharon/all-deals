@@ -111,6 +111,40 @@ let ourSlider = new Swiper('.aboutSwiper', {
 
 //////////////
 
+//////////////
+var swiper = new Swiper(".featureSwiper", {
+    slidesPerView: 4.8,
+    spaceBetween: 30,
+    centeredSlides: false,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    breakpoints: {
+        370: {
+            slidesPerView: 1.8,
+        },
+        992: {
+            slidesPerView: 2.8,
+        },
+        1200: {
+            slidesPerView: 4.8,
+        }
+    }
+});
+//////////////
+
 
 //////////////
 var swiper = new Swiper(".testimonialSwiper", {
