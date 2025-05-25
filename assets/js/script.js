@@ -65,6 +65,20 @@ var swiper = new Swiper(".cardSwiper", {
         disableOnInteraction: false,
     },
     speed: 800,
+    breakpoints: {
+        370: {
+            slidesPerView: 1.9,
+        },
+        768: {
+            slidesPerView: 3.5,
+        },
+        992: {
+            slidesPerView: 4.5,
+        },
+        1200: {
+            slidesPerView: 6.5,
+        }
+    }
 });
 //////////////
 

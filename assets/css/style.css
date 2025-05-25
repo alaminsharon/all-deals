@@ -579,6 +579,9 @@ h6 {
   line-height: 34px;
   color: #ffffff;
   font-weight: 700; }
+  @media (max-width: 1199.98px) {
+    .al-footer-widget-title h5 {
+      font-size: 17px; } }
 
 .al-footer-widget-content li a {
   font-size: 20px;
@@ -590,6 +593,9 @@ h6 {
   transition: 0.3s; }
   .al-footer-widget-content li a:hover {
     color: #7C458F; }
+  @media (max-width: 767.98px) {
+    .al-footer-widget-content li a {
+      line-height: 50px; } }
 
 .al-footer-copyright-content {
   display: -webkit-box;
@@ -637,12 +643,11 @@ h6 {
   margin-left: 250px; }
 
 .al-card-content {
-  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 20px;
   border-radius: 28px; }
-
-.al-card-content-thumb img {
-  width: 100%;
-  border-radius: 28px 28px 0 0; }
 
 .al-card-content-title {
   text-align: center;
@@ -722,6 +727,12 @@ h6 {
     width: 246px;
     height: 100%;
     background: red; }
+  @media (max-width: 1199.98px) {
+    .our-slider {
+      padding: 0 60px; } }
+  @media (max-width: 991.98px) {
+    .our-slider {
+      padding: 0; } }
 
 .al-about-card {
   background-color: #ffffff;

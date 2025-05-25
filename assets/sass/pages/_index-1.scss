@@ -11,16 +11,13 @@
 }
 
 .al-card-content {
-    background-color: $white-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 20px;
     border-radius: 28px;
 }
 
-.al-card-content-thumb {
-    img {
-        width: 100%;
-        border-radius: 28px 28px 0 0;
-    }
-}
 
 .al-card-content-title {
     text-align: center;
@@ -103,18 +100,6 @@
     }
 }
 
-// .our-slider {
-//     padding: 0 120px;
-
-//     @include large-screen {
-//         padding: 0 60px;
-//     }
-
-//     @include screen-992 {
-//         padding: 0;
-//     }
-// }
-
 
 .our-slider {
     padding: 0 120px;
@@ -138,6 +123,13 @@
         width: 246px;
         height: 100%;
         background: red;
+    }
+    @include large-screen {
+        padding: 0 60px;
+    }
+
+    @include screen-992 {
+        padding: 0;
     }
 }
 

@@ -203,6 +203,9 @@
         line-height: 34px;
         color: $white-color;
         font-weight: 700;
+        @include large-screen {
+            font-size: 17px;
+        }
     }
 }
 
@@ -217,6 +220,9 @@
 
             &:hover {
                 color: #7C458F;
+            }
+            @include screen-768 {
+                line-height: 50px;
             }
         }
     }
