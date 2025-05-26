@@ -1038,6 +1038,198 @@ h6 {
       top: 89px; } }
 
 /****** Hero Section End *********/
+/****** About Section Start *********/
+.al-about-section {
+  background-color: #F9EEF3;
+  padding: 75px 0 110px 0; }
+
+.al-about-top-subtitle h6 {
+  display: inline-block;
+  position: relative; }
+  .al-about-top-subtitle h6 span {
+    background: -webkit-linear-gradient(351.17deg, #9F56B9 38.91%, #E9447B 57.22%);
+    background: -o-linear-gradient(351.17deg, #9F56B9 38.91%, #E9447B 57.22%);
+    background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; }
+  .al-about-top-subtitle h6 img {
+    position: absolute;
+    right: -35px;
+    top: -18px; }
+    @media (max-width: 575.98px) {
+      .al-about-top-subtitle h6 img {
+        right: 8px;
+        top: 15px; } }
+  @media (max-width: 575.98px) {
+    .al-about-top-subtitle h6 {
+      font-size: 18px;
+      max-width: 245px; } }
+
+.al-about-top-title {
+  margin-top: 10px;
+  margin-bottom: 16px; }
+  .al-about-top-title h2 {
+    line-height: 61px; }
+    .al-about-top-title h2 span {
+      color: #7C458F; }
+    @media (max-width: 575.98px) {
+      .al-about-top-title h2 {
+        font-size: 45px;
+        line-height: 43px; } }
+
+.al-about-para p {
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 750px;
+  margin: 0 auto; }
+  @media (max-width: 575.98px) {
+    .al-about-para p {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.our-slider {
+  padding: 0 120px;
+  position: relative; }
+  .our-slider::before {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    content: "";
+    width: 246px;
+    height: 100%;
+    background: red; }
+  .our-slider::after {
+    position: absolute;
+    right: 120px;
+    top: 0;
+    content: "";
+    width: 246px;
+    height: 100%;
+    background: red; }
+  @media (max-width: 1199.98px) {
+    .our-slider {
+      padding: 0 60px; } }
+  @media (max-width: 991.98px) {
+    .our-slider {
+      padding: 0; } }
+
+.al-about-card {
+  background-color: #ffffff;
+  padding: 43px 35px;
+  border-radius: 32px;
+  text-align: center; }
+
+.al-about-card-title {
+  margin-top: 42px; }
+  .al-about-card-title h5 {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 500; }
+    @media (max-width: 1260px) {
+      .al-about-card-title h5 {
+        font-size: 19px;
+        line-height: 22px; } }
+    @media (max-width: 991.98px) {
+      .al-about-card-title h5 {
+        font-size: 14px; } }
+    @media (max-width: 767.98px) {
+      .al-about-card-title h5 {
+        font-size: 20px; } }
+
+@media (max-width: 575.98px) {
+  .al-about-btn {
+    display: none; } }
+
+/****** About Section End *********/
+/****** Reward Section Start *********/
+.al-reward-section {
+  padding: 70px 0; }
+
+.al-reward-top {
+  margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .al-reward-top {
+      margin-bottom: 37px; } }
+
+.al-reward-top-title h2 {
+  line-height: 61px;
+  max-width: 650px;
+  margin: 0 auto; }
+  .al-reward-top-title h2 span {
+    color: #7C458F; }
+  @media (max-width: 767.98px) {
+    .al-reward-top-title h2 {
+      font-size: 50px;
+      line-height: 50px; } }
+  @media (max-width: 575.98px) {
+    .al-reward-top-title h2 {
+      font-size: 36px;
+      line-height: 43px; } }
+
+.al-reward-para p {
+  font-size: 24px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-reward-para p {
+      font-size: 20px;
+      line-height: 29px; } }
+
+.al-reward-card {
+  background-color: #F8CAC9;
+  padding: 60px 25px 30px 25px;
+  border-radius: 30px; }
+  @media (max-width: 1399.98px) {
+    .al-reward-card {
+      padding: 50px 15px 25px 20px; } }
+  @media (max-width: 767.98px) {
+    .al-reward-card {
+      padding: 30px 10px 15px 15px; } }
+
+.al-reward-card-color {
+  background-color: #9EE7B0; }
+
+.al-reward-card-content-title h5 {
+  font-size: 22px; }
+
+.al-reward-card-content-title h6 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500; }
+  @media (max-width: 1460px) {
+    .al-reward-card-content-title h6 {
+      font-size: 15px; } }
+
+.al-reward-card-content-icon a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-reward-card-content-icon a i {
+    color: #033365;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .al-reward-card-content-icon a:hover {
+    background-color: #7C458F; }
+    .al-reward-card-content-icon a:hover i {
+      color: #ffffff; }
+
+/****** Reward Section End *********/
 /****** Faq Section Start *********/
 .al-faq-section {
   background-color: #F9EEF3;

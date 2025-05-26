@@ -341,6 +341,257 @@
 
 /****** Hero Section End *********/
 
+/****** About Section Start *********/
+.al-about-section {
+    background-color: $about-bg;
+    padding: 75px 0 110px 0;
+}
+
+.al-about-top-subtitle {
+    h6 {
+        display: inline-block;
+        position: relative;
+
+        span {
+            background: linear-gradient(98.83deg, #9F56B9 38.91%, #E9447B 57.22%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        img {
+            position: absolute;
+            right: -35px;
+            top: -18px;
+
+            @include portrait-phone {
+                right: 8px;
+                top: 15px;
+            }
+        }
+
+        @include portrait-phone {
+            font-size: 18px;
+            max-width: 245px;
+        }
+    }
+}
+
+.al-about-top-title {
+    margin-top: 10px;
+    margin-bottom: 16px;
+
+    h2 {
+        line-height: 61px;
+
+        span {
+            color: #7C458F;
+        }
+
+        @include portrait-phone {
+            font-size: 45px;
+            line-height: 43px;
+        }
+    }
+}
+
+.al-about-para {
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 750px;
+        margin: 0 auto;
+
+        @include portrait-phone {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+.our-slider {
+    padding: 0 120px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 120px;
+        top: 0;
+        content: "";
+        width: 246px;
+        height: 100%;
+        background: red;
+    }
+
+    &::after {
+        position: absolute;
+        right: 120px;
+        top: 0;
+        content: "";
+        width: 246px;
+        height: 100%;
+        background: red;
+    }
+
+    @include large-screen {
+        padding: 0 60px;
+    }
+
+    @include screen-992 {
+        padding: 0;
+    }
+}
+
+.al-about-card {
+    background-color: $white-color;
+    padding: 43px 35px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.al-about-card-title {
+    margin-top: 42px;
+
+    h5 {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 500;
+
+        @include screen-1260 {
+            font-size: 19px;
+            line-height: 22px;
+        }
+
+        @include screen-992 {
+            font-size: 14px;
+        }
+
+        @include screen-768 {
+            font-size: 20px;
+        }
+    }
+}
+
+.al-about-btn {
+    @include portrait-phone {
+        display: none;
+    }
+}
+
+/****** About Section End *********/
+
+/****** Reward Section Start *********/
+.al-reward-section {
+    padding: 70px 0;
+}
+
+.al-reward-top {
+    margin-bottom: 60px;
+
+    @include screen-768 {
+        margin-bottom: 37px;
+    }
+}
+
+.al-reward-top-title {
+    h2 {
+        line-height: 61px;
+        max-width: 650px;
+        margin: 0 auto;
+
+        span {
+            color: #7C458F;
+        }
+
+        @include screen-768 {
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        @include portrait-phone {
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+}
+
+.al-reward-para {
+    p {
+        font-size: 24px;
+        line-height: 36px;
+
+        @include portrait-phone {
+            font-size: 20px;
+            line-height: 29px;
+        }
+    }
+}
+
+.al-reward-card {
+    background-color: $reward-card-bg;
+    padding: 60px 25px 30px 25px;
+    border-radius: 30px;
+
+    @include screen-1400 {
+        padding: 50px 15px 25px 20px;
+    }
+
+    @include screen-768 {
+        padding: 30px 10px 15px 15px;
+    }
+}
+
+.al-reward-card-color {
+    background-color: $reward-card-bg-2;
+}
+
+.al-reward-card-content-title {
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;
+
+        @include screen-1460 {
+            font-size: 15px;
+        }
+    }
+}
+
+.al-reward-card-content-icon {
+    a {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: $white-color;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+
+        i {
+            color: $primary-color;
+            display: inline-block;
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            background-color: #7C458F;
+
+            i {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+/****** Reward Section End *********/
+
 /****** Faq Section Start *********/
 .al-faq-section {
     background-color: #F9EEF3;
