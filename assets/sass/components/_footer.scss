@@ -1,13 +1,18 @@
 /********* Footer Page *********/
 
 /********* Footer Section Start *********/
+.al-footer-top-shape {
+    background: radial-gradient(95.6% 141.23% at 0% 0.72%, #EF8E82 26.04%, #9952F9 51.04%, #F2C46E 100%);
+    mix-blend-mode: lighten;
+}
+
+
 .al-footer-section {
-    padding: 520px 0 25px 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 250px 0 25px 0;
     position: relative;
     z-index: 1;
+    background: linear-gradient(165.98deg, #02274D 9.09%, #001B37 83.19%);
+    clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
 }
 
 .al-footer-shape-01 {
@@ -25,9 +30,11 @@
     right: 0;
     bottom: 60px;
     z-index: 1;
+
     @include screen-992 {
         bottom: 150px;
     }
+
     @include portrait-phone {
         bottom: 200px;
     }
@@ -38,9 +45,11 @@
     right: 40px;
     bottom: 60px;
     z-index: 2;
+
     @include screen-992 {
         bottom: 150px;
     }
+
     @include portrait-phone {
         bottom: 200px;
         right: 5px;
@@ -59,9 +68,11 @@
 
 .al-footer-top {
     margin-bottom: 320px;
+
     @include screen-992 {
         margin-bottom: 400px;
     }
+
     @include portrait-phone {
         margin-bottom: 370px;
     }
@@ -221,6 +232,7 @@
         line-height: 34px;
         color: $white-color;
         font-weight: 700;
+
         @include large-screen {
             font-size: 17px;
         }
@@ -239,6 +251,7 @@
             &:hover {
                 color: #7C458F;
             }
+
             @include screen-768 {
                 line-height: 50px;
             }
@@ -248,6 +261,7 @@
 
 .al-footer-widget-accordion {
     display: none;
+
     @include portrait-phone {
         display: block;
     }
@@ -259,8 +273,10 @@
         margin-bottom: 25px;
         background-color: transparent;
         border-bottom: 2px solid rgba(255, 255, 255, 0.20);
+
         .accordion-header {
             margin-bottom: 20px;
+
             .accordion-button {
                 font-size: 19px;
                 line-height: 34px;
@@ -317,7 +333,7 @@
 }
 
 .al-footer-accordion .accordion-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .al-footer-copyright-content {

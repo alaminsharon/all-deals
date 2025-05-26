@@ -3,11 +3,10 @@
 /****** Hero Section Start *********/
 .al-hero-section {
     padding: 120px 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     margin-top: -95px;
+    background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 }
 
 .al-hero-left {
@@ -502,7 +501,7 @@
 /****** Deal Section Start *********/
 .al-deal-section {
     position: relative;
-    margin-bottom: -360px;
+    margin-bottom: -120px;
     z-index: 2;
 }
 
