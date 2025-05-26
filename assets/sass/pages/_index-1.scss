@@ -7,10 +7,12 @@
     margin-top: -95px;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+
     @include screen-768 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
         padding: 120px 0 100px 0;
     }
+
     @include portrait-phone {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
         padding: 120px 0 60px 0;
@@ -349,6 +351,58 @@
 
 /****** Hero Section End *********/
 
+/****** Card Section Start *********/
+.al-card-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -125px;
+}
+
+.card-slider {
+    margin-left: 250px;
+
+    @include screen-1700 {
+        margin-left: 200px;
+    }
+
+    @include screen-1600 {
+        margin-left: 150px;
+    }
+
+    @include screen-1400 {
+        margin-left: 100px;
+    }
+
+    @include large-screen {
+        margin-left: 30px;
+    }
+}
+
+.al-card-content {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 20px;
+    border-radius: 28px;
+}
+
+
+.al-card-content-title {
+    text-align: center;
+    padding: 20px 0;
+
+    h6 {
+        font-size: 20px;
+        line-height: 28px;
+
+        @include screen-1600 {
+            font-size: 16px;
+        }
+    }
+}
+
+/****** Card Section End *********/
+
 /****** About Section Start *********/
 .al-about-section {
     background-color: $about-bg;
@@ -490,9 +544,196 @@
 
 /****** About Section End *********/
 
+/****** Feature Section Start *********/
+.al-feature-content {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin-left: 100px;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+    z-index: 1;
+
+    .swiper-button-next {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        right: 140px;
+        top: 150px;
+        z-index: 2;
+        color: #000000;
+        opacity: 1;
+
+        &::after {
+            font-size: 20px;
+        }
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        right: 215px;
+        top: 150px;
+        left: auto;
+        z-index: 2;
+        color: #000000;
+        opacity: 1;
+
+        &::after {
+            font-size: 20px;
+        }
+    }
+}
+
+.al-feature-content-title {
+    margin-bottom: 40px;
+    margin-left: 50px;
+
+    h2 {
+        color: $white-color;
+    }
+}
+
+.al-feature-slider {
+    margin-left: 50px;
+
+
+    .swiper-pagination {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0px;
+        top: auto;
+        z-index: 100;
+    }
+
+}
+
+.al-feature-card-top {
+    background-color: $white-color;
+    padding: 20px;
+    border-radius: 24px 24px 0 0;
+}
+
+.al-feature-card-off {
+    background-color: #586BD0;
+    padding: 1px 10px;
+    border-radius: 44px;
+}
+
+.al-feature-card-off-two {
+    background-color: #EF8D76;
+}
+
+
+.al-feature-card-off-title {
+    span {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+}
+
+.al-feature-card-heart {
+    width: 40px;
+    height: 40px;
+    background-color: #EEF6F7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    i {
+        color: #F96668;
+    }
+}
+
+.al-feature-card-top-content-sold {
+    span {
+        font-size: 17px;
+        font-weight: 500;
+        color: rgba(3, 50, 101, 0.50);
+    }
+}
+
+.al-feature-card-top-content-title {
+    margin-top: 6px;
+    margin-bottom: 14px;
+}
+
+.al-feature-card-top-content-number {
+    span {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-color;
+    }
+
+    del {
+        font-size: 20px;
+        font-weight: 500;
+        color: #8194A3;
+    }
+}
+
+.al-feature-card-top-content-number-icon-content {
+    h4 {
+        font-size: 17px;
+        line-height: 22px;
+        color: #2E9865;
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
+
+.al-feature-card-bottom {
+    background-color: #586BD0;
+    padding: 20px;
+    border-radius: 0 0 24px 24px;
+
+    span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white-color;
+    }
+}
+
+.al-feature-card-bottom-two {
+    background-color: #EF8D76;
+}
+
+/****** Feature Section End *********/
+
 /****** Reward Section Start *********/
 .al-reward-section {
     padding: 70px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.al-reward-shape {
+    position: absolute;
+    right: 36px;
+    bottom: -256px;
+    z-index: 1;
 }
 
 .al-reward-top {
@@ -602,7 +843,8 @@
 
 /****** Testimonial Section Start *********/
 .al-testimonial-section {
-    padding: 120px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .al-testimonial-content {
@@ -618,6 +860,7 @@
     position: absolute;
     top: 47px;
     right: 84px;
+
     @include screen-992 {
         display: none;
     }
@@ -637,6 +880,7 @@
             background-clip: text;
             color: transparent;
         }
+
         @include portrait-phone {
             font-size: 36px;
             line-height: 43px;
@@ -652,6 +896,7 @@
     background-color: $white-color;
     padding: 40px;
     border-radius: 30px;
+
     @include screen-768 {
         padding: 20px 35px 20px 20px;
     }
@@ -661,6 +906,7 @@
     p {
         font-size: 22px;
         line-height: 37px;
+
         @include portrait-phone {
             font-size: 15px;
             line-height: 24px;
@@ -673,6 +919,7 @@
         font-size: 22px;
         font-weight: 500;
         line-height: 30px;
+
         @include portrait-phone {
             font-size: 15px;
             line-height: 24px;
@@ -686,6 +933,7 @@
         font-weight: 400;
         line-height: 30px;
         color: #02274D;
+
         @include portrait-phone {
             font-size: 14px;
             line-height: 24px;
@@ -695,6 +943,7 @@
 
 .al-testimonial-default {
     padding: 14px 28px;
+
     @include screen-400 {
         padding: 14px 18px;
     }

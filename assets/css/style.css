@@ -1056,6 +1056,45 @@ h6 {
       top: 89px; } }
 
 /****** Hero Section End *********/
+/****** Card Section Start *********/
+.al-card-section {
+  position: relative;
+  z-index: 10;
+  margin-top: -125px; }
+
+.card-slider {
+  margin-left: 250px; }
+  @media (max-width: 1700px) {
+    .card-slider {
+      margin-left: 200px; } }
+  @media (max-width: 1600px) {
+    .card-slider {
+      margin-left: 150px; } }
+  @media (max-width: 1399.98px) {
+    .card-slider {
+      margin-left: 100px; } }
+  @media (max-width: 1199.98px) {
+    .card-slider {
+      margin-left: 30px; } }
+
+.al-card-content {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 20px;
+  border-radius: 28px; }
+
+.al-card-content-title {
+  text-align: center;
+  padding: 20px 0; }
+  .al-card-content-title h6 {
+    font-size: 20px;
+    line-height: 28px; }
+    @media (max-width: 1600px) {
+      .al-card-content-title h6 {
+        font-size: 16px; } }
+
+/****** Card Section End *********/
 /****** About Section Start *********/
 .al-about-section {
   background-color: #F9EEF3;
@@ -1161,9 +1200,167 @@ h6 {
     display: none; } }
 
 /****** About Section End *********/
+/****** Feature Section Start *********/
+.al-feature-content {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  margin-left: 100px;
+  border-radius: 50px 0 0 50px;
+  position: relative;
+  z-index: 1; }
+  .al-feature-content .swiper-button-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ffffff;
+    right: 140px;
+    top: 150px;
+    z-index: 2;
+    color: #000000;
+    opacity: 1; }
+    .al-feature-content .swiper-button-next::after {
+      font-size: 20px; }
+  .al-feature-content .swiper-button-prev {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ffffff;
+    right: 215px;
+    top: 150px;
+    left: auto;
+    z-index: 2;
+    color: #000000;
+    opacity: 1; }
+    .al-feature-content .swiper-button-prev::after {
+      font-size: 20px; }
+
+.al-feature-content-title {
+  margin-bottom: 40px;
+  margin-left: 50px; }
+  .al-feature-content-title h2 {
+    color: #ffffff; }
+
+.al-feature-slider {
+  margin-left: 50px; }
+  .al-feature-slider .swiper-pagination {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0px;
+    top: auto;
+    z-index: 100; }
+
+.al-feature-card-top {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 24px 24px 0 0; }
+
+.al-feature-card-off {
+  background-color: #586BD0;
+  padding: 1px 10px;
+  border-radius: 44px; }
+
+.al-feature-card-off-two {
+  background-color: #EF8D76; }
+
+.al-feature-card-off-title span {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #033365; }
+
+.al-feature-card-heart {
+  width: 40px;
+  height: 40px;
+  background-color: #EEF6F7;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%; }
+  .al-feature-card-heart i {
+    color: #F96668; }
+
+.al-feature-card-top-content-sold span {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(3, 50, 101, 0.5); }
+
+.al-feature-card-top-content-title {
+  margin-top: 6px;
+  margin-bottom: 14px; }
+
+.al-feature-card-top-content-number span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #033365; }
+
+.al-feature-card-top-content-number del {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8194A3; }
+
+.al-feature-card-top-content-number-icon-content h4 {
+  font-size: 17px;
+  line-height: 22px;
+  color: #2E9865; }
+
+.al-feature-card-top-content-number-icon-content h5 {
+  font-size: 15px;
+  line-height: 20px; }
+
+.al-feature-card-bottom {
+  background-color: #586BD0;
+  padding: 20px;
+  border-radius: 0 0 24px 24px; }
+  .al-feature-card-bottom span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff; }
+
+.al-feature-card-bottom-two {
+  background-color: #EF8D76; }
+
+/****** Feature Section End *********/
 /****** Reward Section Start *********/
 .al-reward-section {
-  padding: 70px 0; }
+  padding: 70px 0;
+  position: relative;
+  z-index: 2; }
+
+.al-reward-shape {
+  position: absolute;
+  right: 36px;
+  bottom: -256px;
+  z-index: 1; }
 
 .al-reward-top {
   margin-bottom: 60px; }
@@ -1250,7 +1447,8 @@ h6 {
 /****** Reward Section End *********/
 /****** Testimonial Section Start *********/
 .al-testimonial-section {
-  padding: 120px 0; }
+  position: relative;
+  z-index: 2; }
 
 .al-testimonial-content {
   background-position: center center;
