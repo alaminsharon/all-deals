@@ -2,10 +2,12 @@
 
 /****** Hero Section Start *********/
 .al-hero-section {
-    padding: 20px 0;
+    padding: 120px 0 190px 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    margin-top: -95px;
 }
 
 .al-hero-title {
@@ -28,13 +30,85 @@
     }
 }
 
+.al-hero-card {
+    background: linear-gradient(173.97deg, rgba(124, 69, 143, 0.8) 4.97%, rgba(231, 55, 113, 0) 84.48%);
+    border-radius: 50px;
+    padding: 30px;
+    max-width: 429px;
+}
+
+.al-hero-card-title {
+    margin-bottom: 25px;
+
+    h5 {
+        font-size: 22px;
+        line-height: 31px;
+        font-weight: 500;
+        color: $white-color;
+        max-width: 265px;
+    }
+}
+
+.al-hero-card-item {
+    background-color: #C8FFE9;
+    padding: 14px 33px;
+    border-radius: 60px;
+    min-width: 273px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    left: -47px;
+}
+
+.al-hero-card-item-two {
+    background-color: #D9F2FF;
+    left: -60px;
+}
+
+.al-hero-card-item-three {
+    background-color: #FFE1DE;
+    left: -70px;
+}
+
+.al-hero-card-item-four {
+    background-color: #FFE2BF;
+    left: -80px;
+}
+
+
+.al-hero-card-item-title {
+    h6 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 34px;
+    }
+}
+
+.al-hero-card-coin {
+    margin-top: 70px;
+    h4 {
+        font-size: 23.25px;
+        line-height: 60px;
+        color: $primary-color;
+
+        span {
+            background: linear-gradient(88.38deg, #7E1FFF 8.12%, #FF49B6 82.18%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
 /****** Hero Section End *********/
 
 
 /****** Card Section Start *********/
 .al-card-section {
-    padding: 60px 0;
-    background-color: green;
+    position: relative;
+    z-index: 10;
+    margin-top: -125px;
 }
 
 .card-slider {

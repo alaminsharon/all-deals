@@ -64,8 +64,9 @@
 /******Header Home page Bottom Start *********/
 
 .al-header-bottom {
-    background-color: #7C458F;
     padding: 15px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .al-container-bottom {
@@ -107,7 +108,7 @@
 
             .submenu-wrapper {
                 position: absolute;
-                right: -120px;
+                right: -147px;
                 top: calc(100% + 19px);
                 min-width: 200px;
                 display: block;
