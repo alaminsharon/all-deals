@@ -56,7 +56,7 @@
 //////////////
 var swiper = new Swiper(".cardSwiper", {
     slidesPerView: 6.5,
-    spaceBetween: 10,
+    spaceBetween: 2,
     centeredSlides: false,
     grabCursor: true,
     loop: true,

@@ -382,8 +382,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 70px 20px;
+    padding: 20px;
     border-radius: 28px;
+    min-height: 380px;
 }
 
 
@@ -476,6 +477,7 @@
 .our-slider {
     padding: 0 120px;
     position: relative;
+    z-index: 1;
 
     &::before {
         position: absolute;
@@ -484,7 +486,11 @@
         content: "";
         width: 246px;
         height: 100%;
-        background: red;
+        background: linear-gradient(271.46deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%);
+        z-index: 2;
+        @include large-screen {
+            display: none;
+        }
     }
 
     &::after {
@@ -494,7 +500,11 @@
         content: "";
         width: 246px;
         height: 100%;
-        background: red;
+        background: linear-gradient(271.46deg, #F9EEF3 26.37%, rgba(249, 238, 243, 0) 77.35%);
+        z-index: 2;
+        @include large-screen {
+            display: none;
+        }
     }
 
     @include large-screen {
