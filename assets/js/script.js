@@ -76,8 +76,11 @@ var swiper = new Swiper(".cardSwiper", {
             slidesPerView: 4.5,
         },
         1200: {
+            slidesPerView: 5.5,
+        },
+        1400: {
             slidesPerView: 6.5,
-        }
+        },
     }
 });
 //////////////

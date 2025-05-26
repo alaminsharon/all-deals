@@ -10,12 +10,32 @@
     margin-top: -95px;
 }
 
+.al-hero-left {
+    @include screen-992 {
+        text-align: center;
+    }
+}
+
 .al-hero-title {
     h1 {
         background: linear-gradient(98.83deg, #7C458F 38.91%, #E73771 57.22%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         line-height: 84px;
+
+        @include screen-1400 {
+            font-size: 65px;
+            line-height: 65px;
+        }
+
+        @include large-screen {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        @include screen-460 {
+            font-size: 40px;
+            line-height: 50px;
+        }
     }
 }
 
@@ -27,6 +47,33 @@
         font-size: 25px;
         line-height: 42px;
         max-width: 710px;
+
+        @include screen-1400 {
+            max-width: 600px;
+        }
+
+        @include large-screen {
+            max-width: 400px;
+        }
+
+        @include screen-992 {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        @include screen-460 {
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+
+    @include screen-992 {
+        margin-bottom: 40px;
+    }
+}
+
+.al-hero-right {
+    @include screen-992 {
+        text-align: center;
     }
 }
 
@@ -35,6 +82,7 @@
     border-radius: 50px;
     padding: 30px;
     max-width: 429px;
+    display: inline-block;
     position: relative;
 }
 
@@ -47,6 +95,9 @@
         font-weight: 500;
         color: $white-color;
         max-width: 265px;
+        @include portrait-phone {
+            max-width: 280px;
+        }
     }
 }
 
@@ -63,19 +114,47 @@
     left: -47px;
 }
 
+
+.al-hero-card-item-one {
+    @include screen-500 {
+        z-index: 1;
+    }
+}
+
 .al-hero-card-item-two {
     background-color: #D9F2FF;
     left: -60px;
+
+    @include screen-500 {
+        max-width: 240px;
+        padding: 14px 32px;
+        left: -76px;
+        min-width: auto;
+    }
 }
 
 .al-hero-card-item-three {
     background-color: #FFE1DE;
     left: -70px;
+
+    @include screen-500 {
+        max-width: 210px;
+        padding: 8px 32px;
+        left: -76px;
+        min-width: auto;
+    }
 }
 
 .al-hero-card-item-four {
     background-color: #FFE2BF;
     left: -80px;
+
+    @include screen-500 {
+        max-width: 220px;
+        padding: 8px 14px;
+        left: -72px;
+        min-width: auto;
+    }
 }
 
 
@@ -87,8 +166,33 @@
     }
 }
 
+.al-hero-card-item-title-one {
+    @include screen-500 {
+        text-align: start;
+
+        h6 {
+            line-height: 30px;
+        }
+    }
+}
+
+.al-hero-card-item-title-two {
+    @include screen-500 {
+        text-align: start;
+
+        h6 {
+            line-height: 30px;
+        }
+    }
+}
+
 .al-hero-card-coin {
     margin-top: 70px;
+
+    @include portrait-phone {
+        margin-top: 50px;
+    }
+
     h4 {
         font-size: 23.25px;
         line-height: 60px;
@@ -101,6 +205,10 @@
             background-clip: text;
             color: transparent;
         }
+
+        @include portrait-phone {
+            font-size: 17px;
+        }
     }
 }
 
@@ -110,6 +218,22 @@
     top: 17px;
     display: inline-block;
     z-index: 2;
+
+    @include portrait-phone {
+        display: none;
+    }
+}
+
+.al-hero-thumb-two {
+    display: none;
+    position: absolute;
+    right: -16px;
+    top: 86px;
+    z-index: 2;
+
+    @include portrait-phone {
+        display: block;
+    }
 }
 
 .al-hero-shape {
@@ -118,6 +242,14 @@
     bottom: 126px;
     display: inline-block;
     z-index: 1;
+
+    @include screen-1260 {
+        right: -40px;
+    }
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-hero-shape-two {
@@ -126,6 +258,22 @@
     bottom: 126px;
     display: inline-block;
     z-index: 1;
+
+    @include large-screen {
+        right: -40px;
+    }
+
+    @include portrait-phone {
+        right: -10px;
+    }
+
+    @include screen-500 {
+        bottom: 200px;
+    }
+
+    @include screen-460 {
+        bottom: 140px;
+    }
 }
 
 .al-hero-coin-one {
@@ -134,6 +282,10 @@
     top: 146px;
     display: inline-block;
     z-index: 1;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-hero-coin-two {
@@ -142,6 +294,10 @@
     bottom: 225px;
     display: inline-block;
     z-index: 1;
+
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-hero-coin-three {
@@ -150,6 +306,16 @@
     top: 176px;
     display: inline-block;
     z-index: 1;
+
+    @include portrait-phone {
+        right: 110px;
+        top: 220px;
+    }
+    @include screen-460 {
+        right: 121px;
+        top: 224px;
+        z-index: 3;
+    }
 }
 
 .al-hero-coin-four {
@@ -158,7 +324,17 @@
     top: 72px;
     display: inline-block;
     z-index: 1;
+
+    @include portrait-phone {
+        right: 130px;
+        top: 80px;
+    }
+    @include screen-460 {
+        right: 102px;
+        top: 89px;
+    }
 }
+
 /****** Hero Section End *********/
 
 
@@ -171,6 +347,22 @@
 
 .card-slider {
     margin-left: 250px;
+
+    @include screen-1700 {
+        margin-left: 200px;
+    }
+
+    @include screen-1600 {
+        margin-left: 150px;
+    }
+
+    @include screen-1400 {
+        margin-left: 100px;
+    }
+
+    @include large-screen {
+        margin-left: 30px;
+    }
 }
 
 .al-card-content {
@@ -189,6 +381,10 @@
     h6 {
         font-size: 20px;
         line-height: 28px;
+
+        @include screen-1600 {
+            font-size: 16px;
+        }
     }
 }
 
@@ -347,6 +543,49 @@
     padding: 100px 0;
     margin-left: 100px;
     border-radius: 50px 0 0 50px;
+    position: relative;
+    z-index: 1;
+
+    .swiper-button-next {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        right: 140px;
+        top: 150px;
+        z-index: 2;
+        color: #000000;
+        opacity: 1;
+
+        &::after {
+            font-size: 20px;
+        }
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        right: 215px;
+        top: 150px;
+        left: auto;
+        z-index: 2;
+        color: #000000;
+        opacity: 1;
+
+        &::after {
+            font-size: 20px;
+        }
+    }
 }
 
 .al-feature-content-title {
@@ -360,30 +599,18 @@
 
 .al-feature-slider {
     margin-left: 50px;
-    position: relative;
 
-    .swiper-button-next {
-        position: absolute;
-        right: 50px;
-        top: -100px;
-        z-index: 100;
-        color: red;
-        opacity: 1;
-    }
-
-    .swiper-button-prev {
-        position: absolute;
-        right: 100px;
-        top: -100px;
-        z-index: 100;
-        color: red;
-        opacity: 1;
-    }
 
     .swiper-pagination {
         position: absolute;
-
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: 0px;
+        top: auto;
+        z-index: 100;
     }
+
 }
 
 .al-feature-card-top {
