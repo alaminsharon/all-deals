@@ -9,6 +9,9 @@
     padding: 11px 0;
 }
 
+.al-header-top-container {
+    padding: 0 10px;
+}
 .al-header-top-left-content {
     p {
         font-weight: 500;
@@ -16,7 +19,7 @@
         font-size: 16px;
 
         @include portrait-phone {
-            font-size: 14px;
+            font-size: 15px;
         }
 
         span {

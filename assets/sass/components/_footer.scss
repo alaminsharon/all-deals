@@ -2,7 +2,7 @@
 
 /********* Footer Section Start *********/
 .al-footer-section {
-    padding: 120px 0 25px 0;
+    padding: 500px 0 25px 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +42,7 @@
     }
     @include portrait-phone {
         bottom: 200px;
+        right: 5px;
     }
 }
 
@@ -256,7 +257,9 @@
         border: 0;
         margin-bottom: 25px;
         background-color: transparent;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.20);
         .accordion-header {
+            margin-bottom: 20px;
             .accordion-button {
                 font-size: 19px;
                 line-height: 34px;
@@ -312,6 +315,9 @@
     }
 }
 
+.al-footer-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
 
 .al-footer-copyright-content {
     display: flex;

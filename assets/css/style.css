@@ -154,13 +154,16 @@ h6 {
   background-color: #02274D;
   padding: 11px 0; }
 
+.al-header-top-container {
+  padding: 0 10px; }
+
 .al-header-top-left-content p {
   font-weight: 500;
   color: #ffffff;
   font-size: 16px; }
   @media (max-width: 575.98px) {
     .al-header-top-left-content p {
-      font-size: 14px; } }
+      font-size: 15px; } }
   .al-header-top-left-content p span {
     font-weight: 700; }
   .al-header-top-left-content p a {
@@ -427,7 +430,7 @@ h6 {
 /********* Footer Page *********/
 /********* Footer Section Start *********/
 .al-footer-section {
-  padding: 120px 0 25px 0;
+  padding: 500px 0 25px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -463,7 +466,8 @@ h6 {
       bottom: 150px; } }
   @media (max-width: 575.98px) {
     .al-footer-shape-03 {
-      bottom: 200px; } }
+      bottom: 200px;
+      right: 5px; } }
 
 .al-footer-shape-04 {
   position: absolute;
@@ -654,48 +658,51 @@ h6 {
 .al-footer-accordion .accordion-item {
   border: 0;
   margin-bottom: 25px;
-  background-color: transparent; }
-  .al-footer-accordion .accordion-item .accordion-header .accordion-button {
-    font-size: 19px;
-    line-height: 34px;
-    font-weight: 700;
-    background-color: transparent;
-    color: #ffffff;
-    outline: none;
-    border: none;
-    padding: 0 0 2px 0; }
-    .al-footer-accordion .accordion-item .accordion-header .accordion-button::after {
-      background: none;
-      content: "\f107";
-      font-family: "FontAwesome";
-      width: auto;
-      height: auto; }
-  .al-footer-accordion .accordion-item .accordion-header .accordion-button:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  .al-footer-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-    color: #ffffff;
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0; }
-  .al-footer-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-    -webkit-transform: rotate(180deg) !important;
-    -ms-transform: rotate(180deg) !important;
-    transform: rotate(180deg) !important;
-    width: 55px;
-    height: 55px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: rgba(111, 104, 191, 0.1);
-    border-radius: 50%;
-    position: relative;
-    right: -12px; }
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+  .al-footer-accordion .accordion-item .accordion-header {
+    margin-bottom: 20px; }
+    .al-footer-accordion .accordion-item .accordion-header .accordion-button {
+      font-size: 19px;
+      line-height: 34px;
+      font-weight: 700;
+      background-color: transparent;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      padding: 0 0 2px 0; }
+      .al-footer-accordion .accordion-item .accordion-header .accordion-button::after {
+        background: none;
+        content: "\f107";
+        font-family: "FontAwesome";
+        width: auto;
+        height: auto; }
+    .al-footer-accordion .accordion-item .accordion-header .accordion-button:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .al-footer-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+      color: #ffffff;
+      -webkit-box-shadow: 0 0 0 0;
+      box-shadow: 0 0 0 0; }
+    .al-footer-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+      -webkit-transform: rotate(180deg) !important;
+      -ms-transform: rotate(180deg) !important;
+      transform: rotate(180deg) !important;
+      width: 55px;
+      height: 55px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background-color: rgba(111, 104, 191, 0.1);
+      border-radius: 50%;
+      position: relative;
+      right: -12px; }
   .al-footer-accordion .accordion-item .accordion-body {
     padding: 0 20px 0 0; }
     .al-footer-accordion .accordion-item .accordion-body p {
@@ -703,6 +710,9 @@ h6 {
       line-height: 37px;
       color: #033365;
       font-weight: 400; }
+
+.al-footer-accordion .accordion-item:last-child {
+  border-bottom: none; }
 
 .al-footer-copyright-content {
   display: -webkit-box;
