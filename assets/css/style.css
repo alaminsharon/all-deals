@@ -376,7 +376,7 @@ h6 {
   display: inline-block;
   text-align: center;
   overflow: hidden;
-  padding: 1px 16px;
+  padding: 1px 18px;
   z-index: 1;
   background-color: #ffffff;
   color: #033365;
@@ -1361,6 +1361,9 @@ h6 {
   right: 36px;
   bottom: -256px;
   z-index: 1; }
+  @media (max-width: 767.98px) {
+    .al-reward-shape {
+      display: none; } }
 
 .al-reward-top {
   margin-bottom: 60px; }
@@ -1486,6 +1489,9 @@ h6 {
 
 .al-testimonial-slider {
   margin-left: 50px; }
+  @media (max-width: 767.98px) {
+    .al-testimonial-slider {
+      margin-left: 20px; } }
 
 .al-testimonial-card {
   background-color: #ffffff;
@@ -1512,21 +1518,24 @@ h6 {
       font-size: 15px;
       line-height: 24px; } }
 
-.al-testimonial-card-content-item-check-title h6 {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #02274D; }
-  @media (max-width: 575.98px) {
-    .al-testimonial-card-content-item-check-title h6 {
-      font-size: 14px;
-      line-height: 24px; } }
+.al-testimonial-card-content-item-check-title {
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .al-testimonial-card-content-item-check-title h6 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #02274D; }
+    @media (max-width: 575.98px) {
+      .al-testimonial-card-content-item-check-title h6 {
+        font-size: 14px;
+        line-height: 24px; } }
 
 .al-testimonial-default {
   padding: 14px 28px; }
   @media (max-width: 400px) {
     .al-testimonial-default {
-      padding: 14px 18px; } }
+      padding: 14px 16px; } }
 
 /****** Testimonial Section End *********/
 /****** Faq Section Start *********/
@@ -1730,6 +1739,10 @@ h6 {
 @media (max-width: 400px) {
   .al-deal-btn {
     margin-left: 10px; } }
+
+@media (max-width: 400px) {
+  .al-deal-default {
+    padding: 14px 16px; } }
 
 /****** Deal Section End *********/
 /******** theme file **********/
