@@ -376,7 +376,7 @@ h6 {
   display: inline-block;
   text-align: center;
   overflow: hidden;
-  padding: 1px 17px;
+  padding: 1px 16px;
   z-index: 1;
   background-color: #ffffff;
   color: #033365;
@@ -444,6 +444,14 @@ h6 {
   background: linear-gradient(165.98deg, #02274D 9.09%, #001B37 83.19%);
   -webkit-clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0); }
+  @media (max-width: 767.98px) {
+    .al-footer-section {
+      -webkit-clip-path: polygon(100% 7%, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 7%, 100% 100%, 0 100%, 0 0); } }
+  @media (max-width: 575.98px) {
+    .al-footer-section {
+      -webkit-clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
+      clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0); } }
 
 .al-footer-shape-01 {
   position: absolute;
@@ -770,6 +778,16 @@ h6 {
   background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
+  @media (max-width: 767.98px) {
+    .al-hero-section {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+      padding: 120px 0 100px 0; } }
+  @media (max-width: 575.98px) {
+    .al-hero-section {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+      padding: 120px 0 60px 0; } }
 
 @media (max-width: 991.98px) {
   .al-hero-left {
@@ -1230,6 +1248,89 @@ h6 {
       color: #ffffff; }
 
 /****** Reward Section End *********/
+/****** Testimonial Section Start *********/
+.al-testimonial-section {
+  padding: 120px 0; }
+
+.al-testimonial-content {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+  border-radius: 50px;
+  position: relative; }
+
+.al-testimonial-shape {
+  position: absolute;
+  top: 47px;
+  right: 84px; }
+  @media (max-width: 991.98px) {
+    .al-testimonial-shape {
+      display: none; } }
+
+.al-testimonial-title h3 {
+  line-height: 60px;
+  color: #ffffff;
+  max-width: 870px;
+  margin: 0 auto; }
+  .al-testimonial-title h3 span {
+    background: -webkit-linear-gradient(352.7deg, #AF59CC 16.54%, #E9447B 71.36%);
+    background: -o-linear-gradient(352.7deg, #AF59CC 16.54%, #E9447B 71.36%);
+    background: linear-gradient(97.3deg, #AF59CC 16.54%, #E9447B 71.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; }
+  @media (max-width: 575.98px) {
+    .al-testimonial-title h3 {
+      font-size: 36px;
+      line-height: 43px; } }
+
+.al-testimonial-slider {
+  margin-left: 50px; }
+
+.al-testimonial-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 30px; }
+  @media (max-width: 767.98px) {
+    .al-testimonial-card {
+      padding: 20px 35px 20px 20px; } }
+
+.al-testimonial-card-para p {
+  font-size: 22px;
+  line-height: 37px; }
+  @media (max-width: 575.98px) {
+    .al-testimonial-card-para p {
+      font-size: 15px;
+      line-height: 24px; } }
+
+.al-testimonial-card-content-item-title h5 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px; }
+  @media (max-width: 575.98px) {
+    .al-testimonial-card-content-item-title h5 {
+      font-size: 15px;
+      line-height: 24px; } }
+
+.al-testimonial-card-content-item-check-title h6 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #02274D; }
+  @media (max-width: 575.98px) {
+    .al-testimonial-card-content-item-check-title h6 {
+      font-size: 14px;
+      line-height: 24px; } }
+
+.al-testimonial-default {
+  padding: 14px 28px; }
+  @media (max-width: 400px) {
+    .al-testimonial-default {
+      padding: 14px 18px; } }
+
+/****** Testimonial Section End *********/
 /****** Faq Section Start *********/
 .al-faq-section {
   background-color: #F9EEF3;

@@ -163,10 +163,10 @@ var swiper = new Swiper(".testimonialSwiper", {
     speed: 800,
     breakpoints: {
         370: {
-            slidesPerView: 1.9,
+            slidesPerView: 1.2,
         },
         992: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.3,
         },
         1200: {
             slidesPerView: 3.3,

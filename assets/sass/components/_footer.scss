@@ -13,6 +13,12 @@
     z-index: 1;
     background: linear-gradient(165.98deg, #02274D 9.09%, #001B37 83.19%);
     clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
+    @include screen-768 {
+        clip-path: polygon(100% 7%, 100% 100%, 0 100%, 0 0);
+    }
+    @include portrait-phone {
+        clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
+    }
 }
 
 .al-footer-shape-01 {

@@ -7,6 +7,14 @@
     margin-top: -95px;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    @include screen-768 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        padding: 120px 0 100px 0;
+    }
+    @include portrait-phone {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+        padding: 120px 0 60px 0;
+    }
 }
 
 .al-hero-left {
@@ -592,6 +600,108 @@
 
 /****** Reward Section End *********/
 
+/****** Testimonial Section Start *********/
+.al-testimonial-section {
+    padding: 120px 0;
+}
+
+.al-testimonial-content {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0;
+    border-radius: 50px;
+    position: relative;
+}
+
+.al-testimonial-shape {
+    position: absolute;
+    top: 47px;
+    right: 84px;
+    @include screen-992 {
+        display: none;
+    }
+}
+
+.al-testimonial-title {
+    h3 {
+        line-height: 60px;
+        color: $white-color;
+        max-width: 870px;
+        margin: 0 auto;
+
+        span {
+            background: linear-gradient(97.3deg, #AF59CC 16.54%, #E9447B 71.36%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        @include portrait-phone {
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+}
+
+.al-testimonial-slider {
+    margin-left: 50px;
+}
+
+.al-testimonial-card {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: 30px;
+    @include screen-768 {
+        padding: 20px 35px 20px 20px;
+    }
+}
+
+.al-testimonial-card-para {
+    p {
+        font-size: 22px;
+        line-height: 37px;
+        @include portrait-phone {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+
+.al-testimonial-card-content-item-title {
+    h5 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30px;
+        @include portrait-phone {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+
+.al-testimonial-card-content-item-check-title {
+    h6 {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #02274D;
+        @include portrait-phone {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.al-testimonial-default {
+    padding: 14px 28px;
+    @include screen-400 {
+        padding: 14px 18px;
+    }
+}
+
+/****** Testimonial Section End *********/
+
 /****** Faq Section Start *********/
 .al-faq-section {
     background-color: #F9EEF3;
@@ -640,6 +750,7 @@
         border: 0;
         margin-bottom: 15px;
         background-color: transparent;
+
         .accordion-header {
             .accordion-button {
                 font-size: 22px;
