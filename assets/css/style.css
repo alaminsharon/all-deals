@@ -427,7 +427,7 @@ h6 {
 /********* Footer Page *********/
 /********* Footer Section Start *********/
 .al-footer-section {
-  padding: 500px 0 25px 0;
+  padding: 120px 0 25px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -743,7 +743,7 @@ h6 {
 /******Home Page*********/
 /****** Hero Section Start *********/
 .al-hero-section {
-  padding: 120px 0 190px 0;
+  padding: 120px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
