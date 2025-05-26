@@ -376,7 +376,7 @@ h6 {
   display: inline-block;
   text-align: center;
   overflow: hidden;
-  padding: 1px 18px;
+  padding: 1px 17px;
   z-index: 1;
   background-color: #ffffff;
   color: #033365;
@@ -430,11 +430,12 @@ h6 {
 /********* Footer Page *********/
 /********* Footer Section Start *********/
 .al-footer-section {
-  padding: 500px 0 25px 0;
+  padding: 520px 0 25px 0;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .al-footer-shape-01 {
   position: absolute;
@@ -1027,6 +1028,209 @@ h6 {
       top: 89px; } }
 
 /****** Hero Section End *********/
+/****** Faq Section Start *********/
+.al-faq-section {
+  background-color: #F9EEF3;
+  padding: 35px 0 120px 0; }
+
+.al-faq-top {
+  margin-bottom: 70px; }
+  @media (max-width: 991.98px) {
+    .al-faq-top {
+      margin-bottom: 50px; } }
+  @media (max-width: 575.98px) {
+    .al-faq-top {
+      margin-bottom: 30px; } }
+  .al-faq-top h2 {
+    line-height: 61px;
+    max-width: 480px;
+    margin: 0 auto; }
+    @media (max-width: 575.98px) {
+      .al-faq-top h2 {
+        font-size: 40px;
+        line-height: 45px; } }
+
+.al-faq-thumb {
+  margin-left: 75px; }
+  @media (max-width: 1399.98px) {
+    .al-faq-thumb {
+      margin-left: 0; } }
+  @media (max-width: 991.98px) {
+    .al-faq-thumb img {
+      width: 100%; } }
+
+.al-faq-accordion .accordion-item {
+  border: 0;
+  margin-bottom: 15px;
+  background-color: transparent; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+    background: transparent;
+    color: #033365;
+    outline: none;
+    border: none;
+    padding: 0 0 27px 0;
+    max-width: 600px; }
+    @media (max-width: 1050px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+        padding: 0 0 5px 0;
+        font-size: 20px;
+        line-height: 28px; } }
+    @media (max-width: 991.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button {
+        max-width: 100%; } }
+    .al-faq-accordion .accordion-item .accordion-header .accordion-button::after {
+      background: none;
+      content: "\f107";
+      font-family: "FontAwesome";
+      width: auto;
+      height: auto; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    color: #A040C1;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0; }
+  .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    -webkit-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+    width: 80px;
+    height: 80px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(111, 104, 191, 0.1);
+    border-radius: 50%;
+    position: relative;
+    right: -32px; }
+    @media (max-width: 1399.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+        width: 60px;
+        height: 60px;
+        right: -25px; } }
+    @media (max-width: 767.98px) {
+      .al-faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+        width: 45px;
+        height: 45px;
+        right: -17px; } }
+  .al-faq-accordion .accordion-item .accordion-body {
+    padding: 0 80px 0 0; }
+    @media (max-width: 1050px) {
+      .al-faq-accordion .accordion-item .accordion-body {
+        padding: 0 40px 0 0; } }
+    @media (max-width: 575.98px) {
+      .al-faq-accordion .accordion-item .accordion-body {
+        padding: 0 10px 0 0; } }
+    .al-faq-accordion .accordion-item .accordion-body p {
+      font-size: 22px;
+      line-height: 37px;
+      color: #033365;
+      font-weight: 400; }
+      @media (max-width: 575.98px) {
+        .al-faq-accordion .accordion-item .accordion-body p {
+          font-size: 18px;
+          line-height: 31px; } }
+
+.al-faq-btn a {
+  text-decoration: underline;
+  color: #033365;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 44px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-faq-btn a:hover {
+    color: #7C458F; }
+
+/****** Faq Section End *********/
+/****** Deal Section Start *********/
+.al-deal-section {
+  position: relative;
+  margin-bottom: -360px;
+  z-index: 2; }
+
+.al-deal-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  padding: 1px 0 10px 0; }
+  @media (max-width: 1050px) {
+    .al-deal-item {
+      padding: 36px 20px 50px 0; } }
+
+.al-deal-shape {
+  position: absolute;
+  top: -60px;
+  left: 150px;
+  z-index: 3; }
+  @media (max-width: 1199.98px) {
+    .al-deal-shape {
+      display: none; } }
+
+.al-deal-infinity {
+  position: absolute;
+  bottom: -60px;
+  left: 0px;
+  z-index: -1; }
+  @media (max-width: 1199.98px) {
+    .al-deal-infinity {
+      display: none; } }
+
+.al-deal-content {
+  margin-left: 120px; }
+  @media (max-width: 1199.98px) {
+    .al-deal-content {
+      margin-left: 30px; } }
+
+.al-deal-content-subtitle h6 {
+  line-height: 24px; }
+  @media (max-width: 575.98px) {
+    .al-deal-content-subtitle h6 {
+      font-size: 21px;
+      line-height: 28px; } }
+
+.al-deal-content-title {
+  margin-top: 17px;
+  margin-bottom: 40px; }
+  .al-deal-content-title h3 {
+    line-height: 61px;
+    max-width: 550px; }
+    @media (max-width: 1199.98px) {
+      .al-deal-content-title h3 {
+        font-size: 45px; } }
+    @media (max-width: 575.98px) {
+      .al-deal-content-title h3 {
+        font-size: 35px;
+        line-height: 42px; } }
+
+.al-deal-thumb {
+  margin-bottom: -80px; }
+  @media (max-width: 991.98px) {
+    .al-deal-thumb {
+      margin-bottom: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-deal-thumb {
+      margin-right: -22px; } }
+
+@media (max-width: 400px) {
+  .al-deal-btn {
+    margin-left: 10px; } }
+
+/****** Deal Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {

@@ -32,6 +32,7 @@
             font-size: 50px;
             line-height: 55px;
         }
+
         @include screen-460 {
             font-size: 40px;
             line-height: 50px;
@@ -60,6 +61,7 @@
             margin: 0 auto;
             max-width: 500px;
         }
+
         @include screen-460 {
             font-size: 20px;
             line-height: 35px;
@@ -95,6 +97,7 @@
         font-weight: 500;
         color: $white-color;
         max-width: 265px;
+
         @include portrait-phone {
             max-width: 280px;
         }
@@ -311,6 +314,7 @@
         right: 110px;
         top: 220px;
     }
+
     @include screen-460 {
         right: 121px;
         top: 224px;
@@ -329,6 +333,7 @@
         right: 130px;
         top: 80px;
     }
+
     @include screen-460 {
         right: 102px;
         top: 89px;
@@ -336,3 +341,261 @@
 }
 
 /****** Hero Section End *********/
+
+/****** Faq Section Start *********/
+.al-faq-section {
+    background-color: #F9EEF3;
+    padding: 35px 0 120px 0;
+}
+
+.al-faq-top {
+    margin-bottom: 70px;
+
+    @include screen-992 {
+        margin-bottom: 50px;
+    }
+
+    @include portrait-phone {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        line-height: 61px;
+        max-width: 480px;
+        margin: 0 auto;
+
+        @include portrait-phone {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+}
+
+.al-faq-thumb {
+    margin-left: 75px;
+
+    @include screen-1400 {
+        margin-left: 0;
+    }
+
+    img {
+        @include screen-992 {
+            width: 100%;
+        }
+    }
+}
+
+.al-faq-accordion {
+    .accordion-item {
+        border: 0;
+        margin-bottom: 15px;
+        background-color: transparent;
+        .accordion-header {
+            .accordion-button {
+                font-size: 22px;
+                line-height: 40px;
+                font-weight: 600;
+                background: transparent;
+                color: $primary-color;
+                outline: none;
+                border: none;
+                padding: 0 0 27px 0;
+                max-width: 600px;
+
+                @include screen-1050 {
+                    padding: 0 0 5px 0;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                @include screen-992 {
+                    max-width: 100%;
+                }
+
+                &::after {
+                    background: none;
+                    content: "\f107";
+                    font-family: "FontAwesome";
+                    width: auto;
+                    height: auto;
+                }
+            }
+
+            .accordion-button:focus {
+                box-shadow: none;
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: #A040C1;
+                box-shadow: 0 0 0 0;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                transform: rotate(180deg) !important;
+                width: 80px;
+                height: 80px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(111, 104, 191, 0.10);
+                border-radius: 50%;
+                position: relative;
+                right: -32px;
+
+                @include screen-1400 {
+                    width: 60px;
+                    height: 60px;
+                    right: -25px;
+                }
+
+                @include screen-768 {
+                    width: 45px;
+                    height: 45px;
+                    right: -17px;
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 0 80px 0 0;
+
+            @include screen-1050 {
+                padding: 0 40px 0 0;
+            }
+
+            @include portrait-phone {
+                padding: 0 10px 0 0;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 37px;
+                color: $primary-color;
+                font-weight: 400;
+
+                @include portrait-phone {
+                    font-size: 18px;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+}
+
+.al-faq-btn {
+    a {
+        text-decoration: underline;
+        color: $primary-color;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 44px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #7C458F;
+        }
+    }
+}
+
+/****** Faq Section End *********/
+
+/****** Deal Section Start *********/
+.al-deal-section {
+    position: relative;
+    margin-bottom: -360px;
+    z-index: 2;
+}
+
+.al-deal-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    padding: 1px 0 10px 0;
+
+    @include screen-1050 {
+        padding: 36px 20px 50px 0;
+    }
+}
+
+.al-deal-shape {
+    position: absolute;
+    top: -60px;
+    left: 150px;
+    z-index: 3;
+
+    @include large-screen {
+        display: none;
+    }
+}
+
+.al-deal-infinity {
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    z-index: -1;
+
+    @include large-screen {
+        display: none;
+    }
+}
+
+.al-deal-content {
+    margin-left: 120px;
+
+    @include large-screen {
+        margin-left: 30px;
+    }
+}
+
+.al-deal-content-subtitle {
+    h6 {
+        line-height: 24px;
+
+        @include portrait-phone {
+            font-size: 21px;
+            line-height: 28px;
+        }
+    }
+}
+
+.al-deal-content-title {
+    margin-top: 17px;
+    margin-bottom: 40px;
+
+    h3 {
+        line-height: 61px;
+        max-width: 550px;
+
+        @include large-screen {
+            font-size: 45px;
+        }
+
+        @include portrait-phone {
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+}
+
+.al-deal-thumb {
+    margin-bottom: -80px;
+
+    @include screen-992 {
+        margin-bottom: 40px;
+    }
+
+    @include portrait-phone {
+        margin-right: -22px;
+    }
+}
+
+.al-deal-btn {
+    @include screen-400 {
+        margin-left: 10px;
+    }
+}
+
+/****** Deal Section End *********/
