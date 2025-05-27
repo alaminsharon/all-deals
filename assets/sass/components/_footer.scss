@@ -46,7 +46,6 @@
     right: 0;
     bottom: 60px;
     z-index: 1;
-    animation: bounce2 2s infinite;
 
     @include screen-992 {
         bottom: 150px;
@@ -62,7 +61,6 @@
     right: 40px;
     bottom: 60px;
     z-index: 2;
-    animation: bounce 2s infinite;
 
     @include screen-992 {
         bottom: 150px;
@@ -90,10 +88,6 @@
 
     @include screen-992 {
         margin-bottom: 400px;
-    }
-
-    @include portrait-phone {
-        margin-bottom: 370px;
     }
 }
 

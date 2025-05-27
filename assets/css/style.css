@@ -19,6 +19,11 @@ img {
   margin: auto;
   padding: 0 30px; }
 
+.al-container-1680 {
+  max-width: 1680px;
+  margin: auto;
+  padding: 0 30px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -316,6 +321,13 @@ h6 {
     margin-top: 8px; }
 
 /******Header Home page Bottom End *********/
+/******Header Single Start *********/
+.al-header-single {
+  padding: 44px 0 0 0;
+  position: relative;
+  z-index: 2; }
+
+/******Header Single End *********/
 /************************ mobile menu start ****************/
 .mobile-menu {
   width: 400px;
@@ -477,9 +489,7 @@ h6 {
   position: absolute;
   right: 0;
   bottom: 60px;
-  z-index: 1;
-  -webkit-animation: bounce2 2s infinite;
-  animation: bounce2 2s infinite; }
+  z-index: 1; }
   @media (max-width: 991.98px) {
     .al-footer-shape-02 {
       bottom: 150px; } }
@@ -491,9 +501,7 @@ h6 {
   position: absolute;
   right: 40px;
   bottom: 60px;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite; }
+  z-index: 2; }
   @media (max-width: 991.98px) {
     .al-footer-shape-03 {
       bottom: 150px; } }
@@ -517,9 +525,6 @@ h6 {
   @media (max-width: 991.98px) {
     .al-footer-top {
       margin-bottom: 400px; } }
-  @media (max-width: 575.98px) {
-    .al-footer-top {
-      margin-bottom: 370px; } }
 
 @media (max-width: 991.98px) {
   .al-footer-widget-newsletter {
@@ -1821,6 +1826,16 @@ h6 {
     padding: 14px 16px; } }
 
 /****** Deal Section End *********/
+/******Product Upload Page*********/
+.al-breadcrumb-section {
+  background: -webkit-linear-gradient(202.37deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
+  background: -o-linear-gradient(202.37deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
+  background: linear-gradient(247.63deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
+  padding: 300px 0;
+  position: relative;
+  margin-top: -165px;
+  z-index: 1; }
+
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {
