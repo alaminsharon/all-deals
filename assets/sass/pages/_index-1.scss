@@ -354,8 +354,9 @@
 /****** Card Section Start *********/
 .al-card-section {
     position: relative;
-    z-index: 10;
-    margin-top: -125px;
+    margin-top: -140px;
+    margin-bottom: -360px;
+    z-index: 2;
 }
 
 .card-slider {
@@ -406,8 +407,11 @@
 
 /****** About Section Start *********/
 .al-about-section {
-    background-color: $about-bg;
-    padding: 75px 0 110px 0;
+    background-color: #F9EEF3;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+    padding: 350px 0 480px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .al-about-top-subtitle {
@@ -473,7 +477,6 @@
     }
 }
 
-
 .our-slider {
     padding: 0 120px;
     position: relative;
@@ -488,6 +491,7 @@
         height: 100%;
         background: linear-gradient(271.46deg, rgba(249, 238, 243, 0) 26.37%, #F9EEF3 77.35%);
         z-index: 2;
+
         @include large-screen {
             display: none;
         }
@@ -502,6 +506,7 @@
         height: 100%;
         background: linear-gradient(271.46deg, #F9EEF3 26.37%, rgba(249, 238, 243, 0) 77.35%);
         z-index: 2;
+
         @include large-screen {
             display: none;
         }
@@ -555,6 +560,12 @@
 /****** About Section End *********/
 
 /****** Feature Section Start *********/
+.al-feature-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -400px;
+    margin-bottom: -450px;
+}
 .al-feature-content {
     background-position: center center;
     background-repeat: no-repeat;
@@ -605,6 +616,30 @@
             font-size: 20px;
         }
     }
+
+    .swiper-pagination-progressbar {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -50px;
+        top: auto;
+        z-index: 100;
+        opacity: 1;
+
+        .swiper-pagination-progressbar-fill {
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transform-origin: left top;
+            z-index: 100;
+            opacity: 1;
+        }
+    }
 }
 
 .al-feature-content-title {
@@ -618,24 +653,18 @@
 
 .al-feature-slider {
     margin-left: 50px;
-
-
-    .swiper-pagination {
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        left: 0;
-        bottom: 0px;
-        top: auto;
-        z-index: 100;
-    }
-
+    position: relative;
+    z-index: 1;
 }
 
 .al-feature-card-top {
     background-color: $white-color;
     padding: 20px;
     border-radius: 24px 24px 0 0;
+}
+
+.al-feature-card-offer {
+    margin-bottom: 10px;
 }
 
 .al-feature-card-off {
@@ -734,9 +763,11 @@
 
 /****** Reward Section Start *********/
 .al-reward-section {
-    padding: 70px 0;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+    padding: 500px 0 900px 0;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .al-reward-shape {
@@ -859,6 +890,8 @@
 .al-testimonial-section {
     position: relative;
     z-index: 2;
+    margin-top: -820px;
+    margin-bottom: -340px;
 }
 
 .al-testimonial-content {
@@ -947,6 +980,7 @@
 
 .al-testimonial-card-content-item-check-title {
     flex-shrink: 0;
+
     h6 {
         font-size: 17px;
         font-weight: 400;
@@ -973,7 +1007,10 @@
 /****** Faq Section Start *********/
 .al-faq-section {
     background-color: #F9EEF3;
-    padding: 35px 0 120px 0;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+    padding: 370px 0 610px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .al-faq-top {
@@ -1131,6 +1168,7 @@
 /****** Deal Section Start *********/
 .al-deal-section {
     position: relative;
+    margin-top: -510px;
     margin-bottom: -120px;
     z-index: 2;
 }
