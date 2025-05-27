@@ -31,6 +31,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         line-height: 84px;
+        
 
         @include screen-1400 {
             font-size: 65px;
@@ -773,7 +774,7 @@
 .al-reward-shape {
     position: absolute;
     right: 36px;
-    bottom: -256px;
+    bottom: 600px;
     z-index: 1;
 
     @include screen-768 {
@@ -1192,6 +1193,7 @@
     top: -60px;
     left: 150px;
     z-index: 3;
+    animation: bounce2 2s infinite;
 
     @include large-screen {
         display: none;
