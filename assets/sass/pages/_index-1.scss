@@ -2,9 +2,10 @@
 
 /****** Hero Section Start *********/
 .al-hero-section {
-    padding: 120px 0;
+    padding: 120px 0 180px 0;
     position: relative;
     margin-top: -95px;
+    z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
 
@@ -357,7 +358,7 @@
     position: relative;
     margin-top: -140px;
     margin-bottom: -360px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .card-slider {
@@ -384,13 +385,29 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     border-radius: 28px;
-    min-height: 380px;
+    min-height: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.al-card-content-thumb-one {
+    margin-top: 20px;
+}
+
+.al-card-content-thumb-two {
+    margin-top: 30px;
+}
+
+.al-card-content-thumb-three {
+    margin-top: 70px;
+}
+
+.al-card-content-thumb-four {
+    margin-top: 40px;
 }
 
 
@@ -398,7 +415,7 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: 0;
-    padding: 20px 0;
+    
 
     h6 {
         font-size: 20px;
@@ -1002,7 +1019,9 @@
 
 .al-testimonial-default {
     padding: 14px 28px;
-
+    img {
+        margin-right: 10px;
+    }
     @include screen-400 {
         padding: 14px 16px;
     }

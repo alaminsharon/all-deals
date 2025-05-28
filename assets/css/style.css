@@ -205,7 +205,7 @@ h6 {
 .al-header-bottom {
   padding: 15px 0;
   position: relative;
-  z-index: 1; }
+  z-index: 2; }
 
 @media (max-width: 767.98px) {
   .al-container-bottom {
@@ -382,28 +382,26 @@ h6 {
     right: 0; }
 
 /******Header Home page *********/
-.default-btn {
-  border: none;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
+.template-btn {
   padding: 1px 18px;
-  z-index: 1;
-  background-color: #ffffff;
-  color: #033365;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 1;
   font-size: 22px;
   line-height: 42px;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
   border-radius: 70px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  .default-btn i {
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .template-btn i {
     font-size: 28px;
     color: #033365;
     display: inline-block;
@@ -413,26 +411,37 @@ h6 {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: relative;
-    top: 5px; }
-  .default-btn span {
+    top: 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.primary-btn {
+  background-color: #ffffff;
+  color: #033365;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .primary-btn::before {
+    content: "";
     position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    background-color: #141417;
-    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: #000000;
     z-index: -1;
-    opacity: 1; }
-  .default-btn:hover {
-    color: #fff; }
-    .default-btn:hover span {
-      width: 225%;
-      height: 562.5px; }
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .primary-btn:hover {
+    background-color: transparent;
+    color: #ffffff; }
+    .primary-btn:hover i {
+      color: #ffffff; }
+    .primary-btn:hover::before {
+      top: -10px; }
 
 /********* Footer Page *********/
 /********* Footer Section Start *********/
@@ -788,9 +797,10 @@ h6 {
 /******Home Page*********/
 /****** Hero Section Start *********/
 .al-hero-section {
-  padding: 120px 0;
+  padding: 120px 0 180px 0;
   position: relative;
   margin-top: -95px;
+  z-index: 1;
   background: -webkit-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   background: -o-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
@@ -1079,7 +1089,7 @@ h6 {
   position: relative;
   margin-top: -140px;
   margin-bottom: -360px;
-  z-index: 2; }
+  z-index: 3; }
 
 .card-slider {
   margin-left: 250px; }
@@ -1100,9 +1110,9 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   border-radius: 28px;
-  min-height: 380px;
+  min-height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1117,11 +1127,22 @@ h6 {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.al-card-content-thumb-one {
+  margin-top: 20px; }
+
+.al-card-content-thumb-two {
+  margin-top: 30px; }
+
+.al-card-content-thumb-three {
+  margin-top: 70px; }
+
+.al-card-content-thumb-four {
+  margin-top: 40px; }
+
 .al-card-content-title {
   text-align: center;
   margin-top: auto;
-  margin-bottom: 0;
-  padding: 20px 0; }
+  margin-bottom: 0; }
   .al-card-content-title h6 {
     font-size: 20px;
     line-height: 28px; }
@@ -1616,6 +1637,8 @@ h6 {
 
 .al-testimonial-default {
   padding: 14px 28px; }
+  .al-testimonial-default img {
+    margin-right: 10px; }
   @media (max-width: 400px) {
     .al-testimonial-default {
       padding: 14px 16px; } }

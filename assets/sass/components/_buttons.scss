@@ -1,22 +1,17 @@
 
-.default-btn {
-    border: none;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
+.template-btn {
     padding: 1px 18px;
-    z-index: 1;
-    background-color: $white-color;
-    color: $primary-color;
-    transition: 0.3s;
-    opacity: 1;
     font-size: 22px;
     line-height: 42px;
     font-weight: 500;
+    position: relative;
+    z-index: 1;
     border-radius: 70px;
-    transition: 0.5s;
-
+    overflow: hidden;
+    transition: all 0.3s;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
     i {
         font-size: 28px;
         color: $primary-color;
@@ -26,26 +21,36 @@
         transform: rotate(45deg);
         position: relative;
         top: 5px;
+        transition: 0.3s;
     }
+}
 
-    span {
+.primary-btn {
+    background-color: $white-color;
+    color: $primary-color;
+    transition: 0.3s;
+
+    &::before {
+        content: "";
         position: absolute;
-        display: inline-block;
-        width: 0;
-        height: 0;
-        background-color: #141417;
-        transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-        transform: translate(-50%, -50%);
+        left: -90px;
+        top: -135%;
+        width: 190%;
+        height: 135%;
+        background-color: #000000;
         z-index: -1;
-        opacity: 1;
+        border-radius: 50%;
+        transition: all 0.3s;
     }
 
     &:hover {
-        color: #fff;
-
-        span {
-            width: 225%;
-            height: 562.5px;
+        background-color: transparent;
+        color: $white-color;
+        i {
+            color: $white-color;
+        }
+        &::before {
+            top: -10px;
         }
     }
 }

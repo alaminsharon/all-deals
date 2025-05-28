@@ -46,7 +46,7 @@ var swiper = new Swiper(".cardSwiper", {
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 1000,
+        delay: 1000000,
         disableOnInteraction: false,
     },
     speed: 800,
@@ -107,7 +107,7 @@ var swiper = new Swiper(".featureSwiper", {
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 10000000,
+        delay: 1000000,
         disableOnInteraction: false,
     },
     speed: 800,
