@@ -438,6 +438,12 @@
     z-index: 1;
 }
 
+.al-about-top {
+    margin-bottom: 60px;
+    @include portrait-phone {
+        margin-bottom: 30px;
+    }
+}
 .al-about-top-subtitle {
     h6 {
         display: inline-block;
@@ -545,6 +551,15 @@
     }
 }
 
+.al-about-item {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include portrait-phone {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+
 .al-about-card {
     background-color: $white-color;
     padding: 43px 35px;
@@ -589,6 +604,10 @@
     z-index: 2;
     margin-top: -400px;
     margin-bottom: -450px;
+    @include portrait-phone {
+        margin-top: -430px;
+        margin-bottom: -460px;
+    }
 }
 
 .al-feature-content {
@@ -967,6 +986,9 @@
     z-index: 2;
     margin-top: -820px;
     margin-bottom: -340px;
+    @include portrait-phone {
+        margin-top: -890px;
+    }
 }
 
 .al-testimonial-content {
@@ -976,6 +998,9 @@
     padding: 110px 0;
     border-radius: 50px;
     position: relative;
+    @include portrait-phone {
+        padding: 80px 0 110px 0;
+    }
 }
 
 .al-testimonial-shape {
@@ -1250,6 +1275,9 @@
     margin-top: -510px;
     margin-bottom: -120px;
     z-index: 2;
+    @include portrait-phone {
+        margin-top: -580px;
+    }
 }
 
 .al-deal-item {
@@ -1347,7 +1375,7 @@
 
 .al-deal-default {
     @include screen-400 {
-        padding: 14px 16px;
+        padding: 1px 12px;
     }
 }
 
