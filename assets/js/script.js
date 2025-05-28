@@ -46,7 +46,7 @@ var swiper = new Swiper(".cardSwiper", {
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 1000000,
+        delay: 1000,
         disableOnInteraction: false,
     },
     speed: 800,
@@ -107,7 +107,7 @@ var swiper = new Swiper(".featureSwiper", {
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 1000000,
+        delay: 1000,
         disableOnInteraction: false,
     },
     speed: 800,
@@ -121,12 +121,12 @@ var swiper = new Swiper(".featureSwiper", {
       },
     breakpoints: {
         370: {
-            slidesPerView: 1.8,
+            slidesPerView: 1.4,
         },
         992: {
-            slidesPerView: 2.8,
+            slidesPerView: 2.6,
         },
-        1200: {
+        1450: {
             slidesPerView: 4.8,
         }
     }

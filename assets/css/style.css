@@ -1289,6 +1289,10 @@ h6 {
   border-radius: 50px 0 0 50px;
   position: relative;
   z-index: 1; }
+  @media (max-width: 767.98px) {
+    .al-feature-content {
+      margin-left: 20px;
+      padding: 40px 0 100px 0; } }
   .al-feature-content .swiper-button-next {
     position: absolute;
     width: 60px;
@@ -1311,6 +1315,9 @@ h6 {
     opacity: 1; }
     .al-feature-content .swiper-button-next::after {
       font-size: 20px; }
+    @media (max-width: 991.98px) {
+      .al-feature-content .swiper-button-next {
+        display: none; } }
   .al-feature-content .swiper-button-prev {
     position: absolute;
     width: 60px;
@@ -1334,6 +1341,9 @@ h6 {
     opacity: 1; }
     .al-feature-content .swiper-button-prev::after {
       font-size: 20px; }
+    @media (max-width: 991.98px) {
+      .al-feature-content .swiper-button-prev {
+        display: none; } }
   .al-feature-content .swiper-pagination-progressbar {
     width: 90%;
     height: 4px;
@@ -1361,29 +1371,43 @@ h6 {
 .al-feature-content-title {
   margin-bottom: 40px;
   margin-left: 50px; }
+  @media (max-width: 991.98px) {
+    .al-feature-content-title {
+      margin-left: 20px; } }
   .al-feature-content-title h2 {
     color: #ffffff; }
+    @media (max-width: 575.98px) {
+      .al-feature-content-title h2 {
+        font-size: 45px; } }
 
 .al-feature-slider {
   margin-left: 50px;
   position: relative;
   z-index: 1; }
+  @media (max-width: 991.98px) {
+    .al-feature-slider {
+      margin-left: 20px; } }
 
 .al-feature-card-top {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 24px 24px 0 0; }
 
-.al-feature-card-offer {
-  margin-bottom: 10px; }
+.al-feature-card-thumb {
+  position: relative; }
+  .al-feature-card-thumb img {
+    width: 100%; }
 
 .al-feature-card-off {
   background-color: #586BD0;
   padding: 1px 10px;
-  border-radius: 44px; }
+  border-radius: 44px;
+  position: absolute;
+  left: 10px;
+  top: 15px; }
 
 .al-feature-card-off-two {
-  background-color: #EF8D76; }
+  background-color: #FBDCCE; }
 
 .al-feature-card-off-title span {
   font-size: 15px;
@@ -1404,9 +1428,15 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 15px; }
   .al-feature-card-heart i {
     color: #F96668; }
+
+.al-feature-card-top-content {
+  padding: 10px; }
 
 .al-feature-card-top-content-sold span {
   font-size: 17px;
@@ -1416,25 +1446,49 @@ h6 {
 .al-feature-card-top-content-title {
   margin-top: 6px;
   margin-bottom: 14px; }
+  @media (max-width: 1600px) {
+    .al-feature-card-top-content-title h5 {
+      font-size: 19px; } }
+  @media (max-width: 1100px) {
+    .al-feature-card-top-content-title h5 {
+      font-size: 17px; } }
 
 .al-feature-card-top-content-number span {
   font-size: 20px;
   font-weight: 600;
   color: #033365; }
+  @media (max-width: 1700px) {
+    .al-feature-card-top-content-number span {
+      font-size: 15px; } }
 
 .al-feature-card-top-content-number del {
   font-size: 20px;
   font-weight: 500;
   color: #8194A3; }
+  @media (max-width: 1700px) {
+    .al-feature-card-top-content-number del {
+      font-size: 15px; } }
+
+.al-feature-card-top-content-number-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px; }
+  @media (max-width: 575.98px) {
+    .al-feature-card-top-content-number-icon {
+      display: none; } }
 
 .al-feature-card-top-content-number-icon-content h4 {
-  font-size: 17px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 16px;
   color: #2E9865; }
 
 .al-feature-card-top-content-number-icon-content h5 {
-  font-size: 15px;
-  line-height: 20px; }
+  font-size: 14px;
+  line-height: 14px; }
 
 .al-feature-card-bottom {
   background-color: #586BD0;
@@ -1641,7 +1695,7 @@ h6 {
     margin-right: 10px; }
   @media (max-width: 400px) {
     .al-testimonial-default {
-      padding: 14px 16px; } }
+      padding: 14px; } }
 
 /****** Testimonial Section End *********/
 /****** Faq Section Start *********/

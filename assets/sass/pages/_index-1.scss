@@ -32,7 +32,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         line-height: 84px;
-        
+
 
         @include screen-1400 {
             font-size: 65px;
@@ -415,7 +415,7 @@
     text-align: center;
     margin-top: auto;
     margin-bottom: 0;
-    
+
 
     h6 {
         font-size: 20px;
@@ -590,6 +590,7 @@
     margin-top: -400px;
     margin-bottom: -450px;
 }
+
 .al-feature-content {
     background-position: center center;
     background-repeat: no-repeat;
@@ -599,6 +600,10 @@
     border-radius: 50px 0 0 50px;
     position: relative;
     z-index: 1;
+    @include screen-768 {
+        margin-left: 20px;
+        padding: 40px 0 100px 0;
+    }
 
     .swiper-button-next {
         position: absolute;
@@ -617,6 +622,9 @@
 
         &::after {
             font-size: 20px;
+        }
+        @include screen-992 {
+            display: none;
         }
     }
 
@@ -638,6 +646,9 @@
 
         &::after {
             font-size: 20px;
+        }
+        @include screen-992 {
+            display: none;
         }
     }
 
@@ -668,9 +679,14 @@
 .al-feature-content-title {
     margin-bottom: 40px;
     margin-left: 50px;
-
+    @include screen-992 {
+        margin-left: 20px;
+    }
     h2 {
         color: $white-color;
+        @include portrait-phone {
+            font-size: 45px;
+        }
     }
 }
 
@@ -678,28 +694,37 @@
     margin-left: 50px;
     position: relative;
     z-index: 1;
+    @include screen-992 {
+        margin-left: 20px;
+    }
 }
 
 .al-feature-card-top {
     background-color: $white-color;
-    padding: 20px;
+    padding: 10px;
     border-radius: 24px 24px 0 0;
 }
 
-.al-feature-card-offer {
-    margin-bottom: 10px;
+.al-feature-card-thumb {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
 }
 
 .al-feature-card-off {
     background-color: #586BD0;
     padding: 1px 10px;
     border-radius: 44px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
 }
 
 .al-feature-card-off-two {
-    background-color: #EF8D76;
+    background-color: #FBDCCE;
 }
-
 
 .al-feature-card-off-title {
     span {
@@ -718,10 +743,17 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 
     i {
         color: #F96668;
     }
+}
+
+.al-feature-card-top-content {
+    padding: 10px;
 }
 
 .al-feature-card-top-content-sold {
@@ -735,6 +767,14 @@
 .al-feature-card-top-content-title {
     margin-top: 6px;
     margin-bottom: 14px;
+    h5 {
+        @include screen-1600 {
+            font-size: 19px;
+        }
+        @include screen-1100 {
+            font-size: 17px;
+        }
+    }
 }
 
 .al-feature-card-top-content-number {
@@ -742,29 +782,41 @@
         font-size: 20px;
         font-weight: 600;
         color: $primary-color;
+        @include screen-1700 {
+            font-size: 15px;
+        }
     }
 
     del {
         font-size: 20px;
         font-weight: 500;
         color: #8194A3;
+        @include screen-1700 {
+            font-size: 15px;
+        }
     }
 }
 
+.al-feature-card-top-content-number-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @include portrait-phone {
+        display: none;
+    }
+}
 .al-feature-card-top-content-number-icon-content {
     h4 {
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 16px;
         color: #2E9865;
     }
 
     h5 {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 14px;
     }
 }
-
-
 
 .al-feature-card-bottom {
     background-color: #586BD0;
@@ -1019,11 +1071,13 @@
 
 .al-testimonial-default {
     padding: 14px 28px;
+
     img {
         margin-right: 10px;
     }
+
     @include screen-400 {
-        padding: 14px 16px;
+        padding: 14px;
     }
 }
 
