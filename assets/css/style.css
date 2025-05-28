@@ -429,15 +429,10 @@ h6 {
     z-index: -1;
     opacity: 1; }
   .default-btn:hover {
-    color: #ffffff; }
-    .default-btn:hover i {
-      color: #ffffff; }
+    color: #fff; }
     .default-btn:hover span {
       width: 225%;
       height: 562.5px; }
-    .default-btn:hover i {
-      -webkit-animation: 0.4s toTopFromBottom1 forwards;
-      animation: 0.4s toTopFromBottom1 forwards; }
 
 /********* Footer Page *********/
 /********* Footer Section Start *********/
@@ -1107,10 +1102,25 @@ h6 {
   background-size: cover;
   padding: 20px;
   border-radius: 28px;
-  min-height: 380px; }
+  min-height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .al-card-content-title {
   text-align: center;
+  margin-top: auto;
+  margin-bottom: 0;
   padding: 20px 0; }
   .al-card-content-title h6 {
     font-size: 20px;
@@ -1125,7 +1135,7 @@ h6 {
   background-color: #F9EEF3;
   -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
   clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-  padding: 350px 0 480px 0;
+  padding: 450px 0 480px 0;
   position: relative;
   z-index: 1; }
 
@@ -1304,17 +1314,16 @@ h6 {
     .al-feature-content .swiper-button-prev::after {
       font-size: 20px; }
   .al-feature-content .swiper-pagination-progressbar {
-    position: absolute;
-    width: 100%;
+    width: 90%;
     height: 4px;
+    background: rgba(255, 255, 255, 0.2);
     left: 0;
     bottom: -50px;
     top: auto;
     z-index: 100;
     opacity: 1; }
     .al-feature-content .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-      background: red;
-      position: absolute;
+      background: #40ACC1;
       left: 0;
       top: 0;
       width: 100%;

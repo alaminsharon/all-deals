@@ -32,23 +32,6 @@
         });
     });
 
-    //2. Default Btn
-    $(function () {
-        $('.default-btn')
-            .on('mouseenter', function (e) {
-                var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-                $(this).find('span').css({ top: relY, left: relX })
-            })
-            .on('mouseout', function (e) {
-                var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-                $(this).find('span').css({ top: relY, left: relX })
-            });
-    });
-
     AOS.init();
 
 
@@ -58,7 +41,7 @@
 //////////////
 var swiper = new Swiper(".cardSwiper", {
     slidesPerView: 6.5,
-    spaceBetween: 2,
+    spaceBetween: 10,
     centeredSlides: false,
     grabCursor: true,
     loop: true,
@@ -124,7 +107,7 @@ var swiper = new Swiper(".featureSwiper", {
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 1000,
+        delay: 10000000,
         disableOnInteraction: false,
     },
     speed: 800,

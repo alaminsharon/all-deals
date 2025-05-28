@@ -1,3 +1,4 @@
+
 .default-btn {
     border: none;
     position: relative;
@@ -40,19 +41,11 @@
     }
 
     &:hover {
-        color: $white-color;
-
-        i {
-            color: $white-color;
-        }
+        color: #fff;
 
         span {
             width: 225%;
             height: 562.5px;
-        }
-
-        i {
-            animation: 0.4s toTopFromBottom1 forwards;
         }
     }
 }
