@@ -5,10 +5,10 @@
     padding: 120px 0 180px 0;
     position: relative;
     margin-top: -95px;
+    margin-bottom: -150px;
     z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
-
     @include screen-768 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
         padding: 120px 0 100px 0;
@@ -356,8 +356,8 @@
 /****** Card Section Start *********/
 .al-card-section {
     position: relative;
-    margin-top: -140px;
-    margin-bottom: -360px;
+    margin-top: -169px;
+    margin-bottom: -279px;
     z-index: 3;
 }
 
@@ -787,6 +787,7 @@
     margin-top: 6px;
     margin-bottom: 14px;
     h5 {
+        max-width: 250px;
         @include screen-1600 {
             font-size: 19px;
         }

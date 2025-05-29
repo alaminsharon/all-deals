@@ -800,6 +800,7 @@ h6 {
   padding: 120px 0 180px 0;
   position: relative;
   margin-top: -95px;
+  margin-bottom: -150px;
   z-index: 1;
   background: -webkit-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   background: -o-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
@@ -1087,8 +1088,8 @@ h6 {
 /****** Card Section Start *********/
 .al-card-section {
   position: relative;
-  margin-top: -140px;
-  margin-bottom: -360px;
+  margin-top: -169px;
+  margin-bottom: -279px;
   z-index: 3; }
 
 .card-slider {
@@ -1464,12 +1465,14 @@ h6 {
 .al-feature-card-top-content-title {
   margin-top: 6px;
   margin-bottom: 14px; }
-  @media (max-width: 1600px) {
-    .al-feature-card-top-content-title h5 {
-      font-size: 19px; } }
-  @media (max-width: 1100px) {
-    .al-feature-card-top-content-title h5 {
-      font-size: 17px; } }
+  .al-feature-card-top-content-title h5 {
+    max-width: 250px; }
+    @media (max-width: 1600px) {
+      .al-feature-card-top-content-title h5 {
+        font-size: 19px; } }
+    @media (max-width: 1100px) {
+      .al-feature-card-top-content-title h5 {
+        font-size: 17px; } }
 
 .al-feature-card-top-content-number span {
   font-size: 20px;
