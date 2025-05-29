@@ -9,6 +9,9 @@
     z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    @include screen-992 {
+        margin-bottom: -220px;
+    }
 
     @include screen-768 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -129,7 +132,6 @@
     left: -47px;
 }
 
-
 .al-hero-card-item-one {
     @include screen-500 {
         z-index: 1;
@@ -171,7 +173,6 @@
         min-width: auto;
     }
 }
-
 
 .al-hero-card-item-title {
     h6 {
@@ -434,7 +435,7 @@
 .al-about-section {
     background-color: #F9EEF3;
     clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-    padding: 450px 0 480px 0;
+    padding: 370px 0 480px 0;
     position: relative;
     z-index: 1;
 }
@@ -800,10 +801,10 @@
     margin-bottom: 14px;
 
     h5 {
-        max-width: 250px;
+        max-width: 240px;
 
         @include screen-1600 {
-            font-size: 19px;
+            font-size: 20px;
         }
 
         @include screen-1100 {

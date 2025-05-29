@@ -72,7 +72,7 @@ select {
   position: fixed;
   bottom: 70px;
   right: 40px;
-  z-index: 100;
+  z-index: 50;
   font-size: 22px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -846,6 +846,9 @@ h6 {
   background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
+  @media (max-width: 991.98px) {
+    .al-hero-section {
+      margin-bottom: -220px; } }
   @media (max-width: 767.98px) {
     .al-hero-section {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -1196,7 +1199,7 @@ h6 {
   background-color: #F9EEF3;
   -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
   clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-  padding: 450px 0 480px 0;
+  padding: 370px 0 480px 0;
   position: relative;
   z-index: 1; }
 
@@ -1505,10 +1508,10 @@ h6 {
   margin-top: 6px;
   margin-bottom: 14px; }
   .al-feature-card-top-content-title h5 {
-    max-width: 250px; }
+    max-width: 240px; }
     @media (max-width: 1600px) {
       .al-feature-card-top-content-title h5 {
-        font-size: 19px; } }
+        font-size: 20px; } }
     @media (max-width: 1100px) {
       .al-feature-card-top-content-title h5 {
         font-size: 17px; } }
