@@ -9,6 +9,7 @@
     z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+
     @include screen-992 {
         margin-bottom: -230px;
     }
@@ -101,12 +102,15 @@
     max-width: 429px;
     display: inline-block;
     position: relative;
+
     @include screen-992 {
         margin-bottom: 60px;
     }
+
     @include screen-768 {
         margin-bottom: 120px;
     }
+
     @include portrait-phone {
         margin-bottom: 150px;
     }
@@ -420,7 +424,6 @@
 .al-card-content-thumb-four {
     margin-top: 40px;
 }
-
 
 .al-card-content-title {
     text-align: center;
@@ -809,15 +812,21 @@
     margin-top: 6px;
     margin-bottom: 14px;
 
-    h5 {
-        max-width: 240px;
+    a {
+        h5 {
+            max-width: 240px;
+            transition: 0.3s;
+            &:hover {
+                color: #7C458F;
+            }
 
-        @include screen-1600 {
-            font-size: 20px;
-        }
+            @include screen-1600 {
+                font-size: 20px;
+            }
 
-        @include screen-1100 {
-            font-size: 17px;
+            @include screen-1100 {
+                font-size: 17px;
+            }
         }
     }
 }
