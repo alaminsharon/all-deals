@@ -848,7 +848,7 @@ h6 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); }
   @media (max-width: 991.98px) {
     .al-hero-section {
-      margin-bottom: -220px; } }
+      margin-bottom: -230px; } }
   @media (max-width: 767.98px) {
     .al-hero-section {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -922,6 +922,15 @@ h6 {
   max-width: 429px;
   display: inline-block;
   position: relative; }
+  @media (max-width: 991.98px) {
+    .al-hero-card {
+      margin-bottom: 60px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-card {
+      margin-bottom: 120px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-card {
+      margin-bottom: 150px; } }
 
 .al-hero-card-title {
   margin-bottom: 25px; }

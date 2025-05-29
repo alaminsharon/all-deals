@@ -10,7 +10,7 @@
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
     @include screen-992 {
-        margin-bottom: -220px;
+        margin-bottom: -230px;
     }
 
     @include screen-768 {
@@ -101,6 +101,15 @@
     max-width: 429px;
     display: inline-block;
     position: relative;
+    @include screen-992 {
+        margin-bottom: 60px;
+    }
+    @include screen-768 {
+        margin-bottom: 120px;
+    }
+    @include portrait-phone {
+        margin-bottom: 150px;
+    }
 }
 
 .al-hero-card-title {
