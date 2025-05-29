@@ -34,6 +34,21 @@
 
     AOS.init();
 
+    //16. Scroll top button
+    $(window).on("scroll", function () {
+        var scrollBar = $(this).scrollTop();
+        if (scrollBar > 150) {
+            $(".scroll-top-btn").fadeIn();
+        } else {
+            $(".scroll-top-btn").fadeOut();
+        }
+    })
+    $(".scroll-top-btn").on("click", function () {
+        $("body,html").animate({
+            scrollTop: 0
+        });
+    });
+
 
 })(jQuery);
 
@@ -114,11 +129,11 @@ var swiper = new Swiper(".featureSwiper", {
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
-      },
-      navigation: {
+    },
+    navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+    },
     breakpoints: {
         370: {
             slidesPerView: 1.4,

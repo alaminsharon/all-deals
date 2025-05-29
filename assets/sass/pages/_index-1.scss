@@ -9,6 +9,7 @@
     z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+
     @include screen-768 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
         padding: 120px 0 100px 0;
@@ -440,10 +441,12 @@
 
 .al-about-top {
     margin-bottom: 60px;
+
     @include portrait-phone {
         margin-bottom: 30px;
     }
 }
+
 .al-about-top-subtitle {
     h6 {
         display: inline-block;
@@ -554,6 +557,7 @@
 .al-about-item {
     margin-top: 60px;
     margin-bottom: 60px;
+
     @include portrait-phone {
         margin-top: 30px;
         margin-bottom: 0;
@@ -604,6 +608,7 @@
     z-index: 2;
     margin-top: -400px;
     margin-bottom: -450px;
+
     @include portrait-phone {
         margin-top: -430px;
         margin-bottom: -460px;
@@ -619,6 +624,7 @@
     border-radius: 50px 0 0 50px;
     position: relative;
     z-index: 1;
+
     @include screen-768 {
         margin-left: 20px;
         padding: 40px 0 100px 0;
@@ -642,6 +648,7 @@
         &::after {
             font-size: 20px;
         }
+
         @include screen-992 {
             display: none;
         }
@@ -666,6 +673,7 @@
         &::after {
             font-size: 20px;
         }
+
         @include screen-992 {
             display: none;
         }
@@ -698,11 +706,14 @@
 .al-feature-content-title {
     margin-bottom: 40px;
     margin-left: 50px;
+
     @include screen-992 {
         margin-left: 20px;
     }
+
     h2 {
         color: $white-color;
+
         @include portrait-phone {
             font-size: 45px;
         }
@@ -713,6 +724,7 @@
     margin-left: 50px;
     position: relative;
     z-index: 1;
+
     @include screen-992 {
         margin-left: 20px;
     }
@@ -786,11 +798,14 @@
 .al-feature-card-top-content-title {
     margin-top: 6px;
     margin-bottom: 14px;
+
     h5 {
         max-width: 250px;
+
         @include screen-1600 {
             font-size: 19px;
         }
+
         @include screen-1100 {
             font-size: 17px;
         }
@@ -802,6 +817,7 @@
         font-size: 20px;
         font-weight: 600;
         color: $primary-color;
+
         @include screen-1700 {
             font-size: 15px;
         }
@@ -811,6 +827,7 @@
         font-size: 20px;
         font-weight: 500;
         color: #8194A3;
+
         @include screen-1700 {
             font-size: 15px;
         }
@@ -821,10 +838,12 @@
     display: flex;
     align-items: center;
     gap: 12px;
+
     @include portrait-phone {
         display: none;
     }
 }
+
 .al-feature-card-top-content-number-icon-content {
     h4 {
         font-size: 14px;
@@ -987,6 +1006,7 @@
     z-index: 2;
     margin-top: -820px;
     margin-bottom: -340px;
+
     @include portrait-phone {
         margin-top: -890px;
     }
@@ -999,6 +1019,7 @@
     padding: 110px 0;
     border-radius: 50px;
     position: relative;
+
     @include portrait-phone {
         padding: 80px 0 110px 0;
     }
@@ -1276,6 +1297,7 @@
     margin-top: -510px;
     margin-bottom: -120px;
     z-index: 2;
+
     @include portrait-phone {
         margin-top: -580px;
     }
