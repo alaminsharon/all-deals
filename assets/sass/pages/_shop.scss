@@ -1,0 +1,43 @@
+.al-hero-single-section {
+    margin-bottom: 0;
+}
+
+
+/******Shop Upload Page*********/
+
+/****** Top Section Start *********/
+.al-top-section {
+    background-color: green;
+    padding: 120px 0;
+}
+
+.top-slider {
+    margin-left: 50px;
+}
+
+.al-top-content-thumb {
+    width: 131px;
+    height: 131px;
+    background-color: #FA94B9;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+.al-top-content-title {
+    text-align: center;
+    margin-top: 20px;
+
+
+    h6 {
+        font-size: 20px;
+        line-height: 28px;
+
+        @include screen-1600 {
+            font-size: 16px;
+        }
+    }
+}
+
+/****** Top Section End *********/

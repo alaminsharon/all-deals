@@ -23,13 +23,13 @@
         <div class="al-header-single">
             <div class="al-container-1680">
                 <div class="row align-items-center">
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <div class="al-header-single-logo">
                             <a href="index.html"><img src="assets/images/header-single-logo.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="al-header-nav">
+                    <div class="col-md-7">
+                        <div class="al-header-single-nav">
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Deals</a></li>
@@ -54,7 +54,12 @@
                                 </div>
                             </div>
                             <div class="al-header-single-content-icon">
-
+                                <div class="al-header-single-icon-cart">
+                                    <img src="assets/images/header-single-cart.svg" alt="">
+                                    <div class="al-header-single-icon-cart-number">
+                                        <span>3</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -98,185 +103,118 @@
     <!--Breadcrumb Section Start-->
     <section class="al-breadcrumb-section">
         <div class="al-container-1680">
-
+            <div class="al-breadcrumb-content">
+                <ul class="d-flex gap-3 align-items-center">
+                    <li><img src="assets/images/breadcrumb-box.svg" alt=""></li>
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                        <p>Your Account</p>
+                    </li>
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                        <p>Orders</p>
+                    </li>
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li><span>CX5-0000758-82314-12</span></li>
+                </ul>
+                <div class="al-breadcrumb-content-title mt20">
+                    <h3>Audit</h3>
+                </div>
+            </div>
         </div>
     </section>
     <!--Breadcrumb Section End-->
 
-    <!--Footer Section Start-->
-    <footer class="al-footer-section">
-        <div class="al-footer-top-shape">
-            
+    <!--Upload Section Start-->
+    <section class="al-upload-section">
+        <div class="al-container-1680">
+            <div class="al-upload-content">
+                <h5>Upload image</h5>
+                <div class="upload-box" id="drop-area">
+                    <img id="preview-icon" src="assets/images/upload-img.png" alt="Upload Icon">
+                    <p><strong>Click to upload</strong> or drag & drop</p>
+                    <p class="file-limit">Maximum file size 50 MB.</p>
+                    <input type="file" id="fileElem" accept="image/*" hidden />
+                    <img id="preview" style="display:none; max-width: 100%; margin-top: 10px;" />
+                </div>
+                <div class="al-upload-button text-center">
+                    <button class="upload-btn"><img src="assets/images/upload-icon.svg" alt=""> Upload</button>
+                </div>
+            </div>
         </div>
-        <img src="assets/images/footer-shape-01.png" alt="" class="al-footer-shape-01">
-        <div class="al-container">
-            <div class="al-footer-top">
-                <div class="row g-4">
-                    <div class="col-lg-5">
-                        <div class="al-footer-widget">
-                            <div class="al-footer-widget-newsletter">
-                                <div class="al-footer-widget-newsletter-title">
-                                    <h4>Sign up for our newsletter.</h4>
-                                </div>
-                                <div class="al-footer-widget-newsletter-subtitle">
-                                    <p>Be the first to know when new deals are available for you to claim.</p>
-                                </div>
-                                <div class="al-footer-widget-email-wrapper align-items-center">
-                                    <input type="email" placeholder="Email Address" class="al-email-input">
-                                    <button class="al-email-button">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                                <div class="al-footer-widget-social">
-                                    <ul class="d-flex align-items-center gap-4">
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+    </section>
+    <!--Upload Section End-->
+
+    <!--Footer Single Section Start-->
+    <footer class="al-footer-single-section">
+        <div class="al-footer-top-shape">
+
+        </div>
+        <img src="assets/images/footer-single-shape.png" alt="" class="al-footer-single-shape">
+        <div class="al-container-875">
+            <div class="al-footer-single">
+                <div class="al-footer-logo text-center">
+                    <img src="assets/images/footer-logo.png" alt="">
+                </div>
+                <div class="al-footer-widget-single-para text-center">
+                    <p>Join today and get $10 bonus after your first rebate!</p>
+                </div>
+                <div class="al-footer-widget-saving-item text-center">
+                    <div
+                        class="al-footer-widget-saving mb90 d-inline-flex align-items-center justify-content-center gap-3">
+                        <div class="al-footer-widget-saving-thumb">
+                            <img src="assets/images/footer-single-img.png" alt="">
                         </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="row g-4 justify-content-center al-footer-widget-content-none">
-                            <div class="col-md-3 col-sm-4">
-                                <div class="al-footer-widget">
-                                    <div class="al-footer-widget-title mb20">
-                                        <h5>GET STARTED</h5>
-                                    </div>
-                                    <ul class="al-footer-widget-content">
-                                        <li><a href="#">Sign Up</a></li>
-                                        <li><a href="#">Login</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="al-footer-widget">
-                                    <div class="al-footer-widget-title mb20">
-                                        <h5>DEALS</h5>
-                                    </div>
-                                    <ul class="al-footer-widget-content">
-                                        <li><a href="#">New Arrivals</a></li>
-                                        <li><a href="#">Premium Deals</a></li>
-                                        <li><a href="#">Promo Deals</a></li>
-                                        <li><a href="#">Almost Gone</a></li>
-                                        <li><a href="#">Explore All</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="al-footer-widget">
-                                    <div class="al-footer-widget-title mb20">
-                                        <h5>DISCOVER</h5>
-                                    </div>
-                                    <ul class="al-footer-widget-content">
-                                        <li><a href="#">How It Works</a></li>
-                                        <li><a href="#">Testimonials</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="al-footer-widget">
-                                    <div class="al-footer-widget-title mb20">
-                                        <h5>HELP</h5>
-                                    </div>
-                                    <ul class="al-footer-widget-content">
-                                        <li><a href="#">Tutorials</a></li>
-                                        <li><a href="#">Help Center</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row al-footer-widget-accordion">
-                            <div class="col-12">
-                                <div class="accordion al-footer-accordion" id="al-footer-accordion">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne">ACCOUNT</button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            data-bs-parent="#al-footer-accordion">
-                                            <div class="accordion-body">
-                                                <ul class="al-footer-widget-content">
-                                                    <li><a href="#">My Deals</a></li>
-                                                    <li><a href="#">My Wallet</a></li>
-                                                    <li><a href="#">Loyalty Points</a></li>
-                                                    <li><a href="#">Referrals</a></li>
-                                                    <li><a href="#">Wishlist</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo">DEALS</button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            data-bs-parent="#al-footer-accordion">
-                                            <div class="accordion-body">
-                                                <div class="accordion-body">
-                                                    <ul class="al-footer-widget-content">
-                                                        <li><a href="#">New Arrivals</a></li>
-                                                        <li><a href="#">Premium Deals</a></li>
-                                                        <li><a href="#">Promo Deals</a></li>
-                                                        <li><a href="#">Almost Gone</a></li>
-                                                        <li><a href="#">Explore All</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree">DISCOVER</button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            data-bs-parent="#al-footer-accordion">
-                                            <div class="accordion-body">
-                                                <div class="accordion-body">
-                                                    <ul class="al-footer-widget-content">
-                                                        <li><a href="#">How It Works</a></li>
-                                                        <li><a href="#">Testimonials</a></li>
-                                                        <li><a href="#">FAQ</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#four">HELP</button>
-                                        </h2>
-                                        <div id="four" class="accordion-collapse collapse"
-                                            data-bs-parent="#al-footer-accordion">
-                                            <div class="accordion-body">
-                                                <div class="accordion-body">
-                                                    <ul class="al-footer-widget-content">
-                                                        <li><a href="#">Tutorials</a></li>
-                                                        <li><a href="#">Help Center</a></li>
-                                                        <li><a href="#">Contact Us</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="al-footer-widget-saving-title">
+                            <h5>Total Customer Savings</h5>
+                            <h3>$14,835,664</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="al-footer-bottom text-center">
-                <div class="al-footer-logo mb20">
-                    <img src="assets/images/footer-logo.png" alt="">
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <div class="al-footer-widget">
+                            <div class="al-footer-widget-title mb20">
+                                <h5>Company</h5>
+                            </div>
+                            <ul class="al-footer-widget-content">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="al-footer-widget">
+                            <div class="al-footer-widget-title mb20">
+                                <h5>Help</h5>
+                            </div>
+                            <ul class="al-footer-widget-content">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="al-footer-widget">
+                            <div class="al-footer-widget-title mb20">
+                                <h5>Get Started</h5>
+                            </div>
+                            <ul class="al-footer-widget-content">
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Forget Passward</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="al-footer-widget-social mt100 mb20">
+                    <ul class="d-flex align-items-center justify-content-center gap-4">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
                 </div>
                 <div class="al-footer-copyright-content justify-content-center align-items-center gap-4">
                     <div class="al-footer-copyright">

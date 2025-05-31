@@ -174,3 +174,54 @@ var swiper = new Swiper(".testimonialSwiper", {
     }
 });
 //////////////
+
+
+const dropArea = document.getElementById('drop-area');
+const fileInput = document.getElementById('fileElem');
+const preview = document.getElementById('preview');
+const previewIcon = document.getElementById('preview-icon');
+
+// Click to open file picker
+dropArea.addEventListener('click', () => {
+    fileInput.click();
+});
+
+// When file is selected
+fileInput.addEventListener('change', handleFiles);
+
+// Drag and Drop Events
+dropArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropArea.classList.add('hover');
+});
+
+dropArea.addEventListener('dragleave', () => {
+    dropArea.classList.remove('hover');
+});
+
+dropArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropArea.classList.remove('hover');
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+        previewFile(files[0]);
+    }
+});
+
+// Show preview
+function handleFiles() {
+    const file = fileInput.files[0];
+    if (file) {
+        previewFile(file);
+    }
+}
+
+function previewFile(file) {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = function () {
+        preview.src = reader.result;
+        preview.style.display = 'block';
+        previewIcon.style.display = 'none'; // Hide icon
+    }
+}

@@ -12,6 +12,7 @@
 .al-header-top-container {
     padding: 0 10px;
 }
+
 .al-header-top-left-content {
     p {
         font-weight: 500;
@@ -160,6 +161,7 @@
     font-weight: 500;
     color: $primary-color;
     background: transparent;
+
     &:hover {
         color: $white-color;
     }
@@ -173,6 +175,7 @@
     padding: 12px 35px;
     border-radius: 70px;
     transition: 0.3s;
+
     &:hover {
         background: linear-gradient(100.13deg, rgba(255, 255, 255, 0.5) 7.91%, #FFFFFF 99.27%);
     }
@@ -212,6 +215,156 @@
     padding: 44px 0 0 0;
     position: relative;
     z-index: 2;
+}
+
+.al-header-single-nav {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        li {
+            a {
+                font-size: 20px;
+                font-weight: 500;
+                display: block;
+                color: $white-color;
+                transition: 0.3s;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+.al-header-single-content-title {
+    h6 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 46px;
+        color: $white-color;
+    }
+}
+
+.al-header-single-content-title-icon {
+    span {
+        i {
+            color: $white-color;
+        }
+    }
+}
+.al-header-single-icon-cart {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.al-header-single-icon-cart-number {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(55.95deg, #EF8E82 -5.28%, #F2C96C 111.04%);
+    border: 4px solid #9852F8;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        color: $white-color;
+    }
+}
+
+.al-header-single-icon-shop-cart-number {
+    border: none;
+}
+.al-header-shop-nav {
+    &>ul {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        &>li {
+            z-index: 20;
+            position: relative;
+
+            &.has-submenu {
+                &::after {
+                    content: '\f107';
+                    position: absolute;
+                    font-weight: 600;
+                    font-family: 'FontAwesome';
+                    right: -26px;
+                    top: 1px;
+                    cursor: pointer;
+                    color: $white-color;
+                }
+            }
+
+            a {
+                font-size: 19px;
+                font-weight: 500;
+                display: block;
+                color: $white-color;
+                transition: 0.3s;
+            }
+
+            .submenu-wrapper {
+                position: absolute;
+                right: -147px;
+                top: calc(100% + 19px);
+                min-width: 200px;
+                display: block;
+                background: $white-color;
+                border: 1px solid rgba(229, 231, 235, 1);
+                border-radius: 6px;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                padding-left: 0;
+
+                a {
+                    min-width: 260px;
+                    padding: 10px 25px;
+                    text-transform: capitalize;
+                    transition: 0.3s;
+                    color: $primary-color;
+
+                    &:hover {
+                        background-color: rgba(243, 244, 246, 1);
+                    }
+                }
+            }
+
+
+            &:hover {
+                &>a {
+                    color: $primary-color;
+                }
+
+                &::after {
+                    color: $primary-color;
+                }
+            }
+
+            &:hover .submenu-wrapper {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 /******Header Single End *********/
 
@@ -282,4 +435,5 @@
         right: 0;
     }
 }
+
 /******Header Home page *********/

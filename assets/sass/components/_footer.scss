@@ -8,12 +8,11 @@
     z-index: 66;
     top: 62px;
     left: -10px;
-    width: calc(100% + 13px);
+    width: calc(100% + 10px);
     height: 25px;
     transform: rotate(3.6deg);
     margin-top: -10px;
 }
-
 
 .al-footer-section {
     padding: 250px 0 25px 0;
@@ -246,6 +245,7 @@
         line-height: 34px;
         color: $white-color;
         font-weight: 700;
+        text-transform: uppercase;
 
         @include large-screen {
             font-size: 17px;
@@ -395,3 +395,56 @@
 }
 
 /********* Footer Section End *********/
+
+
+/********* Footer Single Section Start *******/
+.al-footer-single-section {
+    padding: 220px 0 25px 0;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(165.98deg, #02274D 9.09%, #001B37 83.19%);
+    clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
+
+    @include screen-768 {
+        clip-path: polygon(100% 7%, 100% 100%, 0 100%, 0 0);
+    }
+
+    @include portrait-phone {
+        clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
+    }
+}
+
+.al-footer-single-shape {
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+
+.al-footer-widget-single-para {
+    margin-top: 13px;
+    margin-bottom: 74px;
+    p {
+        font-size: 24px;
+        color: $white-color;
+        line-height: 42px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.al-footer-widget-saving {
+    padding: 10px 78px 36px 43px;
+    background-color: $white-color;
+    border-radius: 130px;
+}
+
+.al-footer-widget-saving-title {
+    h5 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 35px;
+    }
+}
+/********* Footer Single Section End *********/

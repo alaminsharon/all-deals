@@ -1,9 +1,114 @@
 /******Product Upload Page*********/
 
+
+/******Breadcrumb Section Start********/
 .al-breadcrumb-section {
     background: linear-gradient(247.63deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
-    padding: 300px 0;
+    padding: 230px 0 192px 0;
     position: relative;
     margin-top: -165px;
     z-index: 1;
 }
+
+.al-breadcrumb-content {
+    ul {
+        li {
+            i {
+                color: $white-color;
+            }
+
+            p {
+                font-size: 19px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            span {
+                font-size: 19px;
+                font-weight: 400;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.al-breadcrumb-content-title {
+    h3 {
+        font-size: 50px;
+        color: $white-color;
+    }
+}
+
+/******Breadcrumb Section End********/
+
+
+/******Upload Section Start********/
+.al-upload-section {
+    position: relative;
+    z-index: 3;
+    margin-top: -90px;
+    padding: 0 0 120px 0;
+}
+
+.al-upload-content {
+    background: $white-color;
+    border-radius: 35px;
+    padding: 184px 340px 70px 340px;
+    width: 100%;
+    box-shadow: 0px 5px 47.78px rgba(0, 0, 0, 0.1);
+}
+
+.al-upload-content h5 {
+    font-weight: 500;
+    color: $primary-color;
+    margin-bottom: 16px;
+}
+
+.upload-box {
+    padding: 160px 323px;
+    cursor: pointer;
+    background: #F8FEFF;
+    border: 2px dashed rgba(3, 51, 101, 0.4);
+    border-radius: 28px;
+    text-align: center;
+
+}
+
+.upload-box img#preview-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.upload-box p {
+    margin: 5px 0;
+    font-size: 21px;
+    font-weight: 400;
+    color: $primary-color;
+    strong {
+        font-weight: 600;
+    }
+}
+
+.upload-box .file-limit {
+    font-size: 17px;
+    font-weight: 400;
+    color: $primary-color;
+}
+
+.upload-btn {
+    margin-top: 43px;
+    background: #02274D;
+    color: $white-color;
+    padding: 19px 61px;
+    border: none;
+    border-radius: 99px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    img {
+        margin-right: 15px;
+    }
+}
+
+
+/******Upload Section End********/
