@@ -175,6 +175,38 @@ var swiper = new Swiper(".testimonialSwiper", {
 });
 //////////////
 
+//////////////
+var swiper = new Swiper(".topSwiper", {
+    slidesPerView: 9.5,
+    spaceBetween: 10,
+    centeredSlides: false,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    breakpoints: {
+        370: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 6,
+        },
+        1200: {
+            slidesPerView: 8,
+        },
+        1400: {
+            slidesPerView: 9.5,
+        },
+    }
+});
+//////////////
+
 
 const dropArea = document.getElementById('drop-area');
 const fileInput = document.getElementById('fileElem');
