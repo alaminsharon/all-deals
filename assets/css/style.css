@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********* base file **********/
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
@@ -15,7 +16,7 @@ img {
   padding: 0 30px; }
 
 .al-container {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: auto;
   padding: 0 30px; }
 
@@ -2290,7 +2291,20 @@ h6 {
   background: -o-linear-gradient(267.46deg, rgba(58, 30, 95, 0.95) 19.88%, #542F86 98.06%);
   background: linear-gradient(182.54deg, rgba(58, 30, 95, 0.95) 19.88%, #542F86 98.06%);
   opacity: 0.9;
-  border-radius: 35px; }
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.al-hero-single-content-left {
+  width: 40%; }
+
+.al-hero-single-card-content {
+  width: 60%;
+  padding: 20px 0; }
 
 .al-hero-single-content-title h4 {
   font-size: 24px;
@@ -2310,7 +2324,8 @@ h6 {
 .al-hero-single-card {
   background-color: #021A33;
   border-radius: 35px;
-  padding: 20px 11px 45px 28px; }
+  padding: 20px 11px 45px 28px;
+  min-height: 300px; }
 
 .al-hero-single-card-title {
   margin-top: 21px;
@@ -2342,6 +2357,35 @@ h6 {
     font-size: 19px;
     font-weight: 400;
     color: #033365; }
+
+.al-hero-single-select {
+  position: relative; }
+  .al-hero-single-select label {
+    position: absolute;
+    top: 24px;
+    left: 15px; }
+  .al-hero-single-select select {
+    height: 100%;
+    padding: 26px 41px;
+    background-color: #033365;
+    color: #ffffff;
+    border-radius: 70px;
+    font-size: 19px;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .al-hero-single-select::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 33px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #ffffff; }
 
 /****** Hero Single Section End *********/
 /****** Top Section Start *********/

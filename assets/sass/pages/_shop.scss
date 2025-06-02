@@ -15,6 +15,17 @@
     background: linear-gradient(182.54deg, rgba(58, 30, 95, 0.95) 19.88%, #542F86 98.06%);
     opacity: 0.9;
     border-radius: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.al-hero-single-content-left {
+    width: 40%;
+}
+
+.al-hero-single-card-content {
+    width: 60%;
+    padding: 20px 0;
 }
 
 .al-hero-single-content-title {
@@ -24,6 +35,7 @@
         line-height: 64px;
         color: $white-color;
     }
+
     h2 {
         background: linear-gradient(89.44deg, #F2AC6C -11.24%, #E54C7A 77.52%);
         -webkit-background-clip: text;
@@ -37,11 +49,13 @@
     background-color: #021A33;
     border-radius: 35px;
     padding: 20px 11px 45px 28px;
+    min-height: 300px;
 }
 
 .al-hero-single-card-title {
     margin-top: 21px;
     margin-bottom: 10px;
+
     h5 {
         font-size: 23px;
         line-height: 24px;
@@ -56,6 +70,7 @@
         color: $white-color;
     }
 }
+
 .al-hero-single-search {
     position: relative;
 
@@ -74,6 +89,38 @@
         font-size: 19px;
         font-weight: 400;
         color: $primary-color;
+    }
+}
+
+.al-hero-single-select {
+    position: relative;
+
+    label {
+        position: absolute;
+        top: 24px;
+        left: 15px;
+    }
+
+    select {
+        height: 100%;
+        padding: 26px 41px;
+        background-color: $primary-color;
+        color: $white-color;
+        border-radius: 70px;
+        font-size: 19px;
+        font-weight: 500;
+        appearance: none;
+    }
+
+    &::after {
+        content: "▼";
+        position: absolute;
+        top: 50%;
+        right: 33px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 14px;
+        color: $white-color;
     }
 }
 
