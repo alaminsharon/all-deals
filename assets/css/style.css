@@ -11,7 +11,7 @@ img {
   transition: 0.3s; }
 
 .al-container-875 {
-  max-width: 875px;
+  max-width: 935px;
   margin: auto;
   padding: 0 30px; }
 
@@ -21,12 +21,12 @@ img {
   padding: 0 30px; }
 
 .al-container-1540 {
-  max-width: 1540px;
+  max-width: 1600px;
   margin: auto;
   padding: 0 30px; }
 
 .al-container-1680 {
-  max-width: 1680px;
+  max-width: 1740px;
   margin: auto;
   padding: 0 30px; }
 
@@ -2578,6 +2578,123 @@ h6 {
   display: block; }
 
 /****** Shop Section End *********/
+/******My Account Page*********/
+/****** Order Section Start *********/
+.al-order-section {
+  padding: 120px 0; }
+
+.al-order-table-card {
+  -webkit-box-shadow: 0px 7.78px 67.78px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 7.78px 67.78px rgba(0, 0, 0, 0.16);
+  border-radius: 16px; }
+
+.al-order-table-content tr th {
+  font-size: 16px;
+  font-weight: 600;
+  color: #033365;
+  text-transform: uppercase; }
+
+.al-order-table-head {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 16px 16px 0 0; }
+
+.al-order-table-data {
+  background-color: #fff;
+  border-radius: 0 0 16px 16px; }
+  .al-order-table-data td img {
+    margin-right: 10px; }
+  .al-order-table-data td button {
+    background-color: #2E9865;
+    padding: 12px 30px;
+    border-radius: 90px;
+    color: #033365; }
+
+.al-order-table-button-one {
+  background-color: rgba(46, 152, 101, 0.12) !important; }
+
+th,
+td {
+  padding: 20px 30px; }
+
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%; }
+
+.results-per-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  position: relative; }
+  .results-per-page label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #033365; }
+  .results-per-page select {
+    padding: 18px 54px;
+    border-radius: 69px;
+    background: rgba(55, 103, 223, 0.08);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .results-per-page::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 33px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #033365; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px; }
+
+.pagination button {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #4a5568; }
+
+.pagination button.active {
+  background-color: #e2e8f0;
+  font-weight: bold;
+  color: #2d3748; }
+
+.pagination-info {
+  color: #4a5568;
+  font-size: 14px; }
+
+.pagination button:hover {
+  background-color: #edf2f7; }
+
+/****** Order Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {

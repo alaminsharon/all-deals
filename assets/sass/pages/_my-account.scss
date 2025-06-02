@@ -1,0 +1,128 @@
+/******My Account Page*********/
+
+/****** Order Section Start *********/
+.al-order-section {
+    padding: 120px 0;
+}
+
+.al-order-table-card {
+    box-shadow: 0px 7.78px 67.78px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+}
+
+.al-order-table-content {
+    tr {
+        th {
+            font-size: 16px;
+            font-weight: 600;
+            color: $primary-color;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.al-order-table-head {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 16px 16px 0 0;
+}
+
+.al-order-table-data {
+    background-color: #fff;
+    border-radius: 0 0 16px 16px;
+
+    td {
+        img {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #2E9865;
+            padding: 12px 30px;
+            border-radius: 90px;
+            color: $primary-color;
+        }
+    }
+}
+
+.al-order-table-button-one {
+    background-color: rgba(46, 152, 101, 0.12) !important;
+}
+
+th,
+td {
+    padding: 20px 30px;
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.results-per-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+
+    label {
+        font-size: 20px;
+        font-weight: 400;
+        color: $primary-color;
+    }
+
+    select {
+        padding: 18px 54px;
+        border-radius: 69px;
+        background: rgba(55, 103, 223, 0.08);
+        appearance: none;
+    }
+    &::after {
+        content: "▼";
+        position: absolute;
+        top: 50%;
+        right: 33px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 14px;
+        color: $primary-color;
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pagination button {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #4a5568;
+}
+
+.pagination button.active {
+    background-color: #e2e8f0;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.pagination-info {
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.pagination button:hover {
+    background-color: #edf2f7;
+}
+
+/****** Order Section End *********/
