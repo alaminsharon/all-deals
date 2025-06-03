@@ -3,7 +3,7 @@
 
 /****** Hero Single Section Start *********/
 .al-hero-single-section {
-    padding: 200px 0 180px 0;
+    padding: 140px 0 200px 0;
     position: relative;
     margin-top: -115px;
     z-index: 1;
@@ -17,15 +17,27 @@
     border-radius: 35px;
     display: flex;
     align-items: center;
+    position: relative;
+    span {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        i {
+            color: $white-color;
+        }
+    }
 }
 
 .al-hero-single-content-left {
     width: 40%;
 }
 
+.al-hero-single-thumb {
+    margin-top: 70px;
+}
 .al-hero-single-card-content {
     width: 60%;
-    padding: 20px 0;
+    padding: 30px 35px 30px 0;
 }
 
 .al-hero-single-content-title {
@@ -103,7 +115,7 @@
 
     select {
         height: 100%;
-        padding: 26px 41px;
+        padding: 26px 50px;
         background-color: $primary-color;
         color: $white-color;
         border-radius: 70px;
@@ -113,28 +125,39 @@
     }
 
     &::after {
-        content: "▼";
+        content: "\f0d7";
+        font-family: "FontAwesome";
         position: absolute;
         top: 50%;
         right: 33px;
         transform: translateY(-50%);
         pointer-events: none;
-        font-size: 14px;
+        font-size: 20px;
         color: $white-color;
     }
 }
 
 /****** Hero Single Section End *********/
 
-
 /****** Top Section Start *********/
 .al-top-section {
-    background-color: green;
-    padding: 120px 0;
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: -220px;
+    z-index: 3;
+}
+
+.al-top-title {
+    margin-left: 250px;
+    margin-bottom: 20px;
+    h5 {
+        font-size: 22px;
+        color: $white-color;
+    }
 }
 
 .top-slider {
-    margin-left: 110px;
+    margin-left: 250px;
 }
 
 .al-top-content-thumb {
@@ -202,8 +225,11 @@
 
 /****** Shop Section Start *********/
 .al-shop-section {
-    background-color: #E897A8;
-    padding: 120px 0;
+    background-color: #F9EEF3;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+    padding: 250px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .al-shop-left {

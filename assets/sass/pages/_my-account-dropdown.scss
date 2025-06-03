@@ -1,0 +1,74 @@
+/******My Account Dropdown Page*********/
+
+/****** Account Section Start *********/
+.al-account-section {
+    padding: 34px 0 28px 0;
+}
+
+.al-account-title {
+    margin-bottom: 30px;
+
+    h6 {
+        font-size: 16px;
+    }
+}
+
+.al-account-card{
+    background: linear-gradient(45.85deg, #A040C1 1.2%, #6F68BF 89.87%);
+    border-radius: 50px;
+    padding: 26px 38px 64px 34px;
+}
+
+.al-account-card-title {
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 55px;
+    }
+}
+
+.al-account-card-subtitle {
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.al-account-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(110, 159, 177, 0.40);
+}
+
+.al-account-bottom-setting {
+    margin-left: 40px;
+    gap: 50px;
+}
+
+.al-account-bottom-setting-content {
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 55px;
+        color: $primary-color;
+
+        img {
+            margin-right: 14px;
+        }
+    }
+}
+
+.al-account-bottom-sign {
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 55px;
+        color: $primary-color;
+
+        img {
+            margin-right: 14px;
+        }
+    }
+}
+
+/****** Account Section End *********/

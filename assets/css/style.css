@@ -505,6 +505,14 @@ h6 {
       visibility: visible; }
 
 /******Header Single End *********/
+.al-header-single-dropdown {
+  background: -webkit-linear-gradient(197.29deg, #9952F9 17.98%, #EF8E82 72%, #F2C46E 122.55%);
+  background: -o-linear-gradient(197.29deg, #9952F9 17.98%, #EF8E82 72%, #F2C46E 122.55%);
+  background: linear-gradient(252.71deg, #9952F9 17.98%, #EF8E82 72%, #F2C46E 122.55%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  padding: 44px 0; }
+
 /************************ mobile menu start ****************/
 .mobile-menu {
   width: 400px;
@@ -1006,17 +1014,40 @@ h6 {
     max-width: 400px;
     margin: 0 auto; }
 
+.al-footer-widget-saving-item {
+  position: relative;
+  z-index: 1; }
+  .al-footer-widget-saving-item::after {
+    position: absolute;
+    content: "";
+    background: -webkit-linear-gradient(49.81deg, #D355FF -3.45%, #FF789A 88.91%);
+    background: -o-linear-gradient(49.81deg, #D355FF -3.45%, #FF789A 88.91%);
+    background: linear-gradient(40.19deg, #D355FF -3.45%, #FF789A 88.91%);
+    bottom: 82px;
+    left: 241px;
+    z-index: -1;
+    width: 415px;
+    height: 150px;
+    border-radius: 150px; }
+
 .al-footer-widget-saving {
   padding: 10px 78px 36px 43px;
   background-color: #ffffff;
   border-radius: 130px; }
 
-.al-footer-widget-saving-title h5 {
-  font-size: 21px;
-  font-weight: 400; }
-
-.al-footer-widget-saving-title h3 {
-  font-size: 35px; }
+.al-footer-widget-saving-title {
+  position: relative;
+  z-index: 1; }
+  .al-footer-widget-saving-title h5 {
+    font-size: 21px;
+    font-weight: 400; }
+  .al-footer-widget-saving-title h3 {
+    font-size: 35px; }
+  .al-footer-widget-saving-title span {
+    position: absolute;
+    top: 1px;
+    right: -7px;
+    z-index: -1; }
 
 /********* Footer Single Section End *********/
 /******** pages file **********/
@@ -2191,7 +2222,7 @@ h6 {
   background: -webkit-linear-gradient(202.37deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
   background: -o-linear-gradient(202.37deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
   background: linear-gradient(247.63deg, #9952F9 10.89%, #EF8E82 66.46%, #F2C46E 118.45%);
-  padding: 230px 0 192px 0;
+  padding: 230px 0 150px 0;
   position: relative;
   margin-top: -165px;
   z-index: 1; }
@@ -2276,7 +2307,7 @@ h6 {
 /******Shop Upload Page*********/
 /****** Hero Single Section Start *********/
 .al-hero-single-section {
-  padding: 200px 0 180px 0;
+  padding: 140px 0 200px 0;
   position: relative;
   margin-top: -115px;
   z-index: 1;
@@ -2297,14 +2328,24 @@ h6 {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .al-hero-single-content span {
+    position: absolute;
+    right: 20px;
+    top: 15px; }
+    .al-hero-single-content span i {
+      color: #ffffff; }
 
 .al-hero-single-content-left {
   width: 40%; }
 
+.al-hero-single-thumb {
+  margin-top: 70px; }
+
 .al-hero-single-card-content {
   width: 60%;
-  padding: 20px 0; }
+  padding: 30px 35px 30px 0; }
 
 .al-hero-single-content-title h4 {
   font-size: 24px;
@@ -2366,7 +2407,7 @@ h6 {
     left: 15px; }
   .al-hero-single-select select {
     height: 100%;
-    padding: 26px 41px;
+    padding: 26px 50px;
     background-color: #033365;
     color: #ffffff;
     border-radius: 70px;
@@ -2376,7 +2417,8 @@ h6 {
     -moz-appearance: none;
     appearance: none; }
   .al-hero-single-select::after {
-    content: "▼";
+    content: "\f0d7";
+    font-family: "FontAwesome";
     position: absolute;
     top: 50%;
     right: 33px;
@@ -2384,17 +2426,26 @@ h6 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     pointer-events: none;
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff; }
 
 /****** Hero Single Section End *********/
 /****** Top Section Start *********/
 .al-top-section {
-  background-color: green;
-  padding: 120px 0; }
+  position: relative;
+  margin-top: -150px;
+  margin-bottom: -220px;
+  z-index: 3; }
+
+.al-top-title {
+  margin-left: 250px;
+  margin-bottom: 20px; }
+  .al-top-title h5 {
+    font-size: 22px;
+    color: #ffffff; }
 
 .top-slider {
-  margin-left: 110px; }
+  margin-left: 250px; }
 
 .al-top-content-thumb {
   width: 131px;
@@ -2452,8 +2503,12 @@ h6 {
 /****** Top Section End *********/
 /****** Shop Section Start *********/
 .al-shop-section {
-  background-color: #E897A8;
-  padding: 120px 0; }
+  background-color: #F9EEF3;
+  -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+  padding: 250px 0;
+  position: relative;
+  z-index: 1; }
 
 .al-shop-left {
   background-color: #ffffff;
@@ -2672,7 +2727,7 @@ td {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 8px; }
+  gap: 10px; }
 
 .pagination button {
   background: transparent;
@@ -2680,21 +2735,80 @@ td {
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
-  color: #4a5568; }
+  color: #033365;
+  font-size: 20px;
+  font-weight: 500; }
 
 .pagination button.active {
-  background-color: #e2e8f0;
+  background: rgba(55, 103, 223, 0.08);
   font-weight: bold;
-  color: #2d3748; }
+  color: #033365;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%; }
 
-.pagination-info {
-  color: #4a5568;
-  font-size: 14px; }
+.pagination-info span {
+  cursor: pointer;
+  color: #033365;
+  font-size: 20px;
+  font-weight: 500; }
 
 .pagination button:hover {
   background-color: #edf2f7; }
 
 /****** Order Section End *********/
+/******My Account Dropdown Page*********/
+/****** Account Section Start *********/
+.al-account-section {
+  padding: 34px 0 28px 0; }
+
+.al-account-title {
+  margin-bottom: 30px; }
+  .al-account-title h6 {
+    font-size: 16px; }
+
+.al-account-card {
+  background: -webkit-linear-gradient(44.15deg, #A040C1 1.2%, #6F68BF 89.87%);
+  background: -o-linear-gradient(44.15deg, #A040C1 1.2%, #6F68BF 89.87%);
+  background: linear-gradient(45.85deg, #A040C1 1.2%, #6F68BF 89.87%);
+  border-radius: 50px;
+  padding: 26px 38px 64px 34px; }
+
+.al-account-card-title h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 55px; }
+
+.al-account-card-subtitle p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; }
+
+.al-account-bottom {
+  margin-top: 20px;
+  border-top: 1px solid rgba(110, 159, 177, 0.4); }
+
+.al-account-bottom-setting {
+  margin-left: 40px;
+  gap: 50px; }
+
+.al-account-bottom-setting-content span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #033365; }
+  .al-account-bottom-setting-content span img {
+    margin-right: 14px; }
+
+.al-account-bottom-sign span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #033365; }
+  .al-account-bottom-sign span img {
+    margin-right: 14px; }
+
+/****** Account Section End *********/
 /******** theme file **********/
 @-webkit-keyframes toTopFromBottom1 {
   49% {
