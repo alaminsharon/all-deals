@@ -2786,11 +2786,13 @@ td {
     font-size: 16px; }
 
 .al-account-card {
-  background: -webkit-linear-gradient(44.15deg, #A040C1 1.2%, #6F68BF 89.87%);
-  background: -o-linear-gradient(44.15deg, #A040C1 1.2%, #6F68BF 89.87%);
-  background: linear-gradient(45.85deg, #A040C1 1.2%, #6F68BF 89.87%);
   border-radius: 50px;
   padding: 26px 38px 64px 34px; }
+
+.al-account-card.active {
+  background: -webkit-linear-gradient(44.15deg, rgba(161, 64, 193, 0.1) 1.2%, rgba(111, 104, 191, 0.1) 89.87%);
+  background: -o-linear-gradient(44.15deg, rgba(161, 64, 193, 0.1) 1.2%, rgba(111, 104, 191, 0.1) 89.87%);
+  background: linear-gradient(45.85deg, rgba(161, 64, 193, 0.1) 1.2%, rgba(111, 104, 191, 0.1) 89.87%); }
 
 .al-account-card-title h5 {
   font-size: 20px;
@@ -2825,6 +2827,9 @@ td {
   color: #033365; }
   .al-account-bottom-sign span img {
     margin-right: 14px; }
+
+.dropdown-icon-01 {
+  background-color: #2E9865 !important; }
 
 /****** Account Section End *********/
 /******** theme file **********/
