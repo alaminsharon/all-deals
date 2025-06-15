@@ -3,19 +3,21 @@
 /********* Footer Section Start *********/
 .al-footer-top-shape {
     background: radial-gradient(95.6% 141.23% at 0% 0.72%, #EF8E82 26.04%, #9952F9 51.04%, #F2C46E 100%);
-    clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
     position: absolute;
     z-index: 66;
-    top: 62px;
+    top: 40px;
     left: -10px;
     width: calc(100% + 10px);
-    height: 25px;
+    height: 20px;
     transform: rotate(3.6deg);
-    margin-top: -10px;
+    margin-top: 20px;
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-section {
-    padding: 250px 0 25px 0;
+    padding: 270px 0 25px 0;
     position: relative;
     z-index: 1;
     background: linear-gradient(165.98deg, #02274D 9.09%, #001B37 83.19%);
@@ -27,6 +29,7 @@
 
     @include portrait-phone {
         clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
+        padding: 215px 0 25px 0;
     }
 }
 

@@ -76,7 +76,7 @@ select {
   border-radius: 5px;
   border: none;
   position: fixed;
-  bottom: 70px;
+  bottom: 90px;
   right: 40px;
   z-index: 50;
   font-size: 22px;
@@ -631,21 +631,22 @@ h6 {
   background: -webkit-radial-gradient(0% 0.72%, 95.6% 141.23%, #EF8E82 26.04%, #9952F9 51.04%, #F2C46E 100%);
   background: -o-radial-gradient(0% 0.72%, 95.6% 141.23%, #EF8E82 26.04%, #9952F9 51.04%, #F2C46E 100%);
   background: radial-gradient(95.6% 141.23% at 0% 0.72%, #EF8E82 26.04%, #9952F9 51.04%, #F2C46E 100%);
-  -webkit-clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(100% 11%, 100% 100%, 0 100%, 0 0);
   position: absolute;
   z-index: 66;
-  top: 62px;
+  top: 40px;
   left: -10px;
   width: calc(100% + 10px);
-  height: 25px;
+  height: 20px;
   -webkit-transform: rotate(3.6deg);
   -ms-transform: rotate(3.6deg);
   transform: rotate(3.6deg);
-  margin-top: -10px; }
+  margin-top: 20px; }
+  @media (max-width: 991.98px) {
+    .al-footer-top-shape {
+      display: none; } }
 
 .al-footer-section {
-  padding: 250px 0 25px 0;
+  padding: 270px 0 25px 0;
   position: relative;
   z-index: 1;
   background: -webkit-linear-gradient(284.02deg, #02274D 9.09%, #001B37 83.19%);
@@ -660,7 +661,8 @@ h6 {
   @media (max-width: 575.98px) {
     .al-footer-section {
       -webkit-clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
-      clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0); } }
+      clip-path: polygon(100% 4%, 100% 100%, 0 100%, 0 0);
+      padding: 215px 0 25px 0; } }
 
 .al-footer-shape-01 {
   position: absolute;
@@ -1051,10 +1053,10 @@ h6 {
 /******Home Page*********/
 /****** Hero Section Start *********/
 .al-hero-section {
-  padding: 120px 0 180px 0;
+  padding: 120px 0 140px 0;
   position: relative;
   margin-top: -95px;
-  margin-bottom: -150px;
+  margin-bottom: 10px;
   z-index: 1;
   background: -webkit-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
   background: -o-linear-gradient(344.99deg, #FFC2BA 8.31%, #C59AFF 99.75%);
@@ -1577,7 +1579,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 75px 0 100px 0;
   margin-left: 100px;
   border-radius: 50px 0 0 50px;
   position: relative;
@@ -1602,7 +1604,7 @@ h6 {
     justify-content: center;
     background-color: #ffffff;
     right: 140px;
-    top: 150px;
+    top: 100px;
     z-index: 2;
     color: #000000;
     opacity: 1; }
@@ -1627,7 +1629,7 @@ h6 {
     justify-content: center;
     background-color: #ffffff;
     right: 215px;
-    top: 150px;
+    top: 100px;
     left: auto;
     z-index: 2;
     color: #000000;
@@ -1814,7 +1816,7 @@ h6 {
 
 .al-reward-shape {
   position: absolute;
-  right: 36px;
+  right: 0px;
   bottom: 600px;
   z-index: 1; }
   @media (max-width: 767.98px) {
@@ -1918,7 +1920,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 130px 0;
+  padding: 156px 0;
   border-radius: 50px;
   position: relative; }
   @media (max-width: 575.98px) {
@@ -2138,7 +2140,7 @@ h6 {
 .al-deal-section {
   position: relative;
   margin-top: -510px;
-  margin-bottom: -145px;
+  margin-bottom: -170px;
   z-index: 2; }
   @media (max-width: 575.98px) {
     .al-deal-section {

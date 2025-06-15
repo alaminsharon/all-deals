@@ -2,10 +2,10 @@
 
 /****** Hero Section Start *********/
 .al-hero-section {
-    padding: 120px 0 180px 0;
+    padding: 120px 0 140px 0;
     position: relative;
     margin-top: -95px;
-    margin-bottom: -150px;
+    margin-bottom: 10px;
     z-index: 1;
     background: linear-gradient(105.01deg, #FFC2BA 8.31%, #C59AFF 99.75%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
@@ -641,7 +641,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+    padding: 75px 0 100px 0;
     margin-left: 100px;
     border-radius: 50px 0 0 50px;
     position: relative;
@@ -662,7 +662,7 @@
         justify-content: center;
         background-color: $white-color;
         right: 140px;
-        top: 150px;
+        top: 100px;
         z-index: 2;
         color: #000000;
         opacity: 1;
@@ -686,7 +686,7 @@
         justify-content: center;
         background-color: $white-color;
         right: 215px;
-        top: 150px;
+        top: 100px;
         left: auto;
         z-index: 2;
         color: #000000;
@@ -915,7 +915,7 @@
 
 .al-reward-shape {
     position: absolute;
-    right: 36px;
+    right: 0px;
     bottom: 600px;
     z-index: 1;
 
@@ -1045,7 +1045,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 130px 0;
+    padding: 156px 0;
     border-radius: 50px;
     position: relative;
 
@@ -1324,7 +1324,7 @@
 .al-deal-section {
     position: relative;
     margin-top: -510px;
-    margin-bottom: -145px;
+    margin-bottom: -170px;
     z-index: 2;
 
     @include portrait-phone {
