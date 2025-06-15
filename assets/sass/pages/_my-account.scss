@@ -115,10 +115,32 @@ td {
     }
 }
 
+.pagination-two {
+    button {
+        background: transparent;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
 .pagination button.active {
     background: rgba(55, 103, 223, 0.08);
     font-weight: bold;
     color: $primary-color;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.pagination-two button.active {
+    background: $primary-color;
+    font-weight: 700;
+    color: $white-color;
     width: 41px;
     height: 41px;
     border-radius: 50%;
