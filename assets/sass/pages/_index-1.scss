@@ -216,7 +216,7 @@
 }
 
 .al-hero-card-coin {
-    margin-top: 70px;
+    margin-top: 40px;
 
     @include portrait-phone {
         margin-top: 50px;
@@ -374,6 +374,15 @@
     margin-top: -169px;
     margin-bottom: -279px;
     z-index: 3;
+}
+
+.al-about-shape {
+    position: absolute;
+    right: 0px;
+    bottom: 390px;
+    @include screen-768 {
+        display: none;
+    }
 }
 
 .card-slider {
@@ -816,6 +825,7 @@
         h5 {
             max-width: 240px;
             transition: 0.3s;
+
             &:hover {
                 color: #7C458F;
             }

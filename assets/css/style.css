@@ -204,9 +204,6 @@ h6 {
   background-color: #02274D;
   padding: 11px 0; }
 
-.al-header-top-container {
-  padding: 0 10px; }
-
 .al-header-top-left-content p {
   font-weight: 500;
   color: #ffffff;
@@ -1230,7 +1227,7 @@ h6 {
       line-height: 30px; } }
 
 .al-hero-card-coin {
-  margin-top: 70px; }
+  margin-top: 40px; }
   @media (max-width: 575.98px) {
     .al-hero-card-coin {
       margin-top: 50px; } }
@@ -1360,6 +1357,14 @@ h6 {
   margin-top: -169px;
   margin-bottom: -279px;
   z-index: 3; }
+
+.al-about-shape {
+  position: absolute;
+  right: 0px;
+  bottom: 390px; }
+  @media (max-width: 767.98px) {
+    .al-about-shape {
+      display: none; } }
 
 .card-slider {
   margin-left: 250px; }
@@ -2829,7 +2834,7 @@ td {
     margin-right: 14px; }
 
 .dropdown-icon-01 {
-  background-color: #2E9865 !important; }
+  background-color: rgba(46, 152, 101, 0.2) !important; }
 
 /****** Account Section End *********/
 /******** theme file **********/
