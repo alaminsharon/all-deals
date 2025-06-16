@@ -105,6 +105,10 @@
     font-size: 21px;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: #7C458F;
+    }
     img {
         margin-right: 15px;
     }

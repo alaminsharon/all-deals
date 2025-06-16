@@ -1528,6 +1528,11 @@ h6 {
     .our-slider {
       padding: 0; } }
 
+.aboutSwiper .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important; }
+
 .al-about-item {
   margin-top: 60px;
   margin-bottom: 60px; }
@@ -1607,7 +1612,13 @@ h6 {
     top: 100px;
     z-index: 2;
     color: #000000;
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .al-feature-content .swiper-button-next:hover {
+      background-color: #033365;
+      color: #ffffff; }
     .al-feature-content .swiper-button-next::after {
       font-size: 20px; }
     @media (max-width: 991.98px) {
@@ -1633,7 +1644,13 @@ h6 {
     left: auto;
     z-index: 2;
     color: #000000;
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .al-feature-content .swiper-button-prev:hover {
+      background-color: #033365;
+      color: #ffffff; }
     .al-feature-content .swiper-button-prev::after {
       font-size: 20px; }
     @media (max-width: 991.98px) {
@@ -2306,7 +2323,12 @@ h6 {
   border-radius: 99px;
   font-size: 21px;
   font-weight: 500;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .upload-btn:hover {
+    background-color: #7C458F; }
   .upload-btn img {
     margin-right: 15px; }
 

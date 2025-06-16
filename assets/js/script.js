@@ -92,10 +92,12 @@ let ourSlider = new Swiper('.aboutSwiper', {
     slidesPerView: 6,
     spaceBetween: 30,
     autoplay: {
-        delay: 1000,
+        delay: 0,
         disableOnInteraction: false,
     },
-    speed: 800,
+    speed: 2000,
+    freeMode: true,
+    freeModeMomentum: false,
     breakpoints: {
         370: {
             slidesPerView: 3,
@@ -111,6 +113,7 @@ let ourSlider = new Swiper('.aboutSwiper', {
         }
     }
 });
+
 
 //////////////
 
