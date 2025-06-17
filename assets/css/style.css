@@ -2291,11 +2291,17 @@ h6 {
   font-size: 19px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7); }
+  @media (max-width: 767.98px) {
+    .al-breadcrumb-content ul li p {
+      font-size: 15px; } }
 
 .al-breadcrumb-content ul li span {
   font-size: 19px;
   font-weight: 400;
   color: #ffffff; }
+  @media (max-width: 767.98px) {
+    .al-breadcrumb-content ul li span {
+      font-size: 15px; } }
 
 .al-breadcrumb-content-title h3 {
   font-size: 50px;
@@ -2325,6 +2331,9 @@ h6 {
   @media (max-width: 767.98px) {
     .al-upload-content {
       padding: 50px 100px 20px 100px; } }
+  @media (max-width: 575.98px) {
+    .al-upload-content {
+      padding: 20px 40px; } }
 
 .al-upload-content h5 {
   font-weight: 500;
@@ -2347,6 +2356,9 @@ h6 {
   @media (max-width: 767.98px) {
     .upload-box {
       padding: 30px; } }
+  @media (max-width: 575.98px) {
+    .upload-box {
+      padding: 10px; } }
 
 .upload-box img#preview-icon {
   width: 80px;
@@ -2357,6 +2369,9 @@ h6 {
   font-size: 21px;
   font-weight: 400;
   color: #033365; }
+  @media (max-width: 575.98px) {
+    .upload-box p {
+      font-size: 16px; } }
   .upload-box p strong {
     font-weight: 600; }
 
@@ -2378,6 +2393,10 @@ h6 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
+  @media (max-width: 575.98px) {
+    .upload-btn {
+      margin-top: 20px;
+      padding: 19px 57px; } }
   .upload-btn:hover {
     background-color: #7C458F; }
   .upload-btn img {
