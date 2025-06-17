@@ -237,6 +237,14 @@
     }
 }
 
+.al-footer-widget-social-margin {
+    margin-top: 100px;
+
+    @include screen-768 {
+        margin-top: 30px;
+    }
+}
+
 .al-footer-widget-content-none {
     @include portrait-phone {
         display: none;
@@ -422,6 +430,7 @@
     position: absolute;
     top: 160px;
     left: 0;
+
     @include screen-992 {
         display: none;
     }
@@ -430,7 +439,9 @@
 .al-footer-widget-single-para {
     margin-top: 13px;
     margin-bottom: 74px;
-
+    @include portrait-phone {
+        margin-bottom: 30px;
+    }
     p {
         font-size: 24px;
         color: $white-color;
@@ -456,6 +467,10 @@
         width: 415px;
         height: 150px;
         border-radius: 150px;
+
+        @include screen-992 {
+            display: none;
+        }
     }
 }
 
@@ -463,8 +478,16 @@
     padding: 10px 78px 36px 43px;
     background-color: $white-color;
     border-radius: 130px;
+    margin-bottom: 90px;
+    @include portrait-phone {
+        padding: 16px 75px 22px 53px;
+        margin-bottom: 30px;
+    }
 }
 
+.al-footer-widget-saving-thumb {
+    flex-shrink: 0;
+}
 .al-footer-widget-saving-title {
     position: relative;
     z-index: 1;
@@ -472,6 +495,9 @@
     h5 {
         font-size: 21px;
         font-weight: 400;
+        @include screen-768 {
+            font-size: 18px;
+        }
     }
 
     h3 {
