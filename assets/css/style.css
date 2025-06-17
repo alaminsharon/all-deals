@@ -72,7 +72,7 @@ select {
 .scroll-top-btn {
   width: 50px;
   height: 50px;
-  background-color: #141417;
+  background-color: #7C458F;
   border-radius: 5px;
   border: none;
   position: fixed;
@@ -377,6 +377,9 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   gap: 60px; }
+  @media (max-width: 1299.98px) {
+    .al-header-single-nav ul {
+      gap: 20px; } }
   .al-header-single-nav ul li a {
     font-size: 20px;
     font-weight: 500;
@@ -387,6 +390,9 @@ h6 {
     transition: 0.3s; }
     .al-header-single-nav ul li a:hover {
       color: #033365; }
+    @media (max-width: 1100px) {
+      .al-header-single-nav ul li a {
+        font-size: 18px; } }
 
 .al-header-single-content-title h6 {
   font-size: 20px;
@@ -1002,6 +1008,9 @@ h6 {
   position: absolute;
   top: 160px;
   left: 0; }
+  @media (max-width: 991.98px) {
+    .al-footer-single-shape {
+      display: none; } }
 
 .al-footer-widget-single-para {
   margin-top: 13px;
@@ -2283,6 +2292,15 @@ h6 {
   width: 100%;
   -webkit-box-shadow: 0px 5px 47.78px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 47.78px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 1600px) {
+    .al-upload-content {
+      padding: 130px 250px 60px 250px; } }
+  @media (max-width: 1199.98px) {
+    .al-upload-content {
+      padding: 70px 150px 30px 150px; } }
+  @media (max-width: 767.98px) {
+    .al-upload-content {
+      padding: 50px 100px 20px 100px; } }
 
 .al-upload-content h5 {
   font-weight: 500;
@@ -2296,6 +2314,15 @@ h6 {
   border: 2px dashed rgba(3, 51, 101, 0.4);
   border-radius: 28px;
   text-align: center; }
+  @media (max-width: 1600px) {
+    .upload-box {
+      padding: 80px 180px; } }
+  @media (max-width: 1199.98px) {
+    .upload-box {
+      padding: 40px 60px; } }
+  @media (max-width: 767.98px) {
+    .upload-box {
+      padding: 30px; } }
 
 .upload-box img#preview-icon {
   width: 80px;

@@ -11,6 +11,7 @@
     height: 20px;
     transform: rotate(3.6deg);
     margin-top: 20px;
+
     @include screen-992 {
         display: none;
     }
@@ -421,6 +422,9 @@
     position: absolute;
     top: 160px;
     left: 0;
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-footer-widget-single-para {
@@ -454,7 +458,6 @@
         border-radius: 150px;
     }
 }
-
 
 .al-footer-widget-saving {
     padding: 10px 78px 36px 43px;
